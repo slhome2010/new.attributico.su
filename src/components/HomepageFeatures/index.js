@@ -11,16 +11,15 @@ import {
   faPaste,
   faCopy
 } from '@fortawesome/free-solid-svg-icons';
-import attributicoMain from '@site/static/img/portfolio/attributico-main.svg';
+//import Image from '@theme/IdealImage';
+import AttributicoMain from '@site/static/img/portfolio/attributico-main.svg';
 import styles from './styles.module.css';
 
-const Homepage = ({ 
+const Homepage = ({
   entry_portfolio,
   entry_features,
   button_more,
-  // ... остальные пропсы
 }) => {
-  // Данные для портфолио
   const portfolioItems = [
     {
       title: "Attribut&co",
@@ -34,19 +33,15 @@ const Homepage = ({
       description: "Текст описания...",
       link: "/doc/attributico_v.html",
     },
-    // ... второй элемент
   ];
 
-  // Данные для фич
   const features = [
     { icon: faTree, title: "Tree Structure", description: "..." },
     { icon: faSortNumericAsc, title: "Sorting", description: "..." },
-    // ... остальные фичи
   ];
 
   return (
     <div className="container">
-      {/* Секция портфолио */}
       <section id="portfolio" className="mt-3">
         <h1 className="mb-3 text-center">{entry_portfolio}</h1>
         <div className="row">
@@ -62,15 +57,12 @@ const Homepage = ({
                     {item.description}
                   </p>
                   <a href={item.link} className="stretched-link">
-                    {button_more}
+                    Learn more...
                   </a>
                 </div>
                 <div className="col-auto d-none d-lg-block">
-                  <img 
-                   src={attributicoMain} 
-                    alt={item.title} 
-                    style={{ height: '256px', width: 'auto' }} 
-                  />
+                <AttributicoMain width={256} height={256} />
+
                 </div>
               </div>
             </div>
@@ -78,7 +70,6 @@ const Homepage = ({
         </div>
       </section>
 
-      {/* Секция фич */}
       <section id="features">
         <h1 className="mb-3 text-center">{entry_features}</h1>
         <div className="row feature_wrap mb-4">
