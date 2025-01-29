@@ -11,105 +11,92 @@ import {
   faPaste,
   faCopy
 } from '@fortawesome/free-solid-svg-icons';
-import attributicoSvg from '/static/img/portfolio/attributico-main.svg'; // Путь к SVG
+import attributicoMain from '@site/static/img/portfolio/attributico-main.svg';
 import styles from './styles.module.css';
 
-// Данные для портфолио
-const PortfolioItems = [
-  {
-    title: "Attribut&co",
-    designer: "Comtronics",
-    description: "Attribut&amp;co lets you to create, rename, delete attributes for your OpenCart-store. Attributes are represented as trees. Easy to edit using the Copy-Paste technology, or Drag-and-Drop...", // Заменить на актуальные данные
-    link: `/doc/attributico.html`,
-    Svg: attributicoSvg,
-  },
-  {
-    title: "Attribut&co-view",
-    designer: "Comtronics",
-    description: 'Free version. This is only possible to view attributes. It does to make sure the module can run on your OpenCart store.', // Заменить на актуальные данные
-    link: `/doc/attributico.html#free`,
-    Svg: attributicoSvg,
-  },
-];
-
-// Данные для фич
-const FeatureList = [
-  [
+const Homepage = ({ 
+  entry_portfolio,
+  entry_features,
+  button_more,
+  // ... остальные пропсы
+}) => {
+  // Данные для портфолио
+  const portfolioItems = [
     {
-      icon: <i className="fa fa-tree" />,
-      title: 'Show as tree',
-      description: 'It is a visual representation of attributes and attribute values in the form of a tree.',
+      title: "Attribut&co",
+      designer: "Comtronics",
+      description: "Текст описания...",
+      link: "/doc/attributico.html",
     },
     {
-      icon: <i className="fa fa-sort-numeric-asc" />,
-      title: 'Drag-and-drop sorting',
-      description: 'Now, the attributes and groups can be sorted by dragging the mouse.',
+      title: "Attribut&co Viwer",
+      designer: "Comtronics",
+      description: "Текст описания...",
+      link: "/doc/attributico_v.html",
     },
-    {
-      icon: <i className="fa fa-pie-chart" />,
-      title: 'Defragmentation',
-      description: 'Defragment attributes and groups. Preparing the group for parsing.',
-    },
-  ],
-  // Добавить остальные ряды фич аналогичным образом
-];
+    // ... второй элемент
+  ];
 
-function PortfolioItem({title, designer, description, link, Svg}) {
-  return (
-    <div className="col-md-6">
-      <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div className="col p-4 d-flex flex-column position-static">
-          <h5 className="card-title mb-0">{title}</h5>
-          <div className="mb-1 text-muted"><span>Designed by: {designer}</span></div>
-          <p className="card-text mb-auto font-weight-light" style={{fontSize: '80%'}}>
-            {description}
-          </p>
-          <a className="stretched-link" href={link} role="button">
-          Learn more
-          </a>
-        </div>
-        <Svg className={styles.portfolioSvg} height="256px" />
-      </div>
-    </div>
-  );
-}
+  // Данные для фич
+  const features = [
+    { icon: faTree, title: "Tree Structure", description: "..." },
+    { icon: faSortNumericAsc, title: "Sorting", description: "..." },
+    // ... остальные фичи
+  ];
 
-function Feature({icon, title, description}) {
-  return (
-    <div className="col-sm shadow-sm mx-1">
-      <div className="icon_feature">{icon}</div>
-      <div className="wrap">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-export default function Homepage() {
   return (
     <div className="container">
       {/* Секция портфолио */}
-      <section id="portfolio" className="section mt-3">
-        <h1 className="mb-3 text-center">Products</h1>
+      <section id="portfolio" className="mt-3">
+        <h1 className="mb-3 text-center">{entry_portfolio}</h1>
         <div className="row">
-          {PortfolioItems.map((props, idx) => (
-            <PortfolioItem key={idx} {...props} />
+          {portfolioItems.map((item, index) => (
+            <div key={index} className="col-md-6 mb-4">
+              <div className="row no-gutters border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+                <div className="col p-4 d-flex flex-column position-static">
+                  <h5 className="card-title mb-0">{item.title}</h5>
+                  <div className="mb-1 text-muted">
+                    <span>Designed by: {item.designer}</span>
+                  </div>
+                  <p className="card-text mb-auto font-weight-light" style={{ fontSize: '80%' }}>
+                    {item.description}
+                  </p>
+                  <a href={item.link} className="stretched-link">
+                    {button_more}
+                  </a>
+                </div>
+                <div className="col-auto d-none d-lg-block">
+                  <img 
+                   src={attributicoMain} 
+                    alt={item.title} 
+                    style={{ height: '256px', width: 'auto' }} 
+                  />
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </section>
 
       {/* Секция фич */}
-      <section id="features" className="section">
-        <h1 className="mb-3 text-center">Features</h1>
-        {FeatureList.map((row, rowIdx) => (
-          <div key={rowIdx} className="row feature_wrap">
-            {row.map((props, idx) => (
-              <Feature key={idx} {...props} />
-            ))}
-          </div>
-        ))}
+      <section id="features">
+        <h1 className="mb-3 text-center">{entry_features}</h1>
+        <div className="row feature_wrap mb-4">
+          {features.map((feature, index) => (
+            <div key={index} className="col-sm mx-1 shadow-sm p-3">
+              <div className="icon_feature text-center mb-3">
+                <FontAwesomeIcon icon={feature.icon} size="2x" />
+              </div>
+              <div className="text-center">
+                <h3>{feature.title}</h3>
+                <p className="mb-0">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
-}
+};
+
+export default Homepage;

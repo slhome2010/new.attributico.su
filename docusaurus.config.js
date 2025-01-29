@@ -28,7 +28,7 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
+  staticDirectories: ['static'], // Явно указываем папку static
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -38,7 +38,7 @@ const config = {
   },
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -66,7 +66,9 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        
       }),
+      
     ],
   ],  
   themeConfig:
