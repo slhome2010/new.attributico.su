@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknew_attributico_su=self.webpackChunknew_attributico_su||[]).push([[7567],{5050:t=>{t.exports=JSON.parse('{"metadata":{"permalink":"/new.attributico.su/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
