@@ -13,90 +13,68 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import attributicoMain from '@site/static/img/portfolio/attributico-main.svg';
 import styles from './styles.module.css';
+import clsx from 'clsx';
 
-const Homepage = ({ 
-  entry_portfolio,
-  entry_features,
-  button_more,
-  // ... остальные пропсы
-}) => {
-  // Данные для портфолио
-  const portfolioItems = [
-    {
-      title: "Attribut&co",
-      designer: "Comtronics",
-      description: "Текст описания...",
-      link: "/doc/attributico.html",
-    },
-    {
-      title: "Attribut&co Viwer",
-      designer: "Comtronics",
-      description: "Текст описания...",
-      link: "/doc/attributico_v.html",
-    },
-    // ... второй элемент
-  ];
+const features = [
+  { title: 'Tree Structure', icon: {faTree}, description: 'Description for tree structure.' },
+  { title: 'Sorting', icon: 'fa-sort-numeric-asc', description: 'Description for sorting.' },
+  { title: 'Defragmentation', icon: 'fa-pie-chart', description: 'Description for defragmentation.' },
+  { title: 'Editing', icon: 'fa-pencil', description: 'Description for editing.' },
+  { title: 'Search', icon: 'fa-search', description: 'Description for search.' },
+  { title: 'Clear', icon: 'fa-eraser', description: 'Description for clearing data.' },
+  { title: 'Drag & Drop', icon: 'fa fa-hand-pointer', description: 'Description for drag and drop.' },
+  { title: 'Copy-Paste', icon: 'fa-paste', description: 'Description for copy-paste.' },
+  { title: 'Duplicate', icon: 'fa-copy', description: 'Description for duplicating.' },
+];
 
-  // Данные для фич
-  const features = [
-    { icon: faTree, title: "Tree Structure", description: "..." },
-    { icon: faSortNumericAsc, title: "Sorting", description: "..." },
-    // ... остальные фичи
-  ];
+function Feature({ title, icon, description }) {
+  return (
+    <div className={clsx('col col--4', styles.feature)}>
+      <div className="text--center">
+        <i className={clsx('fa', icon, styles.featureIcon)}></i>
+      </div>
+      <div className="text--center padding-horiz--md">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
 
+export default function Homepage() {
   return (
     <div className="container">
-      {/* Секция портфолио */}
-      <section id="portfolio" className="mt-3">
-        <h1 className="mb-3 text-center">{entry_portfolio}</h1>
+      <section className="section mt-3">
+        <h1 className="mb-3 text-center">Portfolio</h1>
         <div className="row">
-          {portfolioItems.map((item, index) => (
-            <div key={index} className="col-md-6 mb-4">
-              <div className="row no-gutters border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
-                <div className="col p-4 d-flex flex-column position-static">
-                  <h5 className="card-title mb-0">{item.title}</h5>
-                  <div className="mb-1 text-muted">
-                    <span>Designed by: {item.designer}</span>
-                  </div>
-                  <p className="card-text mb-auto font-weight-light" style={{ fontSize: '80%' }}>
-                    {item.description}
-                  </p>
-                  <a href={item.link} className="stretched-link">
-                    {button_more}
-                  </a>
-                </div>
-                <div className="col-auto d-none d-lg-block">
-                  <img 
-                   src={attributicoMain} 
-                    alt={item.title} 
-                    style={{ height: '256px', width: 'auto' }} 
-                  />
-                </div>
-              </div>
+          <div className="col-md-6">
+            <div className={styles.card}>
+              <h5>Attribut&co</h5>
+              <p>Designed by: Comtronics</p>
+              <p>Short description about Attribut&co.</p>
+              <a href="/doc/attributico.html">More</a>
             </div>
-          ))}
+              <object type="image/svg+xml" data="img/portfolio/attributico-main.svg" height="256px"></object>
+          </div>
+          <div className="col-md-6">
+            <div className={styles.card}>
+              <h5>Attribut&co-view</h5>
+              <p>Designed by: Comtronics</p>
+              <p>Short description about Attribut&co-view.</p>
+              <a href="/doc/attributico.html">More</a>
+            </div>
+              <object type="image/svg+xml" data="img/portfolio/attributico-main.svg" height="256px"></object>
+          </div>
         </div>
       </section>
-
-      {/* Секция фич */}
-      <section id="features">
-        <h1 className="mb-3 text-center">{entry_features}</h1>
-        <div className="row feature_wrap mb-4">
-          {features.map((feature, index) => (
-            <div key={index} className="col-sm mx-1 shadow-sm p-3">
-              <div className="icon_feature text-center mb-3">
-                <FontAwesomeIcon icon={feature.icon} size="2x" />
-              </div>
-              <div className="text-center">
-                <h3>{feature.title}</h3>
-                <p className="mb-0">{feature.description}</p>
-              </div>
-            </div>
+      <section className="section">
+        <h1 className="mb-3 text-center">Features</h1>
+        <div className="row">
+          {features.map((feature, idx) => (
+            <Feature key={idx} {...feature} />
           ))}
         </div>
       </section>
     </div>
   );
-};
-
-export default Homepage;
+}
