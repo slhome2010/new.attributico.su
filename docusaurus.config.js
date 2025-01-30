@@ -63,8 +63,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false, // Убедитесь, что false
+        respectPrefersColorScheme: true, // Автоматически учитывать системную тему
+      },
       navbar: {
-        title: 'My Site',
+        title: 'Attribut&co',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',

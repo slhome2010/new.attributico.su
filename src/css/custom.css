@@ -1,30 +1,207 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* ======================= */
+/* Global Styles */
+/* ======================= */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Цветовая схема */
+  --ifm-color-primary: #156EAC;
+  --ifm-color-primary-dark: #135e94;
+  --ifm-color-primary-darker: #115483;
+  --ifm-color-primary-darkest: #0d4267;
+  --ifm-color-primary-light: #1a82c5;
+  --ifm-color-primary-lighter: #1d8dd3;
+  --ifm-color-primary-lightest: #259be5;
+  
+  /* Шрифты */
+  --ifm-font-family-base: Arial, sans-serif;
+  --ifm-heading-font-family: "Playfair Display", Georgia, serif;
+  
+  /* Навигационная панель */
+  --ifm-navbar-background-color: #156EAC;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-brand-color: #ffffff;
+  
+  /* Ссылки */
+  --ifm-link-color: #428bca;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #2b6fd3;
+  --ifm-navbar-background-color: #1a3658;
+  --ifm-background-color: #1a1a1a;
+  --ifm-navbar-link-color: rgba(255,255,255,0.9);
+  --ifm-navbar-brand-color: rgba(255,255,255,0.9);
+}
+
+/* ======================= */
+/* Navigation Bar */
+/* ======================= */
+
+/* .navbar {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+} */
+.navbar {
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--ifm-navbar-shadow);
+  height: var(--ifm-navbar-height);
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
+}
+.navbar__brand {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+}
+
+.navbar__toggle {
+  color: white !important;
+}
+
+.navbar__link:hover,
+.navbar__brand:hover {
+  color: #e6e6e6 !important;
+}
+
+/* Иконка переключения темы */
+.toggle_vylO {
+  display: flex;
+  align-items: center;
+}
+
+.toggleButton_gllP {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+}
+
+.toggleButton_gllP svg {
+  color: white !important;
+  fill: white !important;
+}
+
+.toggleButton_gllP:hover svg {
+  opacity: 0.8;
+}
+
+[data-theme='dark'] .toggleButton_gllP svg {
+  color: yellow !important;
+  fill: yellow !important;
+}
+/* ======================= */
+/* Sidebar Menu */
+/* ======================= */
+
+.docs-sidebar {
+  border-right: 1px solid #e8e8e8;
+  background-color: #f8f9fa;
+}
+
+.menu__link {
+  padding: 0.4rem 1.5rem;
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.65);
+  transition: none;
+}
+
+.menu__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  border-left: 2px solid var(--ifm-color-primary);
+  background: transparent !important;
+}
+
+/* ======================= */
+/* Content Styles */
+/* ======================= */
+
+.markdown {
+  padding-top: 2rem;
+}
+
+.markdown img {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ======================= */
+/* Tables */
+/* ======================= */
+
+table {
+  border: 1px solid #e8e8e8;
+  margin: 1rem 0;
+}
+
+th {
+  background-color: #f8f9fa !important;
+  font-weight: 600;
+}
+
+/* ======================= */
+/* Special Elements */
+/* ======================= */
+
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid;
+  border-radius: 3px;
+}
+
+.callout-danger { border-left-color: #ce4844; }
+.callout-info { border-left-color: #1b809e; }
+
+.im {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: #6787a0;
+  font-weight: 500;
+}
+
+.node {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: #2f6f9f;
+  font-weight: bold;
+}
+
+/* ======================= */
+/* Footer */
+/* ======================= */
+
+.footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 2.5rem 0;
+  margin-top: 4rem;
+}
+
+/* ======================= */
+/* Responsive Design */
+/* ======================= */
+
+@media (max-width: 996px) {
+  .navbar__items {
+    background-color: var(--ifm-navbar-background-color);
+  }
+  
+  .menu {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 997px) {
+  .docs-wrapper {
+    display: flex;
+  }
+  
+  .docs-sidebar {
+    width: 300px;
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 60px;
+  }
+  
+  .docs-main {
+    flex-grow: 1;
+    padding: 0 2rem;
+  }
 }
