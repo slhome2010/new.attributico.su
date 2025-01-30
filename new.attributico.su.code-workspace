@@ -1,0 +1,12 @@
+{
+    "folders": [
+        {
+            "name": "new.attributico.su",
+            "path": "."
+        },
+        {
+            "name": "loc.attributico.su",
+            "path": "../loc.attributico.su"
+        }
+    ]
+}

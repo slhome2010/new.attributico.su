@@ -15,11 +15,11 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'fa'],
+    locales: ['en', 'ru', 'fr'],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr', htmlLang: 'en-US' },
       ru: { label: 'Русский', direction: 'ltr', htmlLang: 'ru-RU' },
-      fa: { label: 'فارسی', direction: 'rtl', htmlLang: 'fa-IR' },
+      fr: { label: 'Français', direction: 'ltr', htmlLang: 'fr-FR' },
     },
   },
  
