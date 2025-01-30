@@ -1,12 +1,9 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* ======================= */
+/* Global Styles */
+/* ======================= */
 
-/* You can override the default Infima variables here. */
 :root {
-  /* Основная цветовая схема */
+  /* Цветовая схема */
   --ifm-color-primary: #156EAC;
   --ifm-color-primary-dark: #135e94;
   --ifm-color-primary-darker: #115483;
@@ -15,46 +12,40 @@
   --ifm-color-primary-lighter: #1d8dd3;
   --ifm-color-primary-lightest: #259be5;
   
-  --ifm-navbar-background-color: #156EAC;
+  /* Шрифты */
   --ifm-font-family-base: Arial, sans-serif;
   --ifm-heading-font-family: "Playfair Display", Georgia, serif;
   
-  /* Дополнительные цвета */
+  /* Навигационная панель */
+  --ifm-navbar-background-color: #156EAC;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-brand-color: #ffffff;
+  
+  /* Ссылки */
   --ifm-link-color: #428bca;
-  --ifm-code-font-size: 90%;
-  --ifm-navbar-link-color: #ffffff; /* Белый цвет для ссылок */
-  --ifm-navbar-brand-color: #ffffff; /* Белый цвет для логотипа */
 }
 
-/* Темная тема */
 [data-theme='dark'] {
   --ifm-color-primary: #2b6fd3;
   --ifm-navbar-background-color: #1a3658;
   --ifm-background-color: #1a1a1a;
-}
-[data-theme='dark'] .navbar {
   --ifm-navbar-link-color: rgba(255,255,255,0.9);
   --ifm-navbar-brand-color: rgba(255,255,255,0.9);
-  background-color: #1a3658; /* Темно-синий как на оригинале */
-}
-/* Общие стили */
-body {
-  position: relative;
-  overflow-y: scroll;
-  font-family: var(--ifm-font-family-base);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ifm-heading-font-family);
-  font-weight: 500;
-}
+/* ======================= */
+/* Navigation Bar */
+/* ======================= */
 
-/* Навигационная панель */
-.navbar {
+/* .navbar {
   border-bottom: 1px solid rgba(0,0,0,0.1);
+} */
+.navbar {
   background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--ifm-navbar-shadow);
+  height: var(--ifm-navbar-height);
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal) !important;
 }
-
 .navbar__brand {
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;
@@ -64,13 +55,40 @@ h1, h2, h3, h4, h5, h6 {
   color: white !important;
 }
 
-/* Затемнение при наведении */
 .navbar__link:hover,
 .navbar__brand:hover {
   color: #e6e6e6 !important;
 }
 
-/* Боковое меню */
+/* Иконка переключения темы */
+.toggle_vylO {
+  display: flex;
+  align-items: center;
+}
+
+.toggleButton_gllP {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+}
+
+.toggleButton_gllP svg {
+  color: white !important;
+  fill: white !important;
+}
+
+.toggleButton_gllP:hover svg {
+  opacity: 0.8;
+}
+
+[data-theme='dark'] .toggleButton_gllP svg {
+  color: yellow !important;
+  fill: yellow !important;
+}
+/* ======================= */
+/* Sidebar Menu */
+/* ======================= */
+
 .docs-sidebar {
   border-right: 1px solid #e8e8e8;
   background-color: #f8f9fa;
@@ -90,7 +108,10 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent !important;
 }
 
-/* Контент */
+/* ======================= */
+/* Content Styles */
+/* ======================= */
+
 .markdown {
   padding-top: 2rem;
 }
@@ -102,7 +123,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Таблицы */
+/* ======================= */
+/* Tables */
+/* ======================= */
+
 table {
   border: 1px solid #e8e8e8;
   margin: 1rem 0;
@@ -113,7 +137,10 @@ th {
   font-weight: 600;
 }
 
-/* Специальные классы из sldoc.css */
+/* ======================= */
+/* Special Elements */
+/* ======================= */
+
 .callout {
   padding: 20px;
   margin: 20px 0;
@@ -121,13 +148,8 @@ th {
   border-radius: 3px;
 }
 
-.callout-danger {
-  border-left-color: #ce4844;
-}
-
-.callout-info {
-  border-left-color: #1b809e;
-}
+.callout-danger { border-left-color: #ce4844; }
+.callout-info { border-left-color: #1b809e; }
 
 .im {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -141,7 +163,10 @@ th {
   font-weight: bold;
 }
 
-/* Футер */
+/* ======================= */
+/* Footer */
+/* ======================= */
+
 .footer {
   background-color: #f9f9f9;
   border-top: 1px solid rgba(0,0,0,0.1);
@@ -149,7 +174,10 @@ th {
   margin-top: 4rem;
 }
 
-/* Адаптивность */
+/* ======================= */
+/* Responsive Design */
+/* ======================= */
+
 @media (max-width: 996px) {
   .navbar__items {
     background-color: var(--ifm-navbar-background-color);
