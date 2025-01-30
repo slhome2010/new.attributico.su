@@ -14,12 +14,17 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'ru',
-    locales: ['ru', 'en'],
+    defaultLocale: 'en',
+    locales: ['en', 'ru', 'fa'],
+    localeConfigs: {
+      en: { label: 'English', direction: 'ltr', htmlLang: 'en-US' },
+      ru: { label: 'Русский', direction: 'ltr', htmlLang: 'ru-RU' },
+      fa: { label: 'فارسی', direction: 'rtl', htmlLang: 'fa-IR' },
+    },
   },
-
+ 
   // Плагины объявляем здесь
-  plugins: [
+  /* plugins: [
     [
       '@docusaurus/plugin-ideal-image',
       {
@@ -30,7 +35,7 @@ const config = {
         disableInDev: false,
       },
     ],
-  ],
+  ], */
 
   presets: [
     [
@@ -40,6 +45,9 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'docs',
+        routeBasePath: 'docs',
+        editLocalizedFiles: true, // Включает редактирование локализованных файлов
         },
         blog: {
           showReadingTime: true,
