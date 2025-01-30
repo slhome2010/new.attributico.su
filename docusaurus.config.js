@@ -14,8 +14,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ru',
+    locales: ['ru', 'en'],
   },
 
   // Плагины объявляем здесь
@@ -55,7 +55,10 @@ const config = {
       }),
     ],
   ],
-
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css', // если нужны иконки
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -66,6 +69,7 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        //style: 'dark', // Принудительно темный стиль навбара
         items: [
           {
             type: 'docSidebar',
@@ -82,7 +86,7 @@ const config = {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          },          
         ],
       },
       footer: {
