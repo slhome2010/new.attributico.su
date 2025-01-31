@@ -22,7 +22,7 @@ const config = {
       fr: { label: 'Français', direction: 'ltr', htmlLang: 'fr-FR' },
     },
   },
- 
+
   // Плагины объявляем здесь
   /* plugins: [
     [
@@ -46,8 +46,22 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           path: 'docs',
-        routeBasePath: 'docs',
-        editLocalizedFiles: true, // Включает редактирование локализованных файлов
+          routeBasePath: 'docs',
+          editLocalizedFiles: true,
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'v1.1.0 (актуальная)', // Можете добавить пояснение
+              path: '1.1.0',
+              banner: 'none', // Убираем баннер
+            },
+            '1.0.0': {
+              label: 'v1.0.0 (архив)',
+              path: '1.0.0',
+              banner: 'unmaintained',
+            },
+          },
+          includeCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
@@ -91,6 +105,12 @@ const config = {
             label: 'Tutorial',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownActiveClassDisabled: true,
+            docsPluginId: 'default', // если используете несколько плагинов docs
+          },
           {
             type: 'localeDropdown',
             position: 'right',
