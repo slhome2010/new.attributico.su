@@ -1,5 +1,8 @@
 {
-  
+  "version.label": {
+    "message": "Последняя",
+    "description": "The label for version current"
+  },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
     "message": "Руководство - Базовое",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"

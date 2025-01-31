@@ -51,15 +51,15 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: 'v1.1.0 (актуальная)', // Можете добавить пояснение
-              path: '1.1.0',
+              label: 'Next', // Можете добавить пояснение
+              path: 'current',
               banner: 'none', // Убираем баннер
             },
-            '1.0.0': {
+            /* '1.0.0': {
               label: 'v1.0.0 (архив)',
               path: '1.0.0',
               banner: 'unmaintained',
-            },
+            }, */
           },
           includeCurrentVersion: true,
         },

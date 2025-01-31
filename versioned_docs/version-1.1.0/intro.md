@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction 1.0.0
+# Introduction 1.1.0
 
 ## Module Mission
 
