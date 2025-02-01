@@ -4,13 +4,13 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Attribut&co',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -33,7 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ru'],
   },
   presets: [
     [
@@ -46,6 +46,18 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //lastVersion: 'current',
+          versions: {
+           /*  current: {
+              label: 'v1.0.0',
+              path: '1.0.0',
+            }, */
+            "1.0.0": {
+              label: "v1.0.0",
+              path: "1.0.0",
+            },
+          },
+         // includeCurrentVersion: false,
         },
         blog: {
           showReadingTime: true,
@@ -67,14 +79,14 @@ const config = {
         },
       }),
     ],
-  ],  
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Attribut&co',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -86,7 +98,13 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            //dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            //dropdownActiveClassDisabled: true,
+          },
           {
             type: 'localeDropdown',
             position: 'right',
