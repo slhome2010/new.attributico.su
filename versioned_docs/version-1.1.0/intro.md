@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction 1.1.0
+# Introduction Next (1.1.0)
 
 ## Module Mission
 
@@ -36,7 +36,7 @@ Representing the structure of attributes and values in the form of trees.
 - Editing groups, attributes, templates and values;
 - Substituting the "Default Template" (default template) when adding an attribute to a product;
 - Batch substitution of the "Default Template" in products, when adding an attribute to a category;
-- Setting up the [method](settings.html#settings-product) of adding values and templates to a product;
+- Setting up the method of adding values and templates to a product;
 - Quick viewing of products filtered by attribute or value;
 - A set of tools for ordering attributes:
   - Finding and deleting empty attribute values;

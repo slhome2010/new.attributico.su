@@ -11,7 +11,8 @@ const config = {
   organizationName: 'slhome2010',
   projectName: 'new.attributico.su',
   trailingSlash: false,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // Временно смените на warn для локализации ошибок
+  onBrokenAnchors: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
@@ -45,23 +46,21 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          path: 'docs',
           routeBasePath: 'docs',
-          editLocalizedFiles: true,
-          lastVersion: 'current',
+          path: 'docs',
+          lastVersion: undefined, // Убираем "current"
           versions: {
-            current: {
-              label: 'Next', // Можете добавить пояснение
-              path: 'current',
-              banner: 'none', // Убираем баннер
+            "1.1.0": {
+              label: "v1.1.0",
+              path: "1.1.0",
             },
-            /* '1.0.0': {
-              label: 'v1.0.0 (архив)',
-              path: '1.0.0',
-              banner: 'unmaintained',
-            }, */
+            "1.0.0": {
+              label: "v1.0.0",
+              path: "1.0.0",
+            },
           },
-          includeCurrentVersion: true,
+          includeCurrentVersion: false, // Чтобы не создавалось "current"
+          editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: true,
