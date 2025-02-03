@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknew_attributico_su=self.webpackChunknew_attributico_su||[]).push([[1903],{1912:t=>{t.exports=JSON.parse('{"blogBasePath":"/new.attributico.su/ru/blog","blogTitle":"Blog","authorsListPath":"/new.attributico.su/ru/blog/authors"}')}}]);
