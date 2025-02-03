@@ -54,7 +54,7 @@ const config = {
             }, */
             "1.0.0": {
               label: "v1.0.0",
-              path: "1.0.0",
+              //path: "1.0.0",
             },
           },
          // includeCurrentVersion: false,
