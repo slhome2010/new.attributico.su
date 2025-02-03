@@ -2,46 +2,51 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro v1.0.0
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Module Mission
 
-## Getting Started
+To simplify working with attributes and their values. To display the structure of attributes more clearly. To apply more modern editing technologies. To replace routine manual labor with automated operations and move to batch processing of changes.
 
-Get started by **creating a new site**.
+## Main Idea
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Creating a set of attributes that are the same for a certain product category and linking this set to the category. It is assumed that products of the same category have, roughly, the same set of attributes. The structure of categories and subcategories in Opencart is quite well developed, so the link to the category was chosen, not to the manufacturer, for example. Bringing the structure of attributes and their values to the form:
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Product Category
+    └── Attribute
+          └── Value (list of values) of the attribute
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Representing the structure of attributes and values in the form of trees.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## Capabilities
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- Creating new groups and attributes in the same tree;
+- Drag-and-drop and copy-paste technologies:
+  - Copying attributes from one group to another;
+  - Moving attributes from group to group (changing the group);
+  - Drag-and-drop sorting of groups and attributes within a group;
+  - Drag-and-drop adding attributes to a category;
+  - Moving attributes from one category to another (changing the category);
+  - Merging attributes (combining) without losing values and links;
+- Filtering and searching for groups, attributes and attribute values in the tree;
+- Editing groups, attributes, templates and values;
+- Substituting the "Default Template" (default template) when adding an attribute to a product;
+- Batch substitution of the "Default Template" in products, when adding an attribute to a category;
+- Managing the method of adding values ​​and templates to the product;
+- Quick viewing of products filtered by attribute or value;
+- A set of tools for ordering attributes:
+  - Finding and deleting empty attribute values;
+  - Removing links to non-existent attributes;
+  - Defragmentation of attributes. Preparing a group for parsing;
+  - Deleting attributes not associated with any product;
+  - Merging attribute duplicates without losing links;
+  - Automatic formation of category attributes;
+  - Batch replacement of the attribute value separator;
+  - Changing the case of the first letter of groups, attributes and attribute values;
+- Multilingualism, the ability to work with multiple languages in parallel;
+  - The ability to clone attributes, groups or values of one language into another;
+  
