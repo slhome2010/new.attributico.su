@@ -1,6 +1,10 @@
 {
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Руководство - Базовое",
+    "message": "Tutorial - Basics",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
@@ -8,11 +12,7 @@
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Руководство - Расширенное",
+    "message": "Tutorial - Extras",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
-  },
-  "version.label": {
-    "message": "v1.0.0",
-    "description": "The label for version 1.0.0"
   }
 }

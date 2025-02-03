@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'slhome2010', // Usually your GitHub org/user name.
+  projectName: 'new.attributico.su', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/slhome2010/new.attributico.su/',
           //lastVersion: 'current',
           versions: {
            /*  current: {
@@ -54,7 +54,7 @@ const config = {
             }, */
             "1.0.0": {
               label: "v1.0.0",
-              path: "1.0.0",
+              //path: "1.0.0",
             },
           },
          // includeCurrentVersion: false,
@@ -68,7 +68,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/slhome2010/new.attributico.su/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -110,7 +110,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/slhome2010/new.attributico.su',
             label: 'GitHub',
             position: 'right',
           },
@@ -125,6 +125,19 @@ const config = {
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Get',
+            items: [
+              {
+                label: 'Full version',
+                href: 'https://liveopencart.ru/opencart-moduli-shablony/moduli/filtryi/attribut-co-opencart-atributyi-eto-legko',
+              },
+              {
+                label: 'Free version',
+                href: 'https://liveopencart.ru/opencart-moduli-shablony/moduli/filtryi/attribut-coviewer-opencart-atributyi-eto-legko',
               },
             ],
           },
@@ -154,12 +167,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/slhome2010/new.attributico.su',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Comtronics, Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
