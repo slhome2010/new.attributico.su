@@ -1,18 +1,18 @@
 {
+  "version.label": {
+    "message": "v1.0.0",
+    "description": "The label for version current"
+  },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
     "message": "Руководство - Базовое",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "message": "5 минут для изучения самых важных концептов Docusaurus.",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Руководство - Расширенное",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
-  },
-  "version.label": {
-    "message": "v1.0.0",
-    "description": "The label for version 1.0.0"
   }
 }
