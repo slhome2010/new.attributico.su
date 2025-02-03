@@ -2,46 +2,50 @@
 sidebar_position: 1
 ---
 
-# Введение русское 1.0.0
+# Введение
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Миссия модуля
 
-## Getting Started
+Облегчить работу с атрибутами и их значениями. Более наглядно отобразить структуру атрибутов. Применить более современные технологии редактирования. Заменить рутинный ручной труд автоматическими операциями и перейти к пакетной обработке изменений.
 
-Get started by **creating a new site**.
+## Основная идея
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Составление набора атрибутов, одинаковых для определенной категории товара и привязка этого набора к категории. Предполагается, что товары одной и той же категории имеют, примерно, одинаковый набор атрибутов. Структура категорий и подкатегорий в Opencart достаточно хорошо развита, поэтому выбрана привязка именно к категории, а не к производителю, например. Приведение структуры атрибутов и их значений к виду:
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Категория товаров
+    └── Атрибут
+          └── Значение(список значений) атрибута
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Представление структуры атрибутов и значений в виде деревьев.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## Возможности
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- Создание новых групп и атрибутов в одном и том же дереве;
+- Drag-and-drop и copy-paste технологии:
+  - Копирование атрибутов одной группы в другую;
+  - Перенос атрибутов из группы в группу (смена группы);
+  - Drag-and-drop сортировка групп и атрибутов внутри группы;
+  - Drag-and-drop добавление атрибутов в категорию;
+  - Перенос атрибутов из одной категории в другую (смена категории);
+  - Слияние атрибутов (объединение) без потери значений и связей;
+- Фильтрация и поиск групп, атрибутов и значений атрибутов в дереве;
+- Редактирование групп, атрибутов, шаблонов и значений;
+- Подстановка "Дежурного шаблона" (шаблона по умолчанию) в момент добавления атрибута в товар;
+- Пакетная подстановка "Дежурного шаблона" в товары, в момент добавления атрибута в категорию;
+- Управление способом добавления значений и шаблонов в продукт;
+- Оперативный просмотр товаров отфильтрованных по атрибуту или значению;
+- Набор инструментов для упорядочивания атрибутов:
+  - Поиск и удаление пустых значений атрибутов;
+  - Удаление ссылок на несуществующие атрибуты;
+  - Дефрагментация атрибутов. Подготовка группы парсинга;
+  - Удаление атрибутов не связанных ни с одним товаром;
+  - Объединение дублей атрибутов без потери связей;
+  - Автоматическое формирование атрибутов категорий;
+  - Пакетная замена разделителя значений атрибута;
+  - Смена регистра первой буквы у групп, атрибутов и значений атрибута;
+- Мультиязычность, возможность параллельной работы с несколькими языками;
+  - Возможность клонирования атрибутов, групп или значений одного языка в другой;
