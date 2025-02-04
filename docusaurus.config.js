@@ -40,7 +40,7 @@ const config = {
     highlightResult: true,
     indexBaseUrl: true,
     maxHits: 10,          // Пример других опций
-    excludeRoutes: ['/blog'] 
+    excludeRoutes: ['/blog']
     //includeRoutes: ['/docs/**'],
     //excludeTags: ['nav', 'footer'],
     /* fields: {
@@ -126,7 +126,9 @@ const config = {
           },
           {
             href: 'https://github.com/slhome2010/new.attributico.su',
-            label: 'GitHub',
+            //label: 'GitHub',
+            className: 'header-github-link',
+            'aria-label': 'GitHub',
             position: 'right',
           },
         ],

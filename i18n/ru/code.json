@@ -311,7 +311,7 @@
     "description": "The title of the tag list page"
   },
   "homepage.banner.slogan": {
-    "message": "'Атрибуты - это легко!'",
+    "message": "Атрибуты - это легко!",
     "description": "'The homepage slogan message'"
   },
   "homepage.banner.link": {

@@ -20,7 +20,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">
           <Translate id="homepage.banner.slogan"
             description="'The homepage slogan message'">
-            'Attributes - it is easy!'
+            Attributes - it is easy!
           </Translate>
         </p>
         <div className={styles.buttons}>
