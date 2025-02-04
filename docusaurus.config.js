@@ -35,6 +35,20 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'ru'],
   },
+  plugins: [[require.resolve('docusaurus-lunr-search'), {
+    languages: ['en', 'ru'], // language codes
+    highlightResult: true,
+    indexBaseUrl: true,
+    maxHits: 10,          // Пример других опций
+    excludeRoutes: ['/blog'] 
+    //includeRoutes: ['/docs/**'],
+    //excludeTags: ['nav', 'footer'],
+    /* fields: {
+      title: { boost: 5 },
+      content: { boost: 1 },
+      keywords: { boost: 3 }
+    } */
+  }]],
   presets: [
     [
       'classic',
@@ -48,18 +62,18 @@ const config = {
             'https://github.com/slhome2010/new.attributico.su/',
           //lastVersion: 'current',
           versions: {
-           /*  current: {
-              label: 'v1.0.0',
-              path: '1.0.0',
-            }, */
+            /*  current: {
+               label: 'v1.0.0',
+               path: '1.0.0',
+             }, */
             "1.0.0": {
               label: "v1.0.0",
               //path: "1.0.0",
             },
           },
-         // includeCurrentVersion: false,
+          // includeCurrentVersion: false,
         },
-        blog: {
+        /* blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -73,7 +87,8 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },
+        }, */
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
