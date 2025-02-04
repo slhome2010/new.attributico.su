@@ -141,7 +141,7 @@ const config = {
               },
             ],
           },
-          {
+          /* {
             title: 'Community',
             items: [
               {
@@ -157,7 +157,7 @@ const config = {
                 href: 'https://x.com/docusaurus',
               },
             ],
-          },
+          }, */
           {
             title: 'More',
             items: [

@@ -18,16 +18,19 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
-          <Translate id="homepage.tagline"
-            description="The label for the tagline">
-            {siteConfig.tagline}
+          <Translate id="homepage.banner.slogan"
+            description="'The homepage slogan message'">
+            'Attributes - it is easy!'
           </Translate>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            <Translate id="homepage.banner.link"
+              description="'The homepage link label'">
+              Attribut&co Tutorial - 5min ⏱️
+            </Translate>
           </Link>
         </div>
       </div>

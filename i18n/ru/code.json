@@ -309,5 +309,13 @@
   "theme.tags.tagsPageTitle": {
     "message": "Теги",
     "description": "The title of the tag list page"
+  },
+  "homepage.banner.slogan": {
+    "message": "'Атрибуты - это легко!'",
+    "description": "'The homepage slogan message'"
+  },
+  "homepage.banner.link": {
+    "message": "Быстрый старт - 5min ⏱️",
+    "description": "'The homepage link label'"
   }
 }
