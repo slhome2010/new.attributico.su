@@ -312,10 +312,10 @@
   },
   "homepage.banner.slogan": {
     "message": "Атрибуты - это легко!",
-    "description": "'The homepage slogan message'"
+    "description": "The homepage slogan message"
   },
   "homepage.banner.link": {
     "message": "Быстрый старт - 5min ⏱️",
-    "description": "'The homepage link label'"
+    "description": "The homepage link label"
   }
 }

@@ -19,7 +19,7 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">
           <Translate id="homepage.banner.slogan"
-            description="'The homepage slogan message'">
+            description="The homepage slogan message">
             Attributes - it is easy!
           </Translate>
         </p>
@@ -28,7 +28,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro">
             <Translate id="homepage.banner.link"
-              description="'The homepage link label'">
+              description="The homepage link label">
               Attribut&co Tutorial - 5min ⏱️
             </Translate>
           </Link>
