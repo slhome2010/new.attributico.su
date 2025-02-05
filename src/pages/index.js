@@ -16,7 +16,13 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={clsx('container', styles.heroContainer)}>
         <div className={styles.heroBoxes}>
-          <img src={useBaseUrl('img/logo/attributico-red-tree.svg')} className={styles.heroBox} />
+          <img
+            src={useBaseUrl('img/logo/attributico-red-tree.svg')}
+            className={styles.heroBox}
+            alt="Attributico Logo"
+            width="200"
+            height="200"
+          />
         </div>
         <div className={styles.heroContent}>
           <Heading as="h1" className="hero__title">

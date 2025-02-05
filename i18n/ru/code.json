@@ -319,11 +319,11 @@
     "description": "The homepage link label"
   },
   "homepage.banner.heroFirstline": {
-    "message": "Полный контроль над характеристиками",
+    "message": "Полный контроль над характеристиками товаров",
     "description": "The homepage banner title firstline"
   },
   "in your": {
-    "message": "товаров в вашем"
+    "message": "в вашем"
   },
   "store": {
     "message": "магазине"
