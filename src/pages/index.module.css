@@ -29,11 +29,15 @@
 .heroContent {
   flex-grow: 1;
   text-align: left;
+  padding: 0 1rem; /* Добавляем небольшие отступы по бокам */
+  overflow-wrap: break-word; /* Гарантированный перенос слов */
+  word-break: break-word; /* Разрыв слов, если нужно */
 }
 
 h1 {
   font-size: clamp(1.2rem, 4vw, 2.5rem);
   text-align: left;
+  /* padding: 0 0.5rem; */ /* Чуть уменьшаем шанс выхода за пределы */
 }
 
 .heroFirstLine {
@@ -51,6 +55,7 @@ h1 {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 100;
   text-align: left;
+  padding: 0 1rem;
 }
 
 .buttons {
@@ -78,6 +83,7 @@ h1 {
 
   .heroContent {
     text-align: center;
+    /* padding: 0 1.5rem; */ /* Чуть больше отступа на мобильных */
   }
 
   .heroBloat {    
@@ -94,8 +100,18 @@ h1 {
     font-size: 1.6rem;
   }
   
+  .heroContent {
+    padding: 0 1rem;
+  }
+
   .heroBloat {
     font-size: 1.1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
   }
   
   .getStarted {
