@@ -20,9 +20,9 @@ function HomepageHeader() {
             src={useBaseUrl('img/logo/attributico-red-tree.svg')}
             className={styles.heroBox}
             alt="Attributico Logo"
-            width="150"
+           /*  width="150"
             height="198"
-            loading="lazy"
+            loading="lazy" */
           />
         </div>
         <div className={styles.heroContent}>

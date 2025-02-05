@@ -4,30 +4,142 @@
  */
 
  .heroBanner {
-  padding: 2rem 0; /* Уменьшаем вертикальные отступы */
-  min-height: 400px; /* Фиксируем минимальную высоту */
+  padding: 2rem 0;
+  text-align: start;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-  .heroContainer {
-    flex-direction: column;
-  }
+.heroContainer {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroBoxes {
+  flex: 0 0 35%;
+  max-width: 250px;
+  min-width: 150px;
+}
+
+.heroBoxes img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 150/198;
+  object-fit: contain;
+}
+
+.heroContent {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.hero__title {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.heroAmpersand {
+  color: var(--ifm-color-primary-lightest);
+  white-space: nowrap;
+}
+
+.heroBloat {
+  color: var(--ifm-color-secondary-lighter);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .buttons {
+  display: flex;
   gap: 1rem;
   max-width: 500px;
 }
 
 .getStarted {
-  width: 100%;
-  max-width: 240px;
-  text-align: center;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.getStarted:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 992px) {
+  .hero__title {
+    font-size: 2.8rem;
+  }
+  .heroBloat {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .heroContainer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .heroBoxes {
+    max-width: 180px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .heroBloat {
+    font-size: 1.2rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .getStarted {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.6rem;
+  }
+  
+  .heroBloat {
+    font-size: 1.1rem;
+  }
+  
+  .getStarted {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
 }
 
 .features {
@@ -43,106 +155,5 @@
 }
 
 .heroFirstLine {
-  word-wrap: nowrap;
-  display: flex;
-}
-
-.heroAmpersand {
-  color: var(--ifm-color-primary-lightest);
-}
-
-.heroContainer {
-  display: flex;
-  align-items: center;
-  gap: 5%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.heroBloat {
-  color: var(--ifm-color-secondary-lighter);
-  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
-  /* font-weight: 900; */
-  text-align: start;
-}
-
-.heroBoxes {
-  flex: 0 0 35%; /* Фиксированная ширина для изображения */
-  max-width: 250px; /* Максимальный размер по ширине */
-}
-
-.heroBoxes img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 150/198; /* Сохраняем оригинальное соотношение */
-  object-fit: contain;
-}
-
-.heroContent {
-  flex: 1;
-  padding: 1rem 0;
-}
-
-.hero__title {
-  font-size: 2.2rem;
-  line-height: 1.3;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 992px) {
-  .hero__title {
-    font-size: 2.8rem;
-  }
-}
-
-.heroBloat {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
-}
-
-/* .getStarted {
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  padding: 0.8rem 1.5rem;
-} */
-
-@media (max-width: 768px) {
-  .heroBanner {
-    min-height: auto;
-    padding: 2rem 1rem;
-  }
-  
-  .heroContainer {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .heroBoxes {
-    max-width: 180px;
-    flex: none;
-  }
-  
-  .hero__title {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  
-  .heroBloat {
-    font-size: 1.2rem;
-  }
-  
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.heroAmpersand {
-  white-space: nowrap;
-}
-
-.hero__title {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  display: inline-block;
 }
