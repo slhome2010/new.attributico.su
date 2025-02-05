@@ -47,15 +47,26 @@
 
 .heroContainer {
   display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .heroBloat {
   color: var(--ifm-color-secondary-lighter);
-  font-weight: 900;
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:100;
+  /* font-weight: 900; */
+  text-align: center;
 }
 
 .heroBoxes {
   flex-grow: 0.5;
   display: flex;
   justify-content: center;
+  /* margin-left: auto; */
 }
+
+/* .heroContent {
+  flex-grow: 0.5;
+  display: flex;  
+  text-align: right;
+} */

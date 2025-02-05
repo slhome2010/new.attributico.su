@@ -104,7 +104,7 @@ const config = {
         title: 'Attribut&co',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-round.svg',
         },
         items: [
           {

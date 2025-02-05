@@ -311,11 +311,29 @@
     "description": "The title of the tag list page"
   },
   "homepage.banner.slogan": {
-    "message": "Атрибуты - это легко!",
+    "message": "АТРИБУТЫ - ЭТО ЛЕГКО!",
     "description": "The homepage slogan message"
   },
   "homepage.banner.link": {
     "message": "Быстрый старт - 5min ⏱️",
+    "description": "The homepage link label"
+  },
+  "homepage.banner.heroFirstline": {
+    "message": "Полный контроль над характеристиками",
+    "description": "The homepage banner title firstline"
+  },
+  "in your": {
+    "message": "товаров в вашем"
+  },
+  "store": {
+    "message": "магазине"
+  },
+  "homepage.banner.link.tutorial": {
+    "message": "Изучить - 5мин ⏱️",
+    "description": "The homepage link label"
+  },
+  "homepage.banner.link.getStarted": {
+    "message": "Начать установку 🚀",
     "description": "The homepage link label"
   }
 }

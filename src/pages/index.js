@@ -16,25 +16,42 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={clsx('container', styles.heroContainer)}>
         <div className={styles.heroBoxes}>
-          <img src={useBaseUrl('img/logo-attributico.svg')} className={styles.heroBox} />
+          <img src={useBaseUrl('img/logo/attributico-red-tree.svg')} className={styles.heroBox} />
         </div>
         <div className={styles.heroContent}>
           <Heading as="h1" className="hero__title">
-            {siteConfig.title}
+            {/* {siteConfig.title} */}
+            <span className={clsx(styles.heroFirstLine)}>
+              <Translate id="homepage.banner.heroFirstline"
+                description="The homepage banner title firstline">
+                Full control over product attributes
+              </Translate></span>{' '}
+            <Translate>in your</Translate>
+            <span className={styles.heroAmpersand}> OpenCart </span>
+            <Translate>store</Translate>{' '}
           </Heading>
-          <p className="hero__subtitle">
+          <p className={clsx("hero__subtitle", styles.heroBloat)}>
             <Translate id="homepage.banner.slogan"
               description="The homepage slogan message">
-              Attributes - it is easy!
+              ATTRIBUTES - IT IS EASY!
             </Translate>
           </p>
           <div className={styles.buttons}>
             <Link
-              className="button button--secondary button--lg"
+              className={clsx('button button--outline button--lg', styles.getStarted)}
               to="/docs/intro">
-              <Translate id="homepage.banner.link"
+              <Translate id="homepage.banner.link.tutorial"
                 description="The homepage link label">
-                Attribut&co Tutorial - 5min ⏱️
+                Tutorial - 5min ⏱️
+              </Translate>
+            </Link>
+            <Link
+              className={clsx('button button--outline button--lg', styles.getStarted)}
+              to={useBaseUrl('docs/intro')}
+            >
+              <Translate id="homepage.banner.link.getStarted"
+                description="The homepage link label">
+                Get started 🚀
               </Translate>
             </Link>
           </div>

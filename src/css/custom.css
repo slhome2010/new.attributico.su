@@ -16,6 +16,14 @@
   --ifm-color-primary-lightest: #259be5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+  --ifm-color-secondary: #a50011;
+  --ifm-color-secondary-dark: #88000e;
+  --ifm-color-secondary-darker: #6a000b;
+  --ifm-color-secondary-darkest: #4b0008;
+  --ifm-color-secondary-light: #b52e3c;
+  --ifm-color-secondary-lighter: #c55c67;
+  --ifm-color-secondary-lightest: #d68b92;
+
   /* Шрифты */
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: Arial, sans-serif;
@@ -79,4 +87,10 @@ mark {
 
 [data-theme='dark'] mark {
   background-color: rgba(255, 215, 0, 0.6) !important;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+      --ifm-h1-font-size: calc(1.375rem + 1.5vw);
+  }
 }
