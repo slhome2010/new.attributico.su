@@ -88,3 +88,18 @@ h1 {
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.6rem;
+  }
+  
+  .heroBloat {
+    font-size: 1.1rem;
+  }
+  
+  .getStarted {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
