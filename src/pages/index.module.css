@@ -22,7 +22,7 @@
 }
 
 .heroBoxes img {
-  width: clamp(80px, 15vw, 160px);
+  width: clamp(120px, 20vw, 200px);
   height: auto;
 }
 
@@ -68,7 +68,7 @@ h1 {
   }
 
   .heroBoxes img {
-    width: 120px;
+    width: 150px;
   }
 
   h1 {
@@ -77,6 +77,10 @@ h1 {
   }
 
   .heroContent {
+    text-align: center;
+  }
+
+  .heroBloat {    
     text-align: center;
   }
 
