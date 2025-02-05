@@ -1,126 +1,86 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
- .heroBanner {
-  padding: 4rem 0;
+/* Стили главной страницы */
+.heroBanner {
+  padding: clamp(1rem, 3vw, 2rem) 0;
   text-align: start;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-  .heroContainer {
-    flex-direction: column;
-  }
-}
-
-.buttons {
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: flex-start;
-}
-
-.features {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  height: 280px;
+}
+
+.heroBoxes {
+  flex-shrink: 0;
+}
+
+.heroBoxes img {
+  width: clamp(80px, 15vw, 160px);
+  height: auto;
+}
+
+.heroContent {
+  flex-grow: 1;
+  text-align: left;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  text-align: left;
 }
 
 .heroFirstLine {
-  word-wrap: nowrap;
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 .heroAmpersand {
   color: var(--ifm-color-primary-lightest);
 }
 
-.heroContainer {
-  display: flex;
-  align-items: center;
-  gap: 4%;
-  flex-wrap: wrap;
-}
-
 .heroBloat {
   color: var(--ifm-color-secondary-lighter);
-  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
-  /* font-weight: 900; */
-  text-align: center;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  text-align: left;
 }
 
-.heroBoxes {
-  flex: 1 1 200px;
-  max-width: 200px;
-}
-
-.heroBoxes img {
-  width: 100%;
-  height: auto;
-  max-width: min(100%, 200px);
-  margin: 0 auto;
-}
-
-.heroContent {
-  flex: 1 1 60%;
-  min-width: 300px;
-}
-
-.hero__title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-.heroBloat {
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  margin-bottom: 2rem;
-}
-
-.getStarted {
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  padding: 0.8rem 1.5rem;
+.buttons {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
 }
 
 @media (max-width: 768px) {
   .heroContainer {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    height: auto;
   }
-  
-  .heroBoxes {
-    margin-bottom: 2rem;
-    max-width: 200px;
+
+  .heroBoxes img {
+    width: 120px;
   }
-  
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .heroContent {
+    text-align: center;
+  }
+
   .buttons {
     justify-content: center;
   }
-  
-  .heroFirstLine {
-    white-space: normal;
-    display: block;
-  }
-}
-
-.heroAmpersand {
-  white-space: nowrap;
-}
-
-.hero__title {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
 }

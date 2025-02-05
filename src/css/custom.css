@@ -89,8 +89,8 @@ mark {
   background-color: rgba(255, 215, 0, 0.6) !important;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   h1 {
       --ifm-h1-font-size: calc(1.375rem + 1.5vw);
   }
-}
+} */
