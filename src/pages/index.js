@@ -20,22 +20,25 @@ function HomepageHeader() {
             src={useBaseUrl('img/logo/attributico-red-tree.svg')}
             className={styles.heroBox}
             alt="Attributico Logo"
-            /* width="150"
-            height="198"
-            loading="lazy" */
+          /*  width="150"
+           height="198"
+           loading="lazy" */
           />
         </div>
         <div className={styles.heroContent}>
           <Heading as="h1" className="hero__title">
             {/* {siteConfig.title} */}
-            <span className={clsx(styles.heroFirstLine)}>
+            <span className={clsx(styles.heroFirstLine, styles.ruHyphens)}>
               <Translate id="homepage.banner.heroFirstline"
                 description="The homepage banner title firstline">
                 Full control over product attributes
-              </Translate></span>{' '}
+              </Translate>
+            </span><br/>
+            {' '}
             <Translate>in your</Translate>
             <span className={styles.heroAmpersand}> OpenCart </span>
-            <Translate>store</Translate>{' '}
+            <Translate>store</Translate>
+            {' '}
           </Heading>
           <p className={clsx("hero__subtitle", styles.heroBloat)}>
             <Translate id="homepage.banner.slogan"
