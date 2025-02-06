@@ -8,7 +8,7 @@
   text-align: start;
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  /* min-height: 400px; */
   display: flex;
   align-items: center;
 }
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 5%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -44,12 +44,15 @@
   font-size: 2.2rem;
   line-height: 1.3;
   margin-bottom: 1rem;
-  color: var(--ifm-color-primary);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
   padding: 0 0.5rem;
+  color: var(--ifm-color-primary);
+  hyphens: manual;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .heroAmpersand {
@@ -179,4 +182,52 @@
 
 .heroFirstLine {
   display: inline-block;
+}
+
+/* Специфичные стили для русского языка */
+html[lang="ru"] .hero__title {
+  word-break: break-word;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+
+html[lang="ru"] .heroFirstLine {
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  html[lang="ru"] .hero__title {
+    font-size: clamp(1.3rem, 5.5vw, 1.6rem);
+    line-height: 1.25;
+    word-spacing: -0.5px;
+  }
+  
+  html[lang="ru"] .heroBloat {
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 400px) {
+  html[lang="ru"] .hero__title {
+    font-size: clamp(1.2rem, 5vw, 1.4rem);
+  }
+  
+  html[lang="ru"] .heroAmpersand {
+    white-space: normal;
+    display: inline-block;
+    margin: 0 2px;
+  }
+}
+
+/* Принудительные переносы для длинных русских слов */
+.ru-hyphens {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.ru-hyphens::after {
+  content: "\00AD"; /* Мягкий перенос */
+  display: inline-block;
+  width: 0;
 }

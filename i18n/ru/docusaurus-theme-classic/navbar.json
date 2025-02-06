@@ -7,8 +7,12 @@
     "message": "Логотип",
     "description": "The alt text of navbar logo"
   },
+  "item.label.Docs": {
+    "message": "Документация",
+    "description": "Navbar item with label Tutorial"
+  },
   "item.label.Tutorial": {
-    "message": "Руководство",
+    "message": "Учебник",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {
