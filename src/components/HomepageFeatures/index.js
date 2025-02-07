@@ -6,7 +6,7 @@ import Translate, { translate } from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: <Translate>​Tree view</Translate>, //'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_attributico_tree.svg').default,
     description: (
       <Translate>
         ​Visual representation of groups, attributes and attribute values ​​in the form of a tree. 
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Drag-and-drop</Translate>, //'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/undraw_attributico_monitor.svg').default,
     description: (
       <Translate>
         Drag and drop attributes or groups using the mouse. 
@@ -36,7 +36,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Duty templates</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <Translate>
         It is possible to set a default template for each attribute and 
@@ -46,7 +46,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Merging Duplicates</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_attributico_double.svg').default,
     description: (
       <Translate>
         Merging duplicate attributes without losing the links between their values ​​and products.
@@ -55,7 +55,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Batch processing</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_attributico_react.svg').default,
     description: (
       <Translate>
         Batch replacement of the value separator, letter case replacement, and language cloning.
