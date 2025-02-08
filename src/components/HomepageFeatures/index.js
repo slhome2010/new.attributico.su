@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Drag-and-drop</Translate>, //'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_attributico_monitor.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <Translate>
         Drag and drop attributes or groups using the mouse. 
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Category Attributes</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_attributico_category2.svg').default,
     description: (
       <Translate>
         Binding a set of attributes to a product category for quick assignment to similar products. 
@@ -36,7 +36,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Duty templates</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_attributico_monitor.svg').default,
     description: (
       <Translate>
         It is possible to set a default template for each attribute and 

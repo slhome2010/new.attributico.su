@@ -10,9 +10,21 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs29" />
+     id="defs29">
+    <linearGradient
+       id="swatch10"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#298eb3;stop-opacity:1;"
+         offset="0"
+         id="stop10" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="namedview29"
      pagecolor="#ffffff"
@@ -23,7 +35,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.99911426"
-     inkscape:cx="561.99778"
+     inkscape:cx="561.49734"
      inkscape:cy="331.79388"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
@@ -65,7 +77,7 @@
      fill="#3f3d56"
      id="path2"
      transform="translate(-35.5 -118.5)"
-     style="fill:#3f3d56;fill-opacity:0.89130437" />
+     style="fill:#457b9d;fill-opacity:1" />
   <path
      d="M984.8299,236H188.1701A21.67009,21.67009,0,0,0,166.5,257.6701V296h840V257.6701A21.67009,21.67009,0,0,0,984.8299,236Z"
      transform="translate(-35.5 -118.5)"
@@ -102,7 +114,7 @@
      rx="5.33505"
      fill="#606060"
      id="rect6"
-     style="fill:#979797;fill-opacity:0.65458935" />
+     style="fill:#22adda;fill-opacity:0.32365146" />
   <g
      data-v-fde0c5aa=""
      id="070234ad-d668-4b31-b932-ecc6d708c167"
@@ -123,41 +135,41 @@
      id="rect7"
      style="fill:#5cbbd2;fill-opacity:0.72463769" />
   <rect
-     x="537"
-     y="352.5"
-     width="416"
+     x="530.99469"
+     y="312.46454"
+     width="67.691483"
      height="15"
-     rx="5.47638"
+     rx="0.89111614"
      fill="#2e8555"
      id="rect8"
-     style="fill:#00aad4;fill-opacity:0.41304347" />
+     style="fill:#00aad4;fill-opacity:0.413044;stroke-width:0.403386" />
   <rect
-     x="537"
-     y="396.5"
-     width="416"
+     x="584.04169"
+     y="348.45746"
+     width="218.82535"
      height="15"
-     rx="5.47638"
+     rx="2.8806989"
      fill="#2e8555"
      id="rect9"
-     style="fill:#00aad4;fill-opacity:0.4178744" />
+     style="fill:#00aad4;fill-opacity:0.417874;stroke-width:0.725274" />
   <rect
-     x="537"
-     y="440.5"
-     width="416"
+     x="584.04169"
+     y="384.45038"
+     width="117.73582"
      height="15"
-     rx="5.47638"
+     rx="1.5499184"
      fill="#2e8555"
      id="rect10"
-     style="fill:#00aad4;fill-opacity:0.41545895" />
+     style="fill:#00aad4;fill-opacity:0.415459;stroke-width:0.531995" />
   <rect
-     x="537"
-     y="484.5"
-     width="416"
+     x="532.99646"
+     y="455.4743"
+     width="195.80496"
      height="15"
-     rx="5.47638"
+     rx="2.5776498"
      fill="#2e8555"
      id="rect11"
-     style="fill:#00aad4;fill-opacity:0.4178744" />
+     style="fill:#00aad4;fill-opacity:0.417874;stroke-width:0.686065" />
   <rect
      x="865"
      y="552.5"
@@ -224,4 +236,107 @@
        id="path37"
        style="stroke-width:0.64741" />
   </g>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Focus on What Matters</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     x="-463.64969"
+     y="533.27905"
+     width="191.85939"
+     height="14.998914"
+     rx="2.5257092"
+     fill="#2e8555"
+     id="rect13"
+     style="fill:#00aad4;fill-opacity:0.413044;stroke-width:0.679093"
+     transform="matrix(0.00515996,-0.99998669,0.99988224,0.01534652,0,0)" />
+  <rect
+     x="-428.60278"
+     y="587.92175"
+     width="121.73936"
+     height="15"
+     rx="1.6026226"
+     fill="#2e8555"
+     id="rect14"
+     style="fill:#00aad4;fill-opacity:0.413044;stroke-width:0.540965"
+     transform="rotate(-89.296764)" />
+  <rect
+     x="583.04077"
+     y="420.48227"
+     width="117.73582"
+     height="15"
+     rx="1.5499184"
+     fill="#2e8555"
+     id="rect15"
+     style="fill:#00aad4;fill-opacity:0.415459;stroke-width:0.531995" />
+  <rect
+     x="-537.56885"
+     y="621.92603"
+     width="86.753708"
+     height="14.999444"
+     rx="1.1420584"
+     fill="#2e8555"
+     id="rect16"
+     style="fill:#00aad4;fill-opacity:0.413044;stroke-width:0.456657"
+     transform="matrix(0.01722307,-0.99985167,0.99996175,0.00874599,0,0)" />
+  <rect
+     x="615.06915"
+     y="490.58334"
+     width="115.73404"
+     height="15"
+     rx="1.5235662"
+     fill="#2e8555"
+     id="rect17"
+     style="fill:#00aad4;fill-opacity:0.417874;stroke-width:0.527453" />
+  <rect
+     x="615.06915"
+     y="526.57629"
+     width="117.73582"
+     height="15"
+     rx="1.5499184"
+     fill="#2e8555"
+     id="rect18"
+     style="fill:#00aad4;fill-opacity:0.415459;stroke-width:0.531995" />
+  <rect
+     x="-456.44611"
+     y="792.64612"
+     width="117.74088"
+     height="14.999927"
+     rx="1.5499853"
+     fill="#2e8555"
+     id="rect19"
+     style="fill:#00aad4;fill-opacity:0.413044;stroke-width:0.532006"
+     transform="matrix(0.01269028,-0.99991948,0.99992954,0.01187036,0,0)" />
+  <rect
+     x="789.22339"
+     y="382.44861"
+     width="117.73582"
+     height="15"
+     rx="1.5499184"
+     fill="#2e8555"
+     id="rect20"
+     style="fill:#00aad4;fill-opacity:0.415459;stroke-width:0.531995" />
+  <rect
+     x="789.22339"
+     y="417.47964"
+     width="117.73582"
+     height="15"
+     rx="1.5499184"
+     fill="#2e8555"
+     id="rect21"
+     style="fill:#00aad4;fill-opacity:0.415459;stroke-width:0.531995" />
+  <rect
+     x="787.22162"
+     y="450.50891"
+     width="117.73582"
+     height="15"
+     rx="1.5499184"
+     fill="#2e8555"
+     id="rect22"
+     style="fill:#00aad4;fill-opacity:0.415459;stroke-width:0.531995" />
 </svg>
