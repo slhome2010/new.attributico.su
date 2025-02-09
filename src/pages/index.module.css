@@ -47,11 +47,11 @@ h1 {
 }
 
 .heroAmpersand {
-  color: var(--ifm-color-primary-lightest);
+  color: #33C1ED;
 }
 
 .heroBloat {
-  color: var(--ifm-color-secondary-lighter);
+  color: #F6575E;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 100;
   text-align: left;

@@ -34,7 +34,7 @@ Representing the structure of attributes and values in the form of trees.
   - Merging attributes (combining) without losing values and links;
 - Filtering and searching for groups, attributes and attribute values in the tree;
 - Editing groups, attributes, templates and values;
-- Substituting the "Default Template" (default template) when adding an attribute to a product;
+- Substituting the "Default Template" when adding an attribute to a product;
 - Batch substitution of the "Default Template" in products, when adding an attribute to a category;
 - Managing the method of adding values ​​and templates to the product;
 - Quick viewing of products filtered by attribute or value;

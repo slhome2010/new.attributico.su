@@ -2,74 +2,86 @@
 sidebar_position: 2
 ---
 
-# Установка
+# Installation
 
-## Установка
+1\. Download the module installation files from the resource available to you. As a result, you should have two zip archives: `Attributico_v3.2.8.zip` and `License.zip`. The archive structure is described in [this](included.html) article.
 
-1\. Распакуйте архив. Откройте папку, соответствующую [вашей версии PHP](included.html#included-differences). Содержимое папки `upload.../`, соответствующей вашей версии OpenCart, скопируйте поверх структуры папок сайта.
+2\. Unzip the archive. Open the folder corresponding to [your PHP version](included.html#included-differences). Copy the contents of the `upload.../` folder, corresponding to your OpenCart version, over the site's folder structure.
 
-2\. В административной панели в разделе Дополнения ⇒ Модули должен появиться модуль "Attribut&co". Его необходимо установить. Кнопка
+3\. In the admin panel, in the *Extensions ⇒ Modules* section, the "Attribut&co" module should appear. It needs to be installed (activated).
 
-3\. В административной панели в разделе Система ⇒ Пользователи ⇒ Группы пользователей установите разрешения на просмотр и редактирование для `module/attributico` или `extension/module/attributico` для магазинов версии >2.2 .
+4\. In the admin panel, in the *System ⇒ Users ⇒ User Groups* section, set permissions to view and edit for `module/attributico` or `extension/module/attributico` for stores version >2.2.
 
-4\. Распакуйте архив `License.zip`. Содержимое папки, соответствующей вашей версии PHP скопируйте поверх структуры папок сайта.
+5\. Unzip the `License.zip` archive. Copy the contents of the folder corresponding to your PHP version over the site's folder structure.
 
-5\. В административной панели в разделе Дополнения ⇒ Установка дополнений загрузите файлы `attribut&co.2.x.ocmod.xml` и `autocomplete.ocmod.xml` для магазинов второй версии (2.x) или `attributico.3.x.ocmod.zip` для магазинов третьей версии (3.x) из папки `ocmod`. Для магазинов версии 1.5.x `(до версии 3.1.0)` скопируйте папку `vqumod/` поверх структуры сайта.
+6\. In the admin panel, in the *Extensions ⇒ Installer* section, upload the `attribut&co.2.x.ocmod.xml` and `autocomplete.ocmod.xml` files for version 2.x stores or `attributico.3.x.ocmod.zip` for version 3.x stores from the `ocmod` folder.
 
-Для тех, кто кто использует шаблон OCTEMPLATE, не выполняйте этот пункт. Описание установки модификаторов смотрите ниже.
+For those who use the OCTEMPLATE template, do not perform this step. See the description of installing modifiers below.
 
-6\. В административной панели в разделе Дополнения ⇒ Менеджер дополнений необходимо обновить модификаторы. Кнопка
+7\. In the admin panel, in the *Extensions ⇒ Modifiers* section, you need to update the modifiers.
 
-После этого должен появиться пункт меню Каталог ⇒ Атрибуты ⇒ Attribut&co.
+After that, the *Catalog ⇒ Attributes ⇒ Attribut&co* menu item should appear.
 
-#### Внимание
+:::caution
 
-Если до этого Вы уже использовали модуль более ранних версий и устанавливали модификаторы непосредственно в папку `system`, необходимо их оттуда удалить.
+Clear the store and browser cache. The specifics of clearing the cache for version 3.x stores are described, for example, [here](https://shopiweb.ru/opencart-3/kesh-opencart-3-ochistka-kesha/).
 
-Т.е. в папке `system` вашего сайта файлов `attribut&co.2.x.ocmod.xml` и `autocomplete.ocmod.xml` быть не должно.
+:::
 
-#### Обязательно
+:::warning
 
-Очистите кэш магазина и браузера. Специфика очистки кэша для магазинов версии 3.x [описана, например, здесь](https://shopiweb.ru/opencart-3/kesh-opencart-3-ochistka-kesha/).
+If you have previously used the module of earlier versions and installed modifiers directly into the `system` folder, you need to remove them from there.
 
-#### Некоторые особенности
+That is, in the `system` folder of your site, there should be no `attribut&co.2.x.ocmod.xml` and `autocomplete.ocmod.xml` files.
 
-В некоторых версиях перевода вместо слова Дополнения присутствует слово Расширения. А вместо Менеджер дополнений будет написано Модификаторы
+:::
 
-Для магазинов на движке 1.5.x процедура установки та же кроме пункта 3. Обновление модификаторов не требуется. Вместо кнопок надо использовать ссылки с соответствующими названиями.
+:::info
 
-#### Для тех, кто использует шаблон OCTEMPLATE!
+In some versions of the translation, instead of the word `Extensions`, the word `Addons` is present, and instead of `Modifiers`, it will be written `Addon Manager`.
+Often the word `Attributes` is translated as `Characteristics`.
 
-OCTEMPLATE использует большое количество модификаторов, поэтому для установки модификатора модуля может не хватить ресурсов ocmod.
+:::
 
-Чтобы преодолеть это необходимо выполнить следующие действия:
+:::tip
 
-Не выполняйте пункт 5\. из инструкции по установке. Для магазинов версии ниже 3.0.x файлы `attribut&co.2.x.ocmod.xml` и `autocomplete.ocmod.xml` необходимо скопировать непосредственно в папку `system` вашего сайта. Для магазинов версии 3.0.x необходимо из архива `attributico.3.x.ocmod.zip` извлечь файл `install.xml`, переименовать его в `attributico.3.ocmod.xml` и после этого скопировать его в папку `system`.
+For those who use the OCTEMPLATE template!
 
-#### Возможные проблемы OpenCart 1.5.x `(устаревшее)`
+OCTEMPLATE uses a large number of modifiers, so installing the module modifier may not have enough ocmod resources.
 
-Данный модуль использует плагины `jQuery UI - v1.11.4+`. В OpenCart 1.5.x используется `jQuery UI - v1.8`. В процессе установки модуля эта версия будет заменена однозначно, иначе Attribut&co работать не будет. В связи с этим может быть временно нарушена работоспособность некоторых сторонних модулей.
+To overcome this, you need to perform the following steps:
 
-## Обновление.
+Do not perform step 5\. from the installation instructions. For stores below version 3.0.x, the `attribut&co.2.x.ocmod.xml` and `autocomplete.ocmod.xml` files need to be copied directly into the `system` folder of your site. For stores version 3.0.x, you need to extract the `install.xml` file from the `attributico.3.x.ocmod.zip` archive, rename it to `attributico.3.ocmod.xml` and then copy it to the `system` folder.
 
-1\. Обновление модуля не требует его удаления. После скачивания новой версии надо распаковать архив и содержимое папки `upload.../`, соответствующей вашей версии магазина из архива скопировать поверх структуры папок сайта.
+:::
 
-2\. Для магазинов версии 2.x и 3.x надо обязательно переустановить модификаторы `...ocmod.xml` или `...ocmod.zip` описанным выше способов, затем в административной панели в разделе Дополнения ⇒ Менеджер дополнений необходимо их обновить.
+:::note
+Possible problems OpenCart 1.5.x `(deprecated)`
 
-3\. Очистите [кэш магазина](https://shopiweb.ru/opencart-3/kesh-opencart-3-ochistka-kesha/) и браузера.
+This module uses the `jQuery UI - v1.11.4+` plugins. OpenCart 1.5.x uses `jQuery UI - v1.8`. During the module installation, this version will be replaced unambiguously, otherwise Attribut&co will not work. In this regard, the functionality of some third-party modules may be temporarily disrupted.
 
-4\. Отредактируйте и сохраните заново настройки модуля.
+:::
 
-## Удаление.
+## Update
 
-1\. В административной панели в разделе Дополнения ⇒ Модули напротив модуля "Attribut&co" - кнопка "Удалить".
+1. Updating the module does not require its removal. After downloading the new version, you need to unzip the archive and copy the contents of the `upload.../` folder, corresponding to your store version from the archive, over the site's folder structure.
 
-2\. Для магазинов версии 2.x из папки `/system` удалить файлы `attribut&co.2.x.ocmod.xml, attribut&co.2.3.ocmod.xml, attribut&co.22.ocmod.xml, autocomplete.ocmod.xml`. Для магазинов версии 1.5.x `(до версии 3.1.0)` из папки `/vqmod/xml` удалить файлы `attribut&co1_5_x.xml, autocomplete.xml`
+2. For version 2.x and 3.x stores, you must reinstall the `...ocmod.xml` or `...ocmod.zip` modifiers in the ways described above, then in the admin panel, in the *Extensions ⇒ Modifiers* section, you need to update them.
 
-База данных.
+3. Clear the [store cache](https://shopiweb.ru/opencart-3/kesh-opencart-3-ochistka-kesha/) and browser cache.
 
-В процессе установки модуля в базе данных будет создана таблица "category_attribute" с полями `` `category_id` INTEGER(11) NOT NULL`` и `` `attribute_id` INTEGER(11) NOT NULL.``
+4. Edit and save the module settings again.
 
-Начиная с версии 2.0.1 в стандартной таблице OpenCart "attribute_description" создается дополнительное поле `` `duty` TEXT NOT NULL`` для хранения [Дежурных шаблонов](theory.html#theory-duty).
+## Removal
 
-В процессе удаления модуля все вышеперечисленные таблицы и поля удаляются.
+1. In the admin panel, in the *Extensions ⇒ Modules* section, opposite the "Attribut&co" module - the "Delete" button.
+
+2. For version 2.x stores, delete the `attribut&co.2.x.ocmod.xml, autocomplete.ocmod.xml` files from the `/system` folder. For version 3.x stores, delete the `attribut&co.2.x.ocmod.xml` files from the `/system` folder if you copied them there. Or in the *Extensions ⇒ Modifiers* menu, delete everything related to "Attribut&co".
+
+### Database
+
+During the module installation, the "category_attribute" table will be created in the database with the fields `` `category_id` INTEGER(11) NOT NULL`` and `` `attribute_id` INTEGER(11) NOT NULL.``
+
+Starting with version 2.0.1, an additional field `` `duty` TEXT NOT NULL`` is created in the standard OpenCart "attribute_description" table to store [Duty Templates](theory.html#theory-duty).
+
+During the module removal, all of the above tables and fields are not deleted. If this is critical for you, then delete them yourself, for example, using PhpMyAdmin.
