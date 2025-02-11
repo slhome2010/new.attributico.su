@@ -4,46 +4,50 @@ sidebar_position: 3
 
 # Values and Templates
 
-To better understand what a Value is, it's worth remembering that it's plain text describing a characteristic (Attribute) of a product. The Value is written in a field of type `TEXT` in the Database. You can write anything there, for example: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."`. In the product card, this is a `Textarea` field to the right of the attribute.
+To better understand what a Value is, it is worth reminding that it is a plain text describing a characteristic (Attribute) of a product. The value is written to a field of type `TEXT` in the Database. You can write there anything you want, for example : ``“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...”`. In the product form, this is the `Textarea` field to the right of the attribute.
 
-Of course, we usually write something more meaningful in this field, something that characterizes our product. Moreover, we want this Value to be the same in all products containing it, and we want to be able to find our products by this Value, for example, using a filter.
+Of course, we usually write something more meaningful in this field, characterizing our product. Moreover, we want that in all products containing this Value, it would be the same and by this Value it would be possible to find our products, for example, with the help of a filter.
 
-From the point of view of Opencart developers, the *Product->Attribute->Value* structure is sufficient, but in practice it's not enough. The *Product->Attribute->Set of Values* structure is often encountered.
+From the point of view of Opencart developers, the construction *Commodity->Attribute->Value* is sufficient, but in practice it is not enough. The *Commodity->Attribute->Attribute->Value set* construct is often found.
 
-For example, I sell modules for Opencart and want to show that some of them are compatible with versions `1.5.x`, `2.0.1`, `2.1.x`, while others are also compatible with versions `2.3.x`, `3.0.x`. I will write this in the Values of the `Compatibility` Attribute of the corresponding products, listing the versions separated by a comma or, say, a slash. `v1.5.x/2.0.1/2.1.x` and `v1.5.x/2.0.1/2.1.x/2.3.x/3.0.x`
+For example, I sell modules for Opencart and I want to show that some of them are compatible with versions `1.5.x`, `2.0.1`, `2.1.x`, and others with versions `2.3.x`, `3.0.x`. This is how I will write in the `Compatibility` attribute values of the respective products, listing the versions with a \- comma or, say, a slash separator. `v1.5.x/2.0.1/2.1.x` and `v1.5.x/2.0.1/2.1.x/2.3.x/3.0.x`.
 
-Opencart will not process this structure in any way, it will simply display it entirely in the product card. But smart people have come up with smart filters to expand the possibilities of structuring products and searching for them by Values.
+Opencart will not work out such a design in any way, it will just display it in its entirety in the product card. But smart people invented smart filters to expand the possibilities of structuring products and their search by values.
 
-Below is how Opencart, Attribut&co, filterpro process such sets of Values. I called them *Templates*. Don't like this name? Go to the language file and put your own - "Sets", "Lists", etc. The main thing is to understand what it is.
+Below you can see how Opencart, Attribut&co, filterpro processes such sets of Values. I called them *Templates*. Don't like this name? Go to the language file and put your own \- “Sets”, “Lists”, etc. The main thing is to understand what it is.
 
-## Template Processing
+### Processing Templates
 
 ### In the product card
 
 ![Template explain1](/img/tutorial/opencart.jpg)
 
-### В модуле
+### In module
 
-| ![Template explain2](/img/tutorial/compatibility.jpg) |
+| ![Template explain2](/img/tutorial/compatibility.jpg) | |
 |-|
 
 ### In the filter
 
-| ![Template explain3](/img/tutorial/filterpro.jpg) |
+| ![Template explain3](/img/tutorial/filterpro.jpg) |-|#
 |-|
 
-So **a Template is a set of Attribute Values written separated by a delimiter**. Sometimes it's called a "Multiple Value".
+So **Template is a set of Attribute Values written over a separator**. It is sometimes referred to as a “Multiple Value”.
 
-## Delimiter
+## Separator
 
-The Attribute Delimiter or Attribute Value Delimiter was not invented by me. Here's how it looks in the settings of popular filters:
+The Attribute Separator or Attribute Value Separator was not invented by me. Here's what it looks like in the settings of popular filters:
 
 ### Mega Filter Pro
 
-![Splitter explain1](/img/tutorial/megafilter.jpg)
+| ![Splitter explain1](/img/tutorial/megafilter.jpg) |
+|-|
 
 ### Filterpro
 
-![Splitter explain2](/img/tutorial/filterprosepar.jpg)
+| ![Splitter explain2](/img/tutorial/filterprosepar.jpg) |
+|-|
 
-It should be noted that the Value is unique for each product. If you change one letter in the text in one product, it will not affect the other products, even if the Values were the same before, and you will have another Value. The same is true for Templates.
+It should be noted that the Value is unique for each product. If you change one letter in the text in a product, the rest of the products will not be affected, even if the Values were the same before, and you will have another Value. The same is true for Templates.
+
+Translated with DeepL.com (free version)

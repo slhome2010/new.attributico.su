@@ -40,10 +40,12 @@ Opencart никак не отработает такую конструкцию,
 
 ### Mega Filter Pro
 
-![Splitter explain1](/img/tutorial/megafilter.jpg)
+| ![Splitter explain1](/img/tutorial/megafilter.jpg) |
+|-|
 
 ### Filterpro
 
-![Splitter explain2](/img/tutorial/filterprosepar.jpg)
+| ![Splitter explain2](/img/tutorial/filterprosepar.jpg) |
+|-|
 
 Необходимо отметить, что Значение уникально для каждого товара. Если в каком-то товаре изменить одну букву в тексте, то остальных товаров это не коснется, даже если до этого Значения совпадали, а у вас появится еще одно Значение. То же самое верно и для Шаблонов.

@@ -2,14 +2,16 @@
 sidebar_position: 4
 ---
 
-# Дежурный шаблон \- значение по умолчанию
+# Duty Template
 
-Естественным желанием является то, чтобы при добавлении Атрибута в товар, синхронно добавлялось Значение или набор Значений. Особенно если Значения одни и те же, а операций надо выполнить много.
+*Duty Template \- default value.*
 
-Эти Значения должны где-то храниться. Для этого и служит Дежурный Шаблон. Именно там храняться Значения, которые будут по умолчанию подставляться в товар, как только вы добавите туда Атрибут.
+A natural desire is that when an Attribute is added to a product, a Value or set of Values should be added synchronously. Especially if the Values are the same and there are many operations to be performed.
 
-Для того чтобы подстановка состоялась, надо не забывать про [настройки](settings.html#settings-product).
+These Values must be stored somewhere. This is what the Duty Template is for. It is there that the Values are stored, which will be substituted into the product by default, as soon as you add an Attribute to it.
 
-Дежурный Шаблон можно изменять многократно для подстановки других Значений в другие товары не затрагивая уже имеющиеся. Для этого надо использовать настройку `Подставлять дежурный только в пустые`.
+To make the substitution happen, you should not forget about [settings](settings.html#settings-product).
 
-Дежурный Шаблон можно [удалять](using.html#using-duty-del).
+The Duty Template can be modified multiple times to substitute other Values in other products without affecting the existing ones. To do this, you must use the `Substitute Duty Template into empty ones only` setting.
+
+The Duty Template can be [deleted](using.html#using-duty-del).
