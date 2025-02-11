@@ -2,28 +2,8 @@
 sidebar_position: 4
 ---
 
-# База данных
+# Synchronization
 
-В процессе установки модуля  будут выполнены запросы к базе данных.
+Since the module is multilingual, separate trees will be created for each language. For convenience, we will append language suffixes such as `.ru` or `.en` to tree names where necessary for explanation. To maintain database integrity, synchronization between trees is applied. For example, when a new Attribute is added to the `Attribute Groups.ru` tree, a new Attribute named "New attribute" will be synchronously added to the `Attribute Groups.en` tree. The same applies to Attribute Groups. However, Templates, Values, and Default Templates are not added synchronously.
 
-```SQL
-CREATE TABLE IF NOT EXISTS oc_category_attribute (
-  category_id INT(11) NOT NULL,
-  attribute_id INT(11) NOT NULL,
-  PRIMARY KEY (category_id, attribute_id)
-)
-```
-
-и
-
-```SQL
-ALTER TABLE oc_attribute_description ADD COLUMN `duty` TEXT NOT NULL
-```
-
-В результате будет создана новая таблица **category_attribute** с полями `` `category_id` `` и `` `attribute_id` ``.
-
-А в стандартной таблице OpenCart **attribute_description** добавится поле `` `duty` `` для хранения [Дежурных шаблонов](theory.html#theory-duty).
-
-Общая диаграмма таблиц обслуживающих управление атрибутами и связей между ними приведена на рисунке ниже.
-
-![Database diagram](/img/tutorial/attributico_db_diagram.png)
+Synchronization also occurs when editing Groups, Attributes, Templates, and Values. In all trees where the modified Node is present, changes happen synchronously according to the selected language.

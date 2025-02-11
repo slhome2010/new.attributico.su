@@ -2,28 +2,20 @@
 sidebar_position: 4
 ---
 
-# База данных
+# Node Loading
 
-В процессе установки модуля  будут выполнены запросы к базе данных.
+Slow tree loading can negate all efforts to streamline working with attributes. Therefore, for child nodes such as Templates and Values, a so-called lazy loading approach is used. These nodes are not loaded when the tree is initially loaded but are instead fetched on demand, meaning they load when accessed. This is why, when you double-click on a Template or Value node, you see a loading indicator ![loading](/img/loading_ajax.gif) before the node opens.
 
-```SQL
-CREATE TABLE IF NOT EXISTS oc_category_attribute (
-  category_id INT(11) NOT NULL,
-  attribute_id INT(11) NOT NULL,
-  PRIMARY KEY (category_id, attribute_id)
-)
-```
+This node-loading method significantly improves tree loading times and tree reloads during synchronization. However, it introduces some peculiarities in filter operation. Since the filter must traverse the entire tree and forcefully open all nodes when performing a search, the search process is slow, and the match count display may be inaccurate. However, if you run the search again, it will be faster and more accurate because all nodes have already been opened.
 
-и
+AJAX requests are used to open nodes, each introducing a delay of up to 1 second. Tests with a large number of attributes have shown that freezing can often occur.
 
-```SQL
-ALTER TABLE oc_attribute_description ADD COLUMN `duty` TEXT NOT NULL
-```
+Starting from version 2.1.4, it became possible to manage the loading mode. Either in the settings or through the [context menu](using.html#using-context-menu), you can enable or disable lazy loading. If this mode is disabled, all tree nodes are fully loaded. This eliminates the need to traverse the tree and load nodes dynamically, significantly speeding up searches.
 
-В результате будет создана новая таблица **category_attribute** с полями `` `category_id` `` и `` `attribute_id` ``.
+Thus, if frequent searches are expected, it is better to reload the trees with lazy loading disabled.
 
-А в стандартной таблице OpenCart **attribute_description** добавится поле `` `duty` `` для хранения [Дежурных шаблонов](theory.html#theory-duty).
+Since node loading is performed using asynchronous AJAX requests, you may sometimes see console messages like:
 
-Общая диаграмма таблиц обслуживающих управление атрибутами и связей между ними приведена на рисунке ниже.
+`FancytreeNode(#attribute_393, 'New attribute') scrollIntoView(): node is invisible`
 
-![Database diagram](/img/tutorial/attributico_db_diagram.png)
+This means that the AJAX request data did not load in time before being used. This issue is particularly noticeable on slow servers. However, it does not affect the module's functionality.

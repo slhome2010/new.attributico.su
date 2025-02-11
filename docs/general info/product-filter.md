@@ -2,28 +2,30 @@
 sidebar_position: 5
 ---
 
-# База данных
+# Product Selection
 
-В процессе установки модуля  будут выполнены запросы к базе данных.
+Depending on the selected node in the **Product Attributes** tree and the context menu settings, the product filtering logic can be adjusted.
 
-```SQL
-CREATE TABLE IF NOT EXISTS oc_category_attribute (
-  category_id INT(11) NOT NULL,
-  attribute_id INT(11) NOT NULL,
-  PRIMARY KEY (category_id, attribute_id)
-)
-```
+## Match Mode
 
-и
+|Selection|Matching Products|
+|---|---|
+|Attribute|All products that have this Attribute. The selection is based on the attribute ID, not the name. Therefore, if another Group has an Attribute with the same name, the products linked to it will not be included in the selection.|
+|Template|All products that have the parent Attribute and whose characteristics field exactly matches the selected Template.|
+|Value|All products that have the parent Attribute and whose characteristics field contains the selected Value.|
 
-```SQL
-ALTER TABLE oc_attribute_description ADD COLUMN `duty` TEXT NOT NULL
-```
+| ![Settings](/img/tutorial/matches.jpg) |
+|-|
 
-В результате будет создана новая таблица **category_attribute** с полями `` `category_id` `` и `` `attribute_id` ``.
+## Mismatch Mode
 
-А в стандартной таблице OpenCart **attribute_description** добавится поле `` `duty` `` для хранения [Дежурных шаблонов](theory.html#theory-duty).
+|Selection|Matching Products|
+|---|---|
+|Attribute|All products that do not have this Attribute.|
+|Template|All products that have the parent Attribute but whose characteristics field does not exactly match the selected Template.|
+|Value|All products that have the parent Attribute but whose characteristics field does not contain the selected Value.|
 
-Общая диаграмма таблиц обслуживающих управление атрибутами и связей между ними приведена на рисунке ниже.
+| ![Settings](/img/tutorial/diver.jpg) |
+|-|
 
-![Database diagram](/img/tutorial/attributico_db_diagram.png)
+In Mismatch Mode, folder icons in the product tree change color.
