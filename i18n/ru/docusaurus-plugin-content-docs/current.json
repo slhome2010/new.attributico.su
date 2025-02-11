@@ -14,5 +14,13 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Руководство - Расширенное",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Technical specifications": {
+    "message": "Технические спецификации",
+    "description": "The label for category Technical specifications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Technical specifications.link.generated-index.description": {
+    "message": "Technical specifications. Zip structure. Compatibility.",
+    "description": "The generated-index page description for category Technical specifications in sidebar tutorialSidebar"
   }
 }

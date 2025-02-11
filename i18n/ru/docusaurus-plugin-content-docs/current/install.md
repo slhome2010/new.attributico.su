@@ -81,8 +81,8 @@ OCTEMPLATE использует большое количество модифи
 
 ### База данных
 
-В процессе установки модуля в базе данных будет создана таблица "category_attribute" с полями `` `category_id` INTEGER(11) NOT NULL`` и `` `attribute_id` INTEGER(11) NOT NULL.``
+В процессе установки модуля в базе данных будет создана таблица **category_attribute** с полями `` `category_id` INTEGER(11) NOT NULL`` и `` `attribute_id` INTEGER(11) NOT NULL.``
 
-Начиная с версии 2.0.1 в стандартной таблице OpenCart "attribute_description" создается дополнительное поле `` `duty` TEXT NOT NULL`` для хранения [Дежурных шаблонов](theory.html#theory-duty).
+Начиная с версии 2.0.1 в стандартной таблице OpenCart **attribute_description** создается дополнительное поле `` `duty` TEXT NOT NULL`` для хранения [Дежурных шаблонов](theory.html#theory-duty).
 
 В процессе удаления модуля все вышеперечисленные таблицы и поля не удаляются. Если это для вас критично, то удалите их самостоятельно, например, с помощью PhpMyAdmin.
