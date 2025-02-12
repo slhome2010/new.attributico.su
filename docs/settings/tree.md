@@ -2,9 +2,13 @@
 sidebar_position: 2
 ---
 
-# Настройки деревьев
+# Tree Settings
 
-| ![Настройки деревьев](/img/tutorial/tree_settings.jpg) |
+Now you can configure child nodes for each tree. More about trees: [Glossary](../general-info/glossary.md).
+
+Nodes are enabled and disabled using checkboxes.
+
+| ![Tree Settings](/img/tutorial/tree_settings.jpg) |
 |-|
 
-Теперь можно настроить дочерние узлы для каждого дерева. Подробнее: [Глоссарий](../general-info/glossary.md).
+The number of connected child nodes affects the tree loading speed. This can be critical in stores with a large number of products and attributes.

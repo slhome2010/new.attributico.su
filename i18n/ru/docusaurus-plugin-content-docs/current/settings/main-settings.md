@@ -18,9 +18,11 @@ sidebar_position: 1
 :::info
 Изменить размеры скроллинга.
 Высоту области прокрутки можно изменить в файле `/admin/view/stylesheet/attributico.css`, изменив свойство:
+
 ```css
 .smart-scroll {height: 250px;}
 ```
+
 :::
 
 :::danger

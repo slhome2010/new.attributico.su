@@ -2,23 +2,34 @@
 sidebar_position: 5
 ---
 
-# Добавление значений в товар
+# Adding Values to a Product
 
-| ![Добавление значений](/img/tutorial/product_settings.jpg) |
-|-|
+Values are added to a product using a specific **`Method`**, depending on the settings.
 
-| Пункт | Описание |
-|-------|----------|
-| **Значения атрибутов** | Определяет, как изменять значения атрибута при добавлении. |
-| `Очищать` | Все значения атрибута удаляются. |
-| `Не менять` | Существующие значения остаются без изменений. |
-| `Заменять дежурным` | Все значения заменяются дежурным шаблоном. |
-| `Только в пустые` | Только пустые значения заменяются дежурным шаблоном. |
+| **Attribute Values** | Description |
+|----------------------|------------|
+| `Clear` | All attribute values are removed. |
+| `Keep unchanged` | Existing values remain unchanged. |
+| `Replace with default` | All values are replaced with the default template. |
+| `Only if empty` | Only empty values are replaced with the default template. |
+
+:::note
+Substitution values are taken from the **Default Template**, if it is not empty.
+:::
 
 :::info
-Значения атрибутов можно редактировать прямо в узле дерева с помощью строчного редактора, так же, как в форме товара.
+Attribute values can be edited directly in the tree node using the inline editor, just like in the product form.
 :::
 
 :::warning
-Если отключен пункт **Добавлять атрибут категории в товары**, то настройки **Добавление значений атрибута в товар** не сработают.
+If the **Add category attribute to products** option is disabled, the **Adding attribute values to a product** settings will not take effect.
 :::
+
+## When Values Are Added
+
+Actions that trigger the addition or modification of an **Attribute Value** in a product:
+
+- adding an **attribute** to a category;
+- linking a product to a category;
+- applying the **Category Attributes** tool;
+- clicking the **Category Attributes** button in the product form.

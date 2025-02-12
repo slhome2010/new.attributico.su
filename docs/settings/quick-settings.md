@@ -2,18 +2,18 @@
 sidebar_position: 6
 ---
 
-# Оперативные настройки
+# Quick Settings
 
-Некоторые настройки можно менять во время работы. Они не сохраняются после выхода.
+Some settings can be changed during operation. They are not saved after exiting.
 
-Если в [контекстном меню](using.html#using-context-menu) выбрать "Настройки", появится диалоговое окно управления деревом.
+If you select "Settings" in the [context menu](using.html#using-context-menu), a tree management dialog window will appear.
 
-## Диалоговое окно
+## Dialog Window
 
-| Пункт | Назначение |
-|-------|-----------|
-| **Автоматически сворачивать** | При разворачивании элемента дерева ближайшие родственные элементы сворачиваются, чтобы не загромождать экран. Можно отключить, если требуется видеть несколько развернутых элементов. Связан с пунктами "Развернуть" и "Свернуть" в [контекстном меню](using-context-menu). |
-| **Порядок сортировки** | Позволяет временно отключить порядок сортировки в конкретном дереве. Если отключено, сортировка идёт по алфавиту. |
-| **Ленивая загрузка** | Управляет режимом загрузки деревьев. Если включено, дочерние узлы подгружаются по запросу. Если отключено, дерево загружается полностью. Подробнее: [Загрузка узлов](theory.html#theory-loading). |
-| **Учитывать иерархию** | Работает только в дереве категорий. Позволяет управлять рекурсивным выбором подкатегорий. |
-| **Расхождения** | Работает только в дереве товаров. Используется для оперативного управления [выборкой товаров](theory.html#theory-product). |
+| Item | Purpose |
+|------|---------|
+| **Auto-collapse** | When expanding a tree element, nearby sibling elements collapse to avoid cluttering the screen. Can be disabled if multiple expanded elements need to be visible. Linked to the "Expand" and "Collapse" options in the [context menu](using-context-menu). |
+| **Sorting order** | Allows temporarily disabling the sorting order in a specific tree. If disabled, sorting is alphabetical. |
+| **Lazy loading** | Controls the tree loading mode. If enabled, child nodes are loaded on demand. If disabled, the entire tree loads at once. More details: [Node Loading](theory.html#theory-loading). |
+| **Consider hierarchy** | Works only in the category tree. Allows managing recursive selection of subcategories. |
+| **Discrepancies** | Works only in the product tree. Used for quick management of the [product selection](theory.html#theory-product). |

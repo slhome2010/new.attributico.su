@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Группа кнопок
 
-| ![Настройки деревьев](/img/tutorial/buttons_group.png) |
+| ![Группа кнопок](/img/tutorial/buttons_group.png) |
 |-|
 
 **Назначение кнопок слева направо.**

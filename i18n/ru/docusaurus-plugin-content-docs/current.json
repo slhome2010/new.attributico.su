@@ -30,5 +30,13 @@
   "sidebar.tutorialSidebar.category.General information.link.generated-index.description": {
     "message": "Theory. Glossary. FAQ.",
     "description": "The generated-index page description for category General information in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Настройки",
+    "description": "The label for category Settings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Settings.link.generated-index.description": {
+    "message": "Settings. Environment variables.",
+    "description": "The generated-index page description for category Settings in sidebar tutorialSidebar"
   }
 }

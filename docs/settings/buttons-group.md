@@ -2,19 +2,19 @@
 sidebar_position: 8
 ---
 
-# Группа кнопок
+# Button Group
 
-| ![Настройки деревьев](/img/tutorial/buttons_group.png) |
+| ![Button Group](/img/tutorial/buttons_group.png) |
 |-|
 
-**Назначение кнопок слева направо.**
+**Button functions from left to right:**
 
-- Обновить кэш модуля;
-- Проверить наличие обновлений;
-- Сохранить настройки без выхода из модуля;
-- Сохранить настройки и выйти;
-- Выйти без сохранения;
+- Refresh module cache;
+- Check for updates;
+- Save settings without exiting the module;
+- Save settings and exit;
+- Exit without saving;
 
 :::warning
-Кнопки нужны только для сохранения настроек. Все изменения в узлах сразу синхронно записываются в Базу Данных.
+These buttons are only used for saving settings. All changes in the nodes are immediately and synchronously written to the database.
 :::

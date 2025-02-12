@@ -2,31 +2,30 @@
 sidebar_position: 1
 ---
 
-# Общие настройки
+# General Settings
 
-| ![Настройки](/img/tutorial/settings.jpg) |
-|-|
-
-| Пункт | Описание |
-|-------|----------|
-| **Разделитель атрибутов** | Применяется, если товар может иметь несколько разных значений одного и того же атрибута. Подробнее в [Термины и определения](theory.html#theory-terms). |
-| **Учитывать порядок сортировки** | Если включено, деревья формируются с учетом пользовательского порядка, иначе — по алфавиту. |
-| **Смарт скроллинг** | Включает автопрокрутку узлов дерева внутри фиксированной области. |
-| **Показывать пустые значения** | Показывать или скрывать пустые значения атрибута. Подробнее: [Удалить пустые значения](tools.html#tools-empty). |
-| **Товар в новом окне** | Открывать страницу товара в новом окне. |
-| **Ленивая загрузка** | Дочерние узлы загружаются по запросу. Подробнее: [Загрузка узлов](theory.html#theory-loading). |
-| **Кэш деревьев атрибутов** | Деревья загружаются из кэша, а не из базы данных. Подробнее: [Очистить кэш деревьев](tools.html#tools-cache). |
-| **Все магазины** | Включает категории всех магазинов в список, если включено. |
+| Item | Description |
+|------|------------|
+| **Attribute separator** | Used when a product can have multiple different values for the same attribute. More details in [Terms and Definitions](theory.html#theory-terms). |
+| **Consider sorting order** | If enabled, trees are formed according to the user-defined order; otherwise, they are sorted alphabetically. |
+| **Smart scrolling** | Enables automatic scrolling of tree nodes within a fixed area. |
+| **Show empty values** | Show or hide empty attribute values. More details: [Remove Empty Values](tools.html#tools-empty). |
+| **Product in a new window** | Open the product page in a new window. |
+| **Lazy loading** | Child nodes are loaded on demand. More details: [Node Loading](theory.html#theory-loading). |
+| **Attribute tree cache** | Trees are loaded from cache instead of the database. More details: [Clear Tree Cache](tools.html#tools-cache). |
+| **All stores** | Includes categories from all stores in the list when enabled. |
 
 :::info
-Изменить размеры скроллинга.
-Высоту области прокрутки можно изменить в файле `/admin/view/stylesheet/attributico.css`, изменив свойство:
+Adjust scrolling size.  
+The scroll area height can be changed in the `/admin/view/stylesheet/attributico.css` file by modifying the property:
+
 ```css
 .smart-scroll {height: 250px;}
 ```
+
 :::
 
 :::danger
-Соблюдайте осторожность при открытии формы товара в новом окне.
-Изменения в форме товара сохраняются в БД, но модуль "подхватывает" их только при перезагрузке. Без обновления данные могут быть некорректными.
+Be cautious when opening the product form in a new window.
+Changes in the product form are saved in the database, but the module only "picks them up" after reloading. Without a refresh, the data may be incorrect.
 :::

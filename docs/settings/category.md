@@ -2,14 +2,11 @@
 sidebar_position: 3
 ---
 
-# Атрибуты категории
+# Category Attributes
 
-Управление добавлением/удалением атрибутов категории.
+Managing the addition/removal of category attributes.
 
-| ![Атрибуты категории](/img/tutorial/category_attribute_settings.jpg) |
-|-|
-
-| Пункт | Описание |
-|-------|----------|
-| **Добавлять атрибут категории в товары** | Новый атрибут автоматически добавляется во все товары категории. |
-| **Удалять атрибут категории из товаров** | Атрибут удаляется из всех товаров при удалении из категории. |
+| Item | Description |
+|------|------------|
+| **Add category attribute to products** | A new attribute is automatically added to all products in the category. |
+| **Remove category attribute from products** | The attribute is removed from all products when deleted from the category. |
