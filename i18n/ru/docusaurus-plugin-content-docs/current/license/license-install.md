@@ -28,7 +28,7 @@ sidebar_position: 1
 :::info
 В будущих версиях возможно изменение структуры архива. В любом случае, правильное расположение файла лицензии:
 
-```jsx
+```php
 /system/license/sllic.lic
 ```
 
@@ -37,7 +37,7 @@ sidebar_position: 1
 :::danger
 Если файл **sllic.lic** размещён неправильно или не установлен вовсе, появится сообщение об ошибке:
 
-```jsx
+```php
 Notice: Undefined variable: vendor in .....\www\admin\controller\module\attributico.php on line...
 ```
 
