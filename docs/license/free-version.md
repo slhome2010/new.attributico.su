@@ -23,4 +23,6 @@ Some features will work on local machines with IP 127.0.0.1.
 Despite being free, installing a license is still required.
 :::
 
+:::tip
 For the free version, **domain name approval is not required**.
+:::

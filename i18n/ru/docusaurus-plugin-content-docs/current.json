@@ -38,5 +38,13 @@
   "sidebar.tutorialSidebar.category.Settings.link.generated-index.description": {
     "message": "Настройки модуля. Параметры.",
     "description": "The generated-index page description for category Settings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.License": {
+    "message": "Лицензия",
+    "description": "The label for category License in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.License.link.generated-index.description": {
+    "message": "О лицензированной или бесплатной версии. Действие лицензии. Установка лицензии.",
+    "description": "The generated-index page description for category License in sidebar tutorialSidebar"
   }
 }
