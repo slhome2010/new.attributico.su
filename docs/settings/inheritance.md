@@ -2,25 +2,25 @@
 sidebar_position: 4
 ---
 
-# Наследование {#settings-inherit}
+# Inheritance {#settings-inherit}
 
-| Пункт | Описание |  
+| Item | Description |  
 | --- | --- |  
-| **Добавлять во все подкатегории** | При добавлении нового **Атрибута** в категорию, он будет рекурсивно добавлен во все дочерние категории (подкатегории). **Значения** атрибута во всех товарах этих подкатегорий будут заполнены в соответствии с разделом "Добавление значений атрибута в товар". |  
-| **Удалять из всех подкатегорий** | При удалении **Атрибута** из категории, он будет рекурсивно удален из всех подкатегорий, а **Значения** из всех товаров этих подкатегорий. |  
-| **Автовыбор подкатегорий с учетом иерархии** | Рекурсивный выбор всех дочерних подкатегорий отмеченной категории. Если отмечены все дочерние категории, родительская отмечается автоматически. |  
+| **Add to all subcategories** | When adding a new **Attribute** to a category, it will be recursively added to all child categories (subcategories). The **Values** of the attribute in all products within these subcategories will be filled according to the section "Adding attribute values to a product." |  
+| **Remove from all subcategories** | When deleting an **Attribute** from a category, it will be recursively removed from all subcategories, along with its **Values** from all products in those subcategories. |  
+| **Auto-selection of subcategories with hierarchy consideration** | Recursively selects all child subcategories of the marked category. If all child categories are marked, the parent is automatically selected. |  
 
-Алгоритм наследования требует некоторых пояснений. Первые два пункта настроек обеспечивают недостаточно гибкий алгоритм. Что делать, если не во все подкатегории требуется добавлять тот или иной атрибут?  
+The inheritance algorithm requires some clarification. The first two settings provide a rather inflexible approach. What if an attribute does not need to be added to all subcategories?  
 
-Начиная с версии 2.1.0 появилась возможность отметить целевые подкатегории с помощью чекбоксов. Пока ничего не отмечено - действуют правила рекурсивного добавления/удаления (если отмечены первые два пункта). Если отмечена хотя бы одна категория - действие рекурсии отменяется. Т.е. отменяется действие первых двух пунктов. Все действия будут производиться только с отмеченными категориями.  
+Starting from version 2.1.0, it became possible to mark target subcategories using checkboxes. If nothing is selected, the recursive addition/removal rules apply (if the first two options are enabled). However, if at least one category is selected, recursion is canceled. That is, the first two settings no longer apply. Actions will only be performed on the selected categories.  
 
-Впрочем, теперь даже без первых двух пунктов можно рекурсивно отметить все подкатегории, кликнув на чекбокс родительской категории. Для этого пункт **Автовыбор подкатегорий с учетом иерархии** должен быть отмечен (включен).  
+Moreover, even without the first two settings, all subcategories can be recursively selected by clicking the checkbox of the parent category. For this, the **Auto-selection of subcategories with hierarchy consideration** option must be enabled.  
 
-:::warning 
-При включенном режиме иерархии действует и обратное правило - при выборе всех дочерних, родительская выбирается автоматически. Или - при отмене хотя бы одной дочерней, родительская автоматически отменяется.  
+:::warning  
+When hierarchy mode is enabled, the reverse rule also applies – if all child categories are selected, the parent is automatically selected. Likewise, if at least one child category is deselected, the parent is also deselected.  
 :::
 
-Учитывая сказанное выше, если не нужна рекурсия, если не нужна иерархия, а нужен произвольный набор категорий, то режим **Автовыбор подкатегорий с учетом иерархии** надо отключить. Для оперативного управления этим режимом в дереве **Категории** в контекстном меню **Настройки** есть пункт **Учитывать иерархию**.  
+Given the above, if recursion and hierarchy are not needed, and a custom set of categories is required, the **Auto-selection of subcategories with hierarchy consideration** mode should be disabled. For quick control over this mode, in the **Categories** tree, the **Settings** context menu includes the **Consider hierarchy** option.  
 
 | ![Hierarchical multi-selection](/img/tutorial/hier_category.jpg) |
 | - |
@@ -30,6 +30,7 @@ sidebar_position: 4
 | - |
 | *Hierarchical operate* |
 
-:::warning
-Действия всегда выполняются по отношению к целевой категории независимо от того, отмечена она или нет. Целевая - это та категория, куда вы перетаскиваете атрибут с помощью Drag-and-Drop или Copy-Paste, которая в результате откроется в дереве справа со всеми своими **Атрибутами категории**.  
+:::warning  
+Actions are always performed in relation to the target category, regardless of whether it is selected. The target category is the one where you drag and drop or copy-paste an attribute, which then opens on the right side of the tree with all its **Category Attributes**.  
 :::
+
