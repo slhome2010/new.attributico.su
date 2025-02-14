@@ -2,22 +2,22 @@
 sidebar_position: 1
 ---
 
-# Работа с деревом {#using-tree}
+# Working with the Tree {#using-tree}
 
-Для активизации какого-либо элемента дерева необходимо сделать `Click` на этом элементе левой кнопкой мышки.
+To activate any tree element, click on it with the left mouse button.
 
-Для развертывания (раскрытия) какого-либо элемента дерева необходимо сделать двойной `Click` на этом элементе левой кнопкой мышки.
+To expand (open) a tree element, double-click on it with the left mouse button.
 
-`Click` правой кнопкой мыши на каком-либо **узле** вызовет окно с **контекстным меню**.
+Right-clicking on a **node** will open a **context menu**.
 
-Перетаскивть **узлы** с помощью Drag&Drop можно как в пределах дерева так и между деревьями если это позволяет контекст производимого действия и механизмы контроля `levelcontrol`, `selectcontrol` и другие.
+Nodes can be dragged and dropped within the tree as well as between different trees, if allowed by the context of the action and control mechanisms such as `levelcontrol`, `selectcontrol`, and others.
 
-В следующих статьях каждое из возможных действий будет рассмотрено подробно.
+Each possible action will be discussed in detail in the following articles.
 
-## Множественное выделение {#using-select}  
+## Multiple Selection {#using-select}  
 
-Все действия **Drag-and-Drop**, а также **Copy-Paste** можно выполнять не только над одним *Узлом*, но и над несколькими *Узлами* одновременно.  
+All **Drag-and-Drop** and **Copy-Paste** actions can be performed not only on a single *Node* but also on multiple *Nodes* simultaneously.
 
-Чтобы выделить несколько *Узлов*, зажмите **Ctrl** и кликайте по нужным элементам (**`Ctrl + Click`**).  
+To select multiple *Nodes*, hold **Ctrl** and click on the required elements (**`Ctrl + Click`**).
 
-Для предотвращения ошибок в модуле предусмотрен механизм `selectcontrol`. Например, нельзя одновременно выделить и *Группы*, и *Атрибуты*.
+To prevent errors, the module includes a `selectcontrol` mechanism. For example, it is not possible to select both *Groups* and *Attributes* at the same time.

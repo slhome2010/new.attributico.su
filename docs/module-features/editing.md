@@ -2,25 +2,28 @@
 sidebar_position: 3
 ---
 
-# Редактирование {#using-edit}
+# Editing {#using-edit}
 
-Режим редактирования включается на выбранном **Узле** через `Shift + Click`, `F2` или через [контекстное меню](/module-features/context-menu.md).
+Editing mode is enabled on a selected **Node** via `Shift + Click`, `F2`, or through the [context menu](/module-features/context-menu.md).
 
-Редактирование данных происходит в каждом дереве и для каждого языка отдельно. При необходимости обеспечения целостности данных срабатывает синхронизация.
+Data editing occurs separately in each tree and for each language. Synchronization ensures data integrity when necessary.
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/jBcowwJZlPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Разница редактирования **Шаблонов** и **Значений**  
+## Difference Between Editing **Templates** and **Values**  
 
 :::tip
-Если вы вносите изменения в **Значение**, то изменения произойдут во всех товарах, где присутствует это **Значение**, а значит и во всех **Шаблонах**.  
-То есть, если **Значение** присутствует в нескольких **Шаблонах**, то изменения коснутся их всех.  
+If you modify a **Value**, the changes will apply to all products where that **Value** is present, and consequently, to all **Templates** containing it.  
+Thus, if a **Value** appears in multiple **Templates**, all of them will be affected.  
 :::
+
 :::tip
-Если изменения делаются в **Шаблоне**, то это касается всех товаров, где присутствует данный **Атрибут** и его значение в точности совпадает с редактируемым **Шаблоном**. Другие товары и **Шаблоны** затронуты не будут.  
+If modifications are made to a **Template**, this affects all products where the given **Attribute** and its value exactly match the edited **Template**. Other products and **Templates** will remain unchanged.  
 :::
+
 :::warning
-Обязательно учтите особенности редактирования **Значений** в описании настройки [Сравнение значений](/settings/comparison.md).
+Be sure to consider the specifics of **Value** editing as described in the [Value Comparison](/settings/comparison.md) settings.
 :::
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/_K9NL4JgAdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

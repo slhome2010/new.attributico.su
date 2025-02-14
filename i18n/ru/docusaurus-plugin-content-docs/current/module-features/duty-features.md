@@ -16,11 +16,13 @@ sidebar_position: 5
 
 Если после входа в режим редактирования нажать `Alt + Shift + Click`, то включится подгрузка уже имеющихся в товарах **Значений**. Если таких **Значений** нет, то в списке будет только `No data...`.  
 
-![Duty dropdown select](/img/tutorial/duty1.jpg)  
-*Duty dropdown select*  
+| ![Duty dropdown select](/img/tutorial/duty1.jpg) |
+|:--:|
+| *Duty dropdown select* |  
 
-![Duty dropdown no data](/img/tutorial/duty2.jpg)  
-*Duty dropdown no data*  
+| ![Duty dropdown no data](/img/tutorial/duty2.jpg) |
+|:--:|
+| *Duty dropdown no data* |
 
 ---
 

@@ -2,25 +2,24 @@
 sidebar_position: 8
 ---
 
-# Слияние атрибутов {#using-merge}  
+# Merging Attributes {#using-merge}  
 
-Часто встречается ситуация, когда разные названия атрибутов обозначают одно и то же. Например, **"Страна производитель"**, **"Производитель"** и **"Страна производства"** фактически являются одним и тем же атрибутом. В таких случаях логично объединить их под одним названием, например **"Страна производитель"**. Подобные несоответствия называют *неявными дублями*. Автоматически объединить их невозможно, поэтому это нужно делать вручную. Однако технология Drag-and-Drop значительно упрощает процесс.  
+It is common to encounter situations where different attribute names represent the same concept. For example, **"Country of Origin"**, **"Manufacturer"**, and **"Country of Production"** are essentially the same attribute. In such cases, it makes sense to merge them under a single name, such as **"Country of Origin"**. These inconsistencies are called *implicit duplicates*. Automatic merging is not possible, so it must be done manually. However, the Drag-and-Drop technology significantly simplifies the process.  
 
-Если перетащить один **узел** в другой с помощью Drag-and-Drop, удерживая **Ctrl**, произойдет слияние перетаскиваемого **узла** с целевым. Если же перетаскивать **узлы** без **Ctrl**, выполняется только сортировка или изменение **группы**. Таким образом, сочетание **Ctrl + Drag-and-Drop** используется для слияния **атрибутов**.  
+If you drag one **node** into another using Drag-and-Drop while holding **Ctrl**, the dragged **node** will be merged with the target node. If you drag **nodes** without **Ctrl**, it only sorts or changes the **group**. Thus, the combination **Ctrl + Drag-and-Drop** is used for merging **attributes**.  
 
-## Что происходит при слиянии атрибутов?  
+## What Happens When Attributes Are Merged?  
 
-Связи с товарами или категориями не теряются, поэтому **значения** атрибутов сохраняются. Если один и тот же товар связан и с целевым, и с объединяемым **атрибутом**, его **значения** добавляются к целевому. Например, если у целевого атрибута были **"Россия/Франция"**, после слияния они станут **"Россия/Франция/Германия"**. Новые значения добавляются через разделитель. Если же товары не были связаны с целевым атрибутом, их связь просто меняется с объединяемого на целевой. Для наглядности можно посмотреть видеопример.  
+Links to products or categories are not lost, so the **values** of the attributes remain intact. If the same product is linked to both the target and the merged **attribute**, its **values** are added to the target. For example, if the target attribute had **"Russia/France"**, after merging, it will become **"Russia/France/Germany"**. New values are added using a delimiter. If the products were not linked to the target attribute, their link simply changes from the merged attribute to the target. A video example illustrates this process.  
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/Z1w8sFOJy_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Multiple **attributes** can be merged with a target attribute simultaneously using [multi-selection](/module-features/tree-features.md). Merging **attributes** from different **groups** is also allowed.  
 
-Можно объединять сразу несколько **атрибутов** с целевым, используя [множественное выделение](/module-features/tree-features.md). При этом разрешено объединение **атрибутов** из разных **групп**.  
+## Merging Groups  
 
-## Слияние групп  
+It is also possible to merge **groups**. In this case, all **attributes** from the selected **group** will be moved to the target group, and the original **group** will be deleted.  
 
-Можно также объединять **группы**. В этом случае все **атрибуты** выбранной **группы** будут перемещены в целевую, а сама **группа** будет удалена.  
-
-:::danger
-После слияния **узлы**, отмеченные как объединяемые, будут **удалены без возможности восстановления**. Если слияние прошло не так, как ожидалось, исправить ситуацию поможет только резервная копия базы данных.  
+:::danger  
+After merging, **nodes** marked for merging will be **deleted permanently with no recovery option**. If the merge does not go as expected, the only way to fix it is by restoring a backup of the database.  
 :::

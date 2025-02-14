@@ -2,21 +2,21 @@
 sidebar_position: 4
 ---
 
-# Удаление значений {#using-value}
+# Deleting Values {#using-value}
 
-Операцию можно выполнить через [контекстное меню](#using-context-menu) или клавишей `Del`. Можно удалить **Значение**, **Шаблон** или сразу несколько (используя [мультиселект](#using-select)).
+The operation can be performed via the [context menu](#using-context-menu) or using the `Del` key. You can delete a **Value**, **Template**, or multiple items at once (using [multi-select](#using-select)).
 
-Операция, на самом деле, непростая. Вы должны хорошо представлять себе механизм, который стоит за нажатием одной клавиши.
+This operation is actually quite complex. You need to fully understand the mechanism behind pressing a single key.
 
-Напомним, что **Значения** или описание характеристики товара – это обычные текстовые поля, связанные с конкретным товаром. Они не имеют id-шников. Т.е. в Базе Данных они прописываются как текст в каждом товаре. Это означает, что удалить их можно только из товаров. По сути удаление **Значений** – это операция по удалению **Атрибута** из товара, если **Значение** этого **Атрибута** совпадает с образцом.
+Remember that **Values** or product characteristic descriptions are regular text fields linked to a specific product. They do not have unique IDs. This means they are stored as plain text in each product's database entry. Therefore, they can only be deleted from products. Essentially, deleting **Values** means removing the **Attribute** from the product if the **Attribute's Value** matches the given sample.
 
-Допустим, есть товар или товары, у которых **Атрибут** `Тестовый атрибут 3.1` имеет **Значение** `тестовое значение 3.2.1`.
+For example, suppose there are products where the **Attribute** `Test Attribute 3.1` has the **Value** `test value 3.2.1`.
 
-И есть товар или товары, у которых **Атрибут** `Тестовый атрибут 3.1` имеет **Значение** `тестовое значение 3.2.2`.
+And other products where the **Attribute** `Test Attribute 3.1` has the **Value** `test value 3.2.2`.
 
-Необходимо у всех товаров удалить **Атрибут** `Тестовый атрибут 3.1`, если он имеет **Значение** `тестовое значение 3.2.1`.
+We need to remove **Attribute** `Test Attribute 3.1` from all products where it has the **Value** `test value 3.2.1`.
 
-Если бы мы делали это вручную, то нам пришлось бы открывать каждый товар, просматривать список **Атрибутов** и **Значений**, и нажимать кнопку **Удалить**, если значение совпало с `тестовое значение 3.2.1`.
+If we did this manually, we would have to open each product, review the list of **Attributes** and **Values**, and click **Delete** if the value matches `test value 3.2.1`.
 
 | ![Manually deleting Values](/img/tutorial/product1.jpg) |
 |:--:|
@@ -26,21 +26,21 @@ sidebar_position: 4
 |:--:|
 | *Manually no deleting Values* |
 
-Теперь эту операцию можно сделать в один клик для всех товаров.
+Now, this operation can be performed with a single click for all products.
 
-Все было бы хорошо, если бы товар имел только одно **Значение** или, иначе, одну характеристику для одного **Атрибута**, но зачастую их бывает [несколько](theory.html#theory-template). Как быть, если у нас есть ещё товар или товары, где **Атрибут** `Тестовый атрибут 3.1` имеет **Значение** `тестовое значение 3.2.1/тестовое значение 3.2.2`? Удалять или оставить?
+Everything would be simple if a product had only one **Value** per **Attribute**, but often, there are [multiple values](theory.html#theory-template). What if we also have products where **Attribute** `Test Attribute 3.1` has **Value** `test value 3.2.1/test value 3.2.2`? Should we delete it or keep it?
 
 | ![Deleting multiple values](/img/tutorial/product3.jpg) |
 |:--:|
 | *Deleting multiple values* |
 
-Чтобы избежать неоднозначности, в модуле предусмотрено несколько режимов удаления.
+To avoid ambiguity, the module provides several deletion modes.
 
-Удаление **Шаблонов** (узлы с родителем **Шаблоны**) всегда делается по точному совпадению поля в товаре и всего **Шаблона**.
+Deleting **Templates** (nodes under **Templates**) is always done by exact field matching in the product.
 
-Удаление **Значений** (узлы с родителем **Значения**) зависит от настройки [Сравнение значений](settings.html#settings-compare).
+Deleting **Values** (nodes under **Values**) depends on the [Value Comparison](settings.html#settings-compare) setting.
 
-В любом случае, это удаление по вхождению образца (**Значения**) в поле в товаре. Настройка позволяет сравнивать с образцом каждое **Значение**, записанное через разделитель.
+In any case, deletion is performed by checking if the **Value** sample exists in the product's field. The setting allows comparison with each **Value** separated by a delimiter.
 
 | ![Auto deleting Template](/img/tutorial/product4.jpg) |
 |:--:|
@@ -50,14 +50,15 @@ sidebar_position: 4
 |:--:|
 | *Auto deleting Value* |
 
-## Разница между удалением **Шаблонов** и **Значений**
+## Difference Between Deleting **Templates** and **Values**
 
 :::tip
-Удаление **Шаблона** – это удаление по точному совпадению поля в товаре с образцом.
+Deleting a **Template** means removing an exact match of the field in the product.
 
-Удаление **Значения** – это удаление по вхождению образца в поле в товаре.
+Deleting a **Value** means removing the sample wherever it appears in the product field.
 :::
 
 :::danger
-⚠ **Осторожно!** Если вы удалите **Значения**, будут удалены также все **Шаблоны**, содержащие выбранное **Значение**.  
+⚠ **Caution!** If you delete **Values**, all **Templates** containing the selected **Value** will also be deleted.  
 :::
+

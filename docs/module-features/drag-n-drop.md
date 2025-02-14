@@ -2,32 +2,33 @@
 sidebar_position: 6
 ---
 
-# Drag-and-Drop технологии {#using-dnd}
+# Drag-and-Drop Technology {#using-dnd}
 
-Это одно из удобств, предоставляемых Attribut&co. Насколько удобнее, например, перетащить мышкой *Атрибут* из *Группы* в *Группу*, чем открывать формы, добавлять в одной и удалять в другой название новой *Группы*.  
+This is one of the conveniences provided by Attribut&co. For example, how much easier it is to drag an *Attribute* from one *Group* to another with a mouse instead of opening forms, adding a new *Group* name in one place, and removing it in another.
 
-Возможности **Drag-and-Drop** технологии:  
+**Drag-and-Drop** technology capabilities:
 
-- Перетаскивание *Узлов* внутри одного дерева.  
-- Перетаскивание *Узлов* между деревьями.  
+- Dragging *Nodes* within a single tree.  
+- Dragging *Nodes* between trees.  
 
-Применительно к нашим задачам:  
+Applied to our tasks:
 
-- Изменение *Группы* у *Атрибута*.  
-- Сортировка *Групп*.  
-- Сортировка *Атрибутов* внутри *Группы*.  
-- Добавление *Атрибута* в категорию.  
-- Изменение категории у *Атрибута*.  
-- Слияние *Атрибутов* (объединение) без потери *Значений* и связей.  
+- Changing the *Group* of an *Attribute*.  
+- Sorting *Groups*.  
+- Sorting *Attributes* within a *Group*.  
+- Adding an *Attribute* to a category.  
+- Changing the category of an *Attribute*.  
+- Merging *Attributes* (combining) without losing *Values* and connections.  
 
-## Видео примеры
+## Video Examples
 
-### Drag-and-Drop сортировка
+### Drag-and-Drop Sorting
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/UQASi1MuLWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Копирование атрибута, смена группы
+### Copying an Attribute, Changing a Group
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/q6OkGi1EM2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Все действия, которые поддерживает **Drag-and-Drop**, можно выполнить с помощью [контекстного меню](/module-features/context-menu.md) или горячих клавиш. Каждый выбирает то, что ему удобно. Все действия отражены в [сводной таблице](/module-features/summary-table.md).
+All actions supported by **Drag-and-Drop** can also be performed using the [context menu](/module-features/context-menu.md) or hotkeys. Everyone can choose the method that suits them best. All actions are listed in the [summary table](/module-features/summary-table.md).
+

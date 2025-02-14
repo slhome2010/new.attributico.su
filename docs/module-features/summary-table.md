@@ -1,29 +1,30 @@
 ---
 sidebar_position: 12
 ---
-# Сводная таблица {#using-summary}
+# Summary Table {#using-summary}
 
 :::info  
-Сокращение Drag&Drop означает перетаскивание узлов с нажатой левой кнопкой мыши ***  
-*Источник* - узел или узлы, которые надо переместить. *Цель* - узел, куда надо переместить **  
-*Уровень* - глубина расположения узла в иерархии дерева *  
+The abbreviation Drag&Drop refers to dragging nodes while holding the left mouse button ***  
+*Source* - the node(s) to be moved. *Target* - the node where they should be moved **  
+*Level* - the depth of the node in the tree hierarchy *  
 :::
 
-| Операция | Мышь/Drag&Drop | Меню | Клавиатура | Примечание |
-|----------|---------------|------|------------|------------|
-| **Раскрыть/Свернуть узел** | Двойной клик |  |  |  |
-| **Выделить узел** | `Ctrl + клик` |  |  | Можно выделить несколько узлов. |
-| **Контекстное меню** | Правая кнопка |  |  | Есть подсказки горячих клавиш. |
-| **Добавить группу** |  | Новая группа | <kbd>Ctrl+M</kbd> |  |
-| **Добавить атрибут** |  | Новый атрибут | <kbd>Ctrl+Q</kbd> |  |
-| **Редактировать** |  | Редактировать | <kbd>Shift+Enter</kbd> | Подтверждение - <kbd>Enter</kbd> Отмена - <kbd>Esc</kbd>. |
-| **Удалить** |  | Удалить | <kbd>Del</kbd> |  |
-| **Сортировать** | Drag&Drop | Вырезать > Вставить | <kbd>Ctrl+X</kbd> > <kbd>Ctrl+V</kbd> | Уровни источника и цели должны совпадать. Сортировать можно группы или атрибуты внутри группы. |
-| **Копировать** |  | Копировать > Вставить | <kbd>Ctrl+C</kbd> > <kbd>Ctrl+V</kbd> | Копировать можно только атрибуты. Вставить только в группу или в категорию. |
-| **Сменить группу** | Drag&Drop | Вырезать > Вставить | <kbd>Ctrl+X</kbd> > <kbd>Ctrl+V</kbd> | Источник - атрибут. Цель - группа. |
-| **Слияние атрибутов или групп** | `Ctrl + Drag&Drop` | Вырезать > Объединить | <kbd>Ctrl+X</kbd> > <kbd>Alt+V</kbd> | Уровни источника и цели должны совпадать. Если источник атрибут, то цель должна быть атрибутом. |
-| **Добавить атрибут в категорию** | Drag&Drop | Копировать > Вставить | <kbd>Ctrl+C</kbd> > <kbd>Ctrl+V</kbd> | Источник - атрибут. Цель - категория. |
-| **Сменить категорию** | Drag&Drop | Вырезать > Вставить | <kbd>Ctrl+X</kbd> > <kbd>Ctrl+V</kbd> | Источник - атрибут в дереве "Атрибуты категорий". Цель - категория в дереве "Категории". |
-| **Удалить из категории** |  | Удалить | <kbd>Del</kbd> | Атрибут из дерева "Атрибуты категорий". |
-| **Выбрать из списка дежурный шаблон** |  | Редактировать | <kbd>Shift+Enter</kbd> + <kbd>Alt+Shift+Click</kbd> | Войти в режим редактирования, затем нажать <kbd>Alt+Shift+Click</kbd>. |
-| **Клонировать Дежурный шаблон в другие языки** |  | Клонировать | <kbd>Alt+C</kbd> | Пустые шаблоны не клонируются. |
+| Operation | Mouse/Drag&Drop | Menu | Keyboard | Notes |
+|-----------|---------------|------|------------|------------|
+| **Expand/Collapse Node** | Double Click |  |  |  |
+| **Select Node** | `Ctrl + Click` |  |  | Multiple nodes can be selected. |
+| **Context Menu** | Right Click |  |  | Includes hotkey hints. |
+| **Add Group** |  | New Group | <kbd>Ctrl+M</kbd> |  |
+| **Add Attribute** |  | New Attribute | <kbd>Ctrl+Q</kbd> |  |
+| **Edit** |  | Edit | <kbd>Shift+Enter</kbd> | Confirm - <kbd>Enter</kbd>, Cancel - <kbd>Esc</kbd>. |
+| **Delete** |  | Delete | <kbd>Del</kbd> |  |
+| **Sort** | Drag&Drop | Cut > Paste | <kbd>Ctrl+X</kbd> > <kbd>Ctrl+V</kbd> | Source and target levels must match. Sorting applies to groups or attributes within a group. |
+| **Copy** |  | Copy > Paste | <kbd>Ctrl+C</kbd> > <kbd>Ctrl+V</kbd> | Only attributes can be copied. Can be pasted into a group or category. |
+| **Change Group** | Drag&Drop | Cut > Paste | <kbd>Ctrl+X</kbd> > <kbd>Ctrl+V</kbd> | Source - attribute. Target - group. |
+| **Merge Attributes or Groups** | `Ctrl + Drag&Drop` | Cut > Merge | <kbd>Ctrl+X</kbd> > <kbd>Alt+V</kbd> | Source and target levels must match. If merging attributes, the target must also be an attribute. |
+| **Add Attribute to Category** | Drag&Drop | Copy > Paste | <kbd>Ctrl+C</kbd> > <kbd>Ctrl+V</kbd> | Source - attribute. Target - category. |
+| **Change Category** | Drag&Drop | Cut > Paste | <kbd>Ctrl+X</kbd> > <kbd>Ctrl+V</kbd> | Source - attribute in the "Category Attributes" tree. Target - category in the "Categories" tree. |
+| **Remove from Category** |  | Delete | <kbd>Del</kbd> | Attribute from the "Category Attributes" tree. |
+| **Select Duty Template from List** |  | Edit | <kbd>Shift+Enter</kbd> + <kbd>Alt+Shift+Click</kbd> | Enter edit mode, then press <kbd>Alt+Shift+Click</kbd>. |
+| **Clone Duty Template to Other Languages** |  | Clone | <kbd>Alt+C</kbd> | Empty templates are not cloned. |
+

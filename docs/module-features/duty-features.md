@@ -2,44 +2,47 @@
 sidebar_position: 5
 ---
 
-# Дежурный Шаблон
+# Duty Template
 
-## Создание дежурного шаблона {#using-duty}
+## Creating a Duty Template {#using-duty}
 
-Создание [**Дежурного шаблона**](/general-info/duty.md) производится на вкладке *`Дежурные шаблоны`* или на вкладке *`Атрибуты`*, если в настройках дерева добавлен *узел* **Дежурного шаблона**.  
+Creating a [**Duty Template**](/general-info/duty.md) is done on the *`Duty Templates`* tab or the *`Attributes`* tab if the **Duty Template** node is added in the tree settings.
 
-На выбранном узле нужно войти в режим редактирования, после чего ввести необходимые значения через разделитель или без.  
+On the selected node, enter edit mode and input the necessary values, either separated by a delimiter or not.
 
-## Выбор из списка {#using-duty-autocomplete}
+## Selecting from a List {#using-duty-autocomplete}
 
-Существует еще один режим создания **Дежурного шаблона**.  
+There is another method for creating a **Duty Template**.
 
-Если после входа в режим редактирования нажать `Alt + Shift + Click`, то включится подгрузка уже имеющихся в товарах **Значений**. Если таких **Значений** нет, то в списке будет только `No data...`.  
+If you enter edit mode and press `Alt + Shift + Click`, an autocomplete feature will load existing **Values** from products. If no such **Values** exist, the list will display `No data...`.
 
-![Duty dropdown select](/img/tutorial/duty1.jpg)  
-*Duty dropdown select*  
+| ![Duty dropdown select](/img/tutorial/duty1.jpg) |
+|:--:|
+| *Duty dropdown select* |
 
-![Duty dropdown no data](/img/tutorial/duty2.jpg)  
-*Duty dropdown no data*  
-
----
-
-## Удаление дежурного шаблона {#using-duty-del}
-
-Удаление (очистка) **Дежурного шаблона** производится через [контекстное меню](/module-features/context-menu.md) или клавишей `Del`.  
-
-Операцию можно производить только на вкладках *`Дежурные шаблоны`* или *`Группы атрибутов`*. Данная операция не затрагивает товары. Удаляется только **Дежурный шаблон**.  
+| ![Duty dropdown no data](/img/tutorial/duty2.jpg) |
+|:--:|
+| *Duty dropdown no data* |
 
 ---
 
-## Клонирование дежурного шаблона {#using-duty-clone}
+## Deleting a Duty Template {#using-duty-del}
 
-Очень часто **Дежурный шаблон** представляет собой набор числовых значений, не нуждающихся в переводе на другие языки. Например, `20°C - 40°C`, или `2G/3G (WCDMA/UMTS)/4G (LTE)`.  
+Deleting (clearing) a **Duty Template** is done via the [context menu](/module-features/context-menu.md) or by pressing `Del`.
 
-Заполнив **Дежурный шаблон** для одного языка, можно сразу клонировать его в другие языки.  
+This operation can only be performed on the *`Duty Templates`* or *`Attribute Groups`* tabs. It does not affect products—only the **Duty Template** itself is removed.
 
-Клонирование **Дежурного шаблона** производится через [контекстное меню](/module-features/context-menu.md) или по сочетанию клавиш `Alt + C`.
+---
 
-## Видео примеры
+## Cloning a Duty Template {#using-duty-clone}
+
+A **Duty Template** often consists of numerical values that do not require translation into other languages. For example, `20°C - 40°C` or `2G/3G (WCDMA/UMTS)/4G (LTE)`.
+
+Once a **Duty Template** is filled for one language, it can be cloned to other languages instantly.
+
+Cloning a **Duty Template** is done via the [context menu](/module-features/context-menu.md) or by pressing `Alt + C`.
+
+## Video Examples
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/zdL9XxdNmyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

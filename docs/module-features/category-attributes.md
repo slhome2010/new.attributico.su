@@ -2,37 +2,37 @@
 sidebar_position: 8
 ---
 
-# Атрибуты категории {#using-attribute-category}  
+# Category Attributes {#using-attribute-category}  
 
-Использование набора атрибутов для массового присваивания однотипным товарам — ключевой принцип работы этого модуля. Подготовить **Атрибуты категории** можно несколькими способами.  
+Using a set of attributes for bulk assignment to similar products is a key principle of this module. **Category Attributes** can be prepared in several ways.
 
 ## Drag-and-Drop
 
-Самый простой — **Drag-and-Drop**. Просто перетащите выбранный **Атрибут** (или несколько атрибутов с помощью [множественного выделения](/module-features/tree-features.md) в дерево **Категорий** или прямо в дерево **Атрибутов категорий**.  
+The simplest method is **Drag-and-Drop**. Just drag the selected **Attribute** (or multiple attributes using [multi-selection](/module-features/tree-features.md)) into the **Categories** tree or directly into the **Category Attributes** tree.
 
-Можно также отметить чекбоксы у нескольких категорий и перетащить **Атрибуты** сразу во все отмеченные категории **одним движением**.  
+You can also check multiple categories and drag **Attributes** into all selected categories **in one move**.
 
-Для лучшего понимания рекомендуем посмотреть видео с примерами.
+For better understanding, we recommend watching the video with examples.
 
 <iframe width="100%" height="515" src="https://www.youtube.com/embed/FZWGr5aQIwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Инструмент
+## Tool
 
-Другой способ — использование инструмента [Атрибуты категорий](tools.html#tools-category).  
+Another method is using the [Category Attributes](tools.html#tools-category) tool.
 
-## Добавление атрибутов категории в товар  
+## Adding Category Attributes to a Product  
 
-Атрибуты категории добавляются в товар в соответствии с настройками:  
+Category attributes are added to a product according to the following settings:
 
-- [Атрибуты категорий](/settings/category.md)  
-- [Наследование](/settings/inheritance.md)  
+- [Category Attributes](/settings/category.md)  
+- [Inheritance](/settings/inheritance.md)  
 
-Для инструмента эта настройка вынесена отдельно и управляется чекбоксом **"Расставить атрибуты категории в товары"**.  
+For the tool, this setting is managed separately via the **"Assign category attributes to products"** checkbox.
 
-Также добавить **Атрибуты категории** можно в **форме товара**. Подробнее об этом в разделе [Интеграция с OpenCart](integro.html#integro-attribute).  
+You can also add **Category Attributes** in the **product form**. More details in the [Integration with OpenCart](integro.html#integro-attribute) section.
 
-## Добавление значений атрибутов  
+## Adding Attribute Values  
 
-Одновременно с добавлением **Атрибутов категории** в товар могут добавляться их **Значения** или, точнее, **Дежурный шаблон**. Это зависит от настроек:  
+Along with adding **Category Attributes** to a product, their **Values** or, more precisely, the **Duty Template** can also be added. This depends on the settings:
 
-- [Добавление значений атрибута в товар](/settings/product.md).
+- [Adding attribute values to a product](/settings/product.md).
