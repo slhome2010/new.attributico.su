@@ -46,5 +46,13 @@
   "sidebar.tutorialSidebar.category.License.link.generated-index.description": {
     "message": "О лицензированной или бесплатной версии. Действие лицензии. Установка лицензии.",
     "description": "The generated-index page description for category License in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Module features": {
+    "message": "Функции модуля",
+    "description": "The label for category Module features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Module features.link.generated-index.description": {
+    "message": "Возможности. Примеры.",
+    "description": "The generated-index page description for category Module features in sidebar tutorialSidebar"
   }
 }
