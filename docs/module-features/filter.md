@@ -55,7 +55,7 @@ sidebar_position: 11
 Отдельно стоит объяснить действие настроек **Только Атрибуты** и **Только Значения**.  
 Точнее было бы назвать настройку **Только Атрибуты** как **Поиск только в загруженных узлах**.  
 
-Для понимания определения *загруженных узлов* надо прочитать раздел [Загрузка узлов](theory.html#theory-loading).  
+Для понимания определения *загруженных узлов* надо прочитать раздел [Загрузка узлов](/general-info/lazy-load.md).  
 Это означает, что поиск будет производиться в **Атрибутах** и **Группах**, если до этого не были загружены дочерние узлы.  
 Если **Шаблоны** или **Значения** были загружены ранее, то поиск будет производиться и в них.
 
@@ -66,3 +66,7 @@ sidebar_position: 11
 
 В момент нажатия ![Применить](/img/tutorial/apply_button.png) или ![Сохранить](/img/tutorial/save_button.png) состояние фильтра сохраняется для каждого дерева.
 :::
+
+## Видео примеры
+
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/gW3l9gFJ67o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -10,7 +10,7 @@ This node-loading method significantly improves tree loading times and tree relo
 
 AJAX requests are used to open nodes, each introducing a delay of up to 1 second. Tests with a large number of attributes have shown that freezing can often occur.
 
-Starting from version 2.1.4, it became possible to manage the loading mode. Either in the settings or through the [context menu](using.html#using-context-menu), you can enable or disable lazy loading. If this mode is disabled, all tree nodes are fully loaded. This eliminates the need to traverse the tree and load nodes dynamically, significantly speeding up searches.
+Starting from version 2.1.4, it became possible to manage the loading mode. Either in the settings or through the [context menu](/module-features/context-menu.md), you can enable or disable lazy loading. If this mode is disabled, all tree nodes are fully loaded. This eliminates the need to traverse the tree and load nodes dynamically, significantly speeding up searches.
 
 Thus, if frequent searches are expected, it is better to reload the trees with lazy loading disabled.
 
