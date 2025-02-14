@@ -38,3 +38,7 @@ sidebar_position: 5
 Заполнив **Дежурный шаблон** для одного языка, можно сразу клонировать его в другие языки.  
 
 Клонирование [**Дежурного шаблона**](theory.html#theory-duty) производится через [контекстное меню](#using-context-menu) или по сочетанию клавиш `Alt + C`.
+
+## Видео примеры
+
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/zdL9XxdNmyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
