@@ -12,7 +12,7 @@ sidebar_position: 2
 |Category Attribute|An Attribute associated with a specific category. An Attribute can be linked to multiple categories, and a category can be associated with multiple Attributes. When we refer to Category Attributes, we mean the list of Attributes assigned ("belonging") to a category.|
 |Template|A set of Attribute Values separated by a delimiter, e.g., `Value1/Value2/Value3`.|
 |Value|A single Attribute Value extracted from a Template. Often, a Template consists of a single Value.|
-|Default Template|Also known as the default template. This is a Template that is stored "together" with an Attribute, contains a frequently used set of Values, and can be automatically "assigned" to a product according to the [method](settings.html#settings-product) specified in the settings.|
+|Default Template|Also known as the default template. This is a Template that is stored "together" with an Attribute, contains a frequently used set of Values, and can be automatically "assigned" to a product according to the [**`Method`**](/settings/product.md) specified in the settings.|
 
 ## Trees
 
@@ -29,7 +29,7 @@ A parent node or ancestor is a node located at the first level of hierarchy.
 |№|Tab|Name|Description|
 |---|---|---|---|
 |`1`|Attributes|Attribute Groups|The main tree where all manipulations with Groups, Attributes, and Values can be performed—editing, sorting, searching, deleting, and adding.|
-|`2`|Default Templates|Default Templates|A tree for working with [Default Templates](theory-duty). Editing and searching.|
+|`2`|Default Templates|Default Templates|A tree for working with [Default Templates](general-info/duty.md). Editing and searching.|
 |`3`|Category Attributes|Categories|A category structure displayed in a tree format.|
 |`4`|Category Attributes|Attributes|A tree similar to Attribute Groups, used for dragging and dropping a selected attribute into the desired category using Drag-and-Drop or copying via Copy-Paste. It is recommended to include the _Default Templates_ child node in the structure to remind users which Values will be added to the product when an Attribute is added to a category.|
 |`5`|Category Attributes|Category Attributes|A tree that shows a category with all its assigned Attributes, Templates, and Values. Here, Attributes can be added or removed.|

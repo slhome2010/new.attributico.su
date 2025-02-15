@@ -29,7 +29,7 @@ Category attributes are added to a product according to the following settings:
 
 For the tool, this setting is managed separately via the **"Assign category attributes to products"** checkbox.
 
-You can also add **Category Attributes** in the **product form**. More details in the [Integration with OpenCart](integro.html#integro-attribute) section.
+You can also add **Category Attributes** in the **product form**. More details in the [Integration with OpenCart](/opencart-integration/category-attributes.md) section.
 
 ## Adding Attribute Values  
 

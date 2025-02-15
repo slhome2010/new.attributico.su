@@ -22,7 +22,7 @@ ALTER TABLE oc_attribute_description ADD COLUMN `duty` TEXT NOT NULL
 
 В результате будет создана новая таблица **category_attribute** с полями `` `category_id` `` и `` `attribute_id` ``.
 
-А в стандартной таблице OpenCart **attribute_description** добавится поле `` `duty` `` для хранения [Дежурных шаблонов](theory.html#theory-duty).
+А в стандартной таблице OpenCart **attribute_description** добавится поле `` `duty` `` для хранения [Дежурных шаблонов](general-info/duty.md).
 
 Общая диаграмма таблиц обслуживающих управление атрибутами и связей между ними приведена на рисунке ниже.
 

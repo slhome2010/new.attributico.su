@@ -14,7 +14,7 @@ A natural expectation is that when adding an **Attribute** to a product, a **Val
 
 These **Values** need to be stored somewhere. This is the purpose of the **Duty Template**. It stores **Values** that will be automatically assigned to a product as soon as you add the **Attribute**.
 
-To ensure the automatic assignment happens, do not forget about the [**settings**](settings.html#settings-product). Depending on the value assignment settings, the following options are available:
+To ensure the automatic assignment happens, do not forget about the [**settings**](/settings/product.md). Depending on the value assignment settings, the following options are available:
 
 - **Clear** – Remove all **attribute values** when adding.
 - **Keep (do not modify)** – Do not change existing **values**.
@@ -29,6 +29,6 @@ Values for assignment are taken from the **Duty Template**, if it is not empty.
 
 The **Duty Template** can be modified multiple times to insert different **values** into different products without affecting existing ones. To do this, use the setting `Apply Duty Template only to empty fields`.
 
-The **Duty Template** can be [**deleted**](using.html#using-duty-del).
+The **Duty Template** can be [**deleted**](/module-features/duty-features.md).
 
 ---

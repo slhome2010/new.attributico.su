@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Installation
 
-1\. Download the module installation files from the resource available to you. As a result, you should have two zip archives: `Attributico_v3.2.8.zip` and `License.zip`. The archive structure is described in [this](included.html) article.
+1\. Download the module installation files from the resource available to you. As a result, you should have two zip archives: `Attributico_v3.2.8.zip` and `License.zip`. The archive structure is described in [this](/technical-specifications/archive-content.md) article.
 
-2\. Unzip the archive. Open the folder corresponding to [your PHP version](included.html#included-differences). Copy the contents of the `upload.../` folder, corresponding to your OpenCart version, over the site's folder structure.
+2\. Unzip the archive. Open the folder corresponding to [your PHP version](/technical-specifications/compatibility.md). Copy the contents of the `upload.../` folder, corresponding to your OpenCart version, over the site's folder structure.
 
 3\. In the admin panel, in the *Extensions ⇒ Modules* section, the "Attribut&co" module should appear. It needs to be installed (activated).
 
@@ -82,6 +82,6 @@ This module uses the `jQuery UI - v1.11.4+` plugins. OpenCart 1.5.x uses `jQuery
 
 During the module installation, the "category_attribute" table will be created in the database with the fields `` `category_id` INTEGER(11) NOT NULL`` and `` `attribute_id` INTEGER(11) NOT NULL.``
 
-Starting with version 2.0.1, an additional field `` `duty` TEXT NOT NULL`` is created in the standard OpenCart "attribute_description" table to store [Duty Templates](theory.html#theory-duty).
+Starting with version 2.0.1, an additional field `` `duty` TEXT NOT NULL`` is created in the standard OpenCart "attribute_description" table to store [Duty Templates](general-info/duty.md).
 
 During the module removal, all of the above tables and fields are not deleted. If this is critical for you, then delete them yourself, for example, using PhpMyAdmin.

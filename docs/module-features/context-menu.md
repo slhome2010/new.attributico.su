@@ -10,7 +10,7 @@ Actions that are allowed for the selected **Nodes** in the tree will be active i
 These actions can also be triggered using "hotkeys."
 
 The main manipulations with **Groups** and **Attributes** are available through Drag&Drop, the context menu, and hotkeys.  
-All actions are listed in the [summary table](using-summary).
+All actions are listed in the [summary table](/module-features/summary-table.md).
 
 |   | **Action** | **Hotkeys** | **Description** |
 |---|------------|------------|-----------------|
@@ -35,6 +35,6 @@ If the **"Settings"** option is selected from the [context menu](#using-context-
 |-----------|------------|
 | **Auto-collapse** | Enabled by default, meaning that when an element in the tree is expanded, the nearest related elements (on the same level) collapse. This reduces screen clutter. If multiple expanded elements need to be visible simultaneously, disable this option. This setting affects the [context menu](#using-context-menu) options **"Expand"** and **"Collapse"**. |
 | **Sorting Order** | Allows temporarily disabling sorting in a specific tree. If disabled, everything is sorted alphabetically. |
-| **Lazy Loading** | Quick control over the tree loading mode. If enabled, child nodes load on demand. If disabled, the entire tree loads fully. More details in the section [Node Loading](theory.html#theory-loading). |
+| **Lazy Loading** | Quick control over the tree loading mode. If enabled, child nodes load on demand. If disabled, the entire tree loads fully. More details in the section [Node Loading](/general-info/lazy-load.md). |
 | **Consider Hierarchy** | Works only in the category tree. Allows managing recursive subcategory selection. |
-| **Discrepancies** | Works only in the product tree. Allows managing [product selection](theory.html#theory-product). |
+| **Discrepancies** | Works only in the product tree. Allows managing [product selection](/general-info/product-filter.md). |

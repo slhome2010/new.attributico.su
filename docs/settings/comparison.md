@@ -67,7 +67,7 @@ will display only products with **Value** `20`.
 
 ## Impact on **Value** Deletion
 
-This setting also affects [value deletion](module-features/delete-value).
+This setting also affects [value deletion](/module-features/delete-value.md).
 
 Suppose there is a product or multiple products where the **Attribute** `Test Attribute 3.1` has a **Value** `test value 3.2.1`.
 
