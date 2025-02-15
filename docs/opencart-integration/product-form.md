@@ -2,34 +2,34 @@
 sidebar_position: 1
 ---
 
-# Интеграция с формой товара {#integro-product}
+# Integration with the Product Form {#integro-product}
 
-Интеграция модуля с движком OpenCart осуществляется с помощью файлов модификаторов `ocmod`. О назначении файлов в разделе [Структура архива](/technical-specifications/archive-content.md). Об установке модификаторов в разделе [Установка](/install.md).
+The module integrates with the OpenCart engine using `ocmod` modification files. The purpose of these files is described in the section [Archive Structure](/technical-specifications/archive-content.md). Instructions for installing modifications can be found in the section [Installation](/install.md).
 
 :::danger
-Все действия, описанные ниже, производимые с помощью этого модификатора, не вносят изменений в Базу Данных. Все изменения происходят только в браузере, на странице формы товара.
+All actions described below, performed using this modifier, do not make changes to the Database. All modifications occur only in the browser, on the product form page.
 
-Изменения в Базе Данных происходят только после того, как Вы нажмете кнопку `Сохранить`. Сохранение осуществляется штатными средствами OpenCart.
+Changes to the Database occur only after you click the `Save` button. Saving is carried out using OpenCart's standard mechanisms.
 
-Сохранить или не сохранить изменения принимаете решение только Вы.
+You are the one who decides whether to save the changes or not.
 :::
 
-Если модификация прошла корректно, то в сайдбаре административной панели в меню *Каталог ⇒ Характеристики* должен появиться пункт **Attribut&co**, а в форме товара должны появиться дополнительные кнопки управления.
+If the modification is applied correctly, the **Attribut&co** menu item should appear in the *Catalog ⇒ Attributes* section of the admin panel sidebar, and additional control buttons should appear in the product form.
 
 | ![attribute](/img/tutorial/servpanel.png) |
 |:--:|
 | *Service panel* |
 
-В правой стороне таблицы над текстовой областью для каждого языка должно появиться поле выбора **Значений** из списка.
+On the right side of the table, above the text area for each language, a **Value** selection field from a dropdown list should appear.
 
 | ![attribute](/img/tutorial/modified_textarea.png) |
 |:--:|
 | *Modified textarea* |
 
-Станут доступны следующие **операции**:
+The following **operations** will become available:
 
-- Вставка **Шаблонов** или **Значений** из выпадающего списка;
-- Вставка **Дежурных шаблонов** в момент выбора **Атрибута**;
-- Вставка **Атрибутов** с их **Дежурныыми шаблонами** в момент привязки или перепривязки товара к категории на вкладке **Связи**;
-- Вставка всех **Атрибутов категории** с их **Дежурныыми шаблонами** одной кнопкой;
-- Вставка всех **Атрибутов** выбранной из списка группы с их **Дежурныыми шаблонами**.
+- Inserting **Templates** or **Values** from a dropdown list;
+- Inserting **Default Templates** when selecting an **Attribute**;
+- Inserting **Attributes** with their **Default Templates** when linking or relinking a product to a category on the **Links** tab;
+- Inserting all **Category Attributes** with their **Default Templates** using a single button;
+- Inserting all **Attributes** from a selected group with their **Default Templates**.

@@ -2,10 +2,10 @@
 sidebar_position: 8
 ---
 
-# Интеграция с формой категории {#integro-category}
+# Integration with the Category Form {#integro-category}
 
-На сегодняшний день сохраняется интеграция на уровне формы категории. Там должна появиться вкладка **Атрибуты**.
+As of now, integration at the category form level is maintained. A new **Attributes** tab should appear there.
 
 :::warning
-Интеграция сделана только в информационных целях. Можно только просматривать привязанные к категории атрибуты. Все операции с атрибутами категорий делаются через модуль. Это сделано, чтобы не дублировать функционал самого модуля и минимизировать модификации движка OpenCart, что может привести к возрастанию вероятности ошибок, конфликтов с другими модификаторами.
+This integration is for informational purposes only. You can only view the attributes linked to a category. All operations with category attributes must be performed through the module. This approach prevents duplication of the module's functionality and minimizes modifications to the OpenCart engine, reducing the likelihood of errors and conflicts with other modifications.
 :::

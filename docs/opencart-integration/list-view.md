@@ -2,28 +2,28 @@
 sidebar_position: 2
 ---
 
-# Управление видом списка {#integro-list}
+# Managing List View {#integro-list}
 
-В зависимости от того, какая кнопка нажата, в поле выбора будут выводиться либо **Шаблоны**, либо **Значения**.
+Depending on which button is pressed, either **Templates** or **Values** will be displayed in the selection field.
 
 | ![attribute](/img/tutorial/list_view_switch.png) |
 |:--:|
 | *List View Switch* |
 
-Более подробно о **Шаблонах** и **Значениях** можно почитать в разделе [Значения и Шаблоны](/general-info/values-templates.md).
+More details about **Templates** and **Values** can be found in the section [Values and Templates](/general-info/values-templates.md).
 
-В данном случае **Значения** — это *разобранные* по [разделителю](/general-info/values-templates.md) **Шаблоны**.
+In this case, **Values** are *parsed* **Templates** based on a [delimiter](/general-info/values-templates.md).
 
-## Формирование списка
+## List Generation
 
-Для формирования списка скрипт делает запрос к Базе Данных для сбора всех **Значений**, связанных с данным **Атрибутом** из всех товаров, где присутствует этот **Атрибут**.
+To generate the list, the script queries the Database to collect all **Values** associated with a given **Attribute** from all products that contain this **Attribute**.
 
-Представим, что мы только начали работать с магазином. Создали несколько товаров, несколько **Атрибутов**. Зайдя в форму товара, на вкладку **Атрибуты**, мы увидим пустую страницу. Добавим **Атрибут**, и справа появится пустая текстовая область. Чтобы появился хотя бы один **Шаблон**, надо что-то вписать в эту область. Точнее, туда надо вписать  **Значение** или несколько **Значений** через разделитель. Например: `Дальность1/Дальность2/Дальность3`.
+Imagine that you have just started working with the store. You have created a few products and several **Attributes**. When you go to the **Attributes** tab in the product form, you will see an empty page. After adding an **Attribute**, an empty text area will appear on the right. To generate at least one **Template**, you need to enter something into this field—specifically, a **Value** or multiple **Values** separated by a delimiter. For example: `Range1/Range2/Range3`.
 
-После того как вы сохраните изменения и снова зайдете в форму товара, справа появится поле выбора, и можно будет выбрать только одну запись. По мере накопления товаров и заполнения текстовых полей список **Шаблонов** пополняется.
+Once you save the changes and re-enter the product form, a selection field will appear on the right, allowing you to choose a single entry. As more products are created and text fields are filled, the **Templates** list will expand.
 
-Если выбран вид списка `Значенния`, скрипт разделит **Шаблоны** по разделителю, а одиночные **Значения** просто добавит в список.
+If the list view mode is set to `Values`, the script will split **Templates** using the delimiter, while standalone **Values** will be added directly to the list.
 
 :::tip
-Новый шаблон всегда можно "накидать" из **Значений**. Разделитель будет подставляться автоматически. Недостающие в списке **Значения** можно добавить вручную, отредактировав текстовую область.
+A new template can always be "assembled" from **Values**. The delimiter will be inserted automatically. Missing **Values** can be added manually by editing the text area.
 :::

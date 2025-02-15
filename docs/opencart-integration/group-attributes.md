@@ -2,8 +2,8 @@
 sidebar_position: 7
 ---
 
-# Атрибуты группы {#integro-group}
+# Group Attributes {#integro-group}
 
-В версии 3.2.8 появилась возможность добавить все **Атрибуты группы**, выбранной из списка, непосредственно в форме товара.
+Starting from version 3.2.8, it is now possible to add all **Group Attributes** from a selected list directly within the product form.
 
-Из выпадающего списка можно выбрать **Группу**, **Атрибуты** которой вы хотите добавить в форму товара. Групп может быть много, поэтому работает автодополнение — поиск и фильтрация в списке по мере ввода символов названия группы.
+From the dropdown list, you can select the **Group** whose **Attributes** you want to add to the product form. Since there may be many groups, autocomplete is enabled—allowing search and filtering as you type the group's name.

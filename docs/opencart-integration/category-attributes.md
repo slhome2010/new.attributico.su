@@ -2,22 +2,22 @@
 sidebar_position: 6
 ---
 
-# Поддержка атрибутов категории {#integro-attribute}
+# Category Attribute Support {#integro-attribute}
 
-Интеграция со страницей товара позволяет немного автоматизировать процесс добавления **Атрибутов категории** в товар.
+Integration with the product page allows partial automation of the process of adding **Category Attributes** to a product.
 
-Добавление **Атрибутов категории** происходит в момент "привязки" товара к определенной категории или установки видимости товара в категории.
-Физически это происходит в момент, когда отмечается чекбокс напротив категории или изменяется Главная категория на вкладке **Связи** (Ocstore) или в момент выбора категории из списка (OpenCart).
+Adding **Category Attributes** occurs at the moment the product is "linked" to a specific category or when its visibility in the category is set.
+Physically, this happens when a checkbox next to a category is selected, or when the Main Category is changed on the **Links** tab (Ocstore), or when a category is selected from the list (OpenCart).
 
-Удаление **Атрибутов категории** происходит в момент "отвязки" товара от категории. Удаление необходимо подтвердить во всплывающем окне.
+Removing **Category Attributes** occurs when the product is "unlinked" from a category. The removal must be confirmed in a pop-up window.
 
-Добавление **Значений атрибутов категории** в товар происходит в соответствии со **`Способом`**, который установлен в настройках [Добавление значений атрибута в товар](/settings/product.md) или [**`Переопределенным способом`**](/opencart-integration/method-inserting.md).
+Adding **Category Attribute Values** to a product follows the **`Method`** set in the settings of [Adding Attribute Values to a Product](/settings/product.md) or the [**`Overridden Method`**](/opencart-integration/method-inserting.md).
 
-Появилась возможность добавить **Атрибуты** всех категорий, к которым "привязан" товар, одной кнопкой непосредственно в форме товара.
-Действие кнопки не зависит от настройки [Добавлять атрибут категории в товары](/settings/category.md).
+It is now possible to add **Attributes** from all categories to which the product is linked with a single button directly within the product form.
+The button's function is independent of the setting [Add category attributes to products](/settings/category.md).
 
 :::info
-Все, что описано выше по поводу добавления **Атрибутов категорий** и их **Значений**, касается одного, конкретного, редактируемого товара.
+Everything described above regarding the addition of **Category Attributes** and their **Values** applies to a single, specific, editable product.
 
-Если необходимо добавить **Атрибуты категории** во все товары какой-либо категории, используйте возможности модуля [Атрибуты категории](/module-features/category-attributes.md) или воспользуйтесь инструментом [Атрибуты категорий](tools.html#tools-category).
+If you need to add **Category Attributes** to all products in a certain category, use the module's [Category Attributes](/module-features/category-attributes.md) feature or the [Category Attributes Tool](tools.html#tools-category).
 :::

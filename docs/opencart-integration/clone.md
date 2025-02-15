@@ -2,18 +2,18 @@
 sidebar_position: 5
 ---
 
-# Клонирование {#integro-clone}
+# Cloning {#integro-clone}
 
-По многочисленным просьбам, добавлена возможность вставки одного и того же, выбранного из списка **Значения** или **Шаблона**, синхронно во все языки. Надеюсь, разница между синхронной вставкой **Дежурного шаблона**, описанной ранее, и вставкой одного и того же **Значения** очевидна.
+By popular request, the ability to insert the same selected **Value** or **Template** synchronously into all languages has been added. Hopefully, the difference between synchronous insertion of a **Default Template**, described earlier, and inserting the same **Value** is clear.
 
-Возможно, это полезно, когда не требуется перевод с одного языка на другой или для предварительных действий перед работой переводчика. Сделано исключительно на основе пожеланий пользователей модуля.
+This may be useful when translation from one language to another is not required or as a preliminary step before a translator begins working. This feature was implemented solely based on user requests.
 
-**Включается кнопкой:**
+**Enabled via the button:**
 
 | ![attribute](/img/tutorial/clone_button.png) |
 |:--:|
 | *Clone Button* |
 
 :::info
-Активированное состояние кнопки сохраняется на время текущей сессии.
+The activated state of the button is preserved for the duration of the current session.
 :::

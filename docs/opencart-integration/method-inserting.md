@@ -2,24 +2,23 @@
 sidebar_position: 4
 ---
 
-# Переопределение способа вставки значений {#integro-override}
+# Overriding the Value Insertion Method {#integro-override}
 
-До сих пор **Значения** или **Шаблоны** в товар вставлялись в соответствии со **`Способом`**, который установлен в настройках [Добавление значений атрибута в товар](/settings/product.md).
+Until now, **Values** or **Templates** were inserted into a product according to the **`Method`** set in the settings of [Adding Attribute Values to a Product](/settings/product.md).
 
-Чтобы каждый раз не менять базовые настройки, добавлена возможность оперативно *переопределить* **`Способ`** вставки значений.
+To avoid changing the default settings every time, an option has been added to *override* the **`Method`** of value insertion in real time.
 
-| **Способ вставки** |
+| **Insertion Method** |
 |:--|
-| `Очищать` |
-| `Не менять` |
-| `Заменять дежурным` |
-| `Только в пустые` |
+| `Clear` |
+| `Do not change` |
+| `Replace with default` |
+| `Only in empty fields` |
 
-**`Переопределенный Способ`** имеет приоритет, но действует только на время работы в форме товара. При перезагрузке страницы или загрузке другого товара он будет сброшен к [действующей настройке](/settings/product.md) модуля. Действие **`Переопределенного Способа`** распространяется на **все операции** с **Дежурными шаблонами** в форме товара.
+The **`Overridden Method`** takes priority but is only active while working within the product form. When the page is reloaded or another product is loaded, it resets to the [current module setting](/settings/product.md). The effect of the **`Overridden Method`** applies to **all operations** with **Default Templates** in the product form.
 
-Вставка **Дежурного шаблона** производится синхронно для всех языков в момент привязки к категории или выбора нового **Атрибута**.
+Insertion of the **Default Template** is performed synchronously for all languages at the moment of category assignment or when selecting a new **Attribute**.
 
-Если фильтр переключен в положение `Дежурные`, а переключатель управления видом списка находится в положении `Шаблоны`, то в списке будут только **Дежурные шаблоны**, и в момент выбора из списка произойдет синхронная подстановка в другие языки соответствующих им **Дежурных шаблонов**.
+If the filter is set to `Default`, and the list view switch is set to `Templates`, then only **Default Templates** will be displayed in the list. Selecting an item from the list will trigger the synchronous insertion of the corresponding **Default Templates** into other languages.
 
-Если вы хотите защитить ранее введенные **Значения**, выбирайте способ вставки `Только в пустые`.
-
+If you want to protect previously entered **Values**, choose the insertion method `Only in empty fields`.
