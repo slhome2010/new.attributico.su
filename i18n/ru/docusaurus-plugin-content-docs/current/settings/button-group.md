@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Группа кнопок
 
-| ![Группа кнопок](/img/tutorial/buttons_group.png) |
+| ![Группа кнопок](/img/tutorial/button_group_3_2_8.png) |
 |-|
 
 **Назначение кнопок слева направо.**

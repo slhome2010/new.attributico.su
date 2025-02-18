@@ -4,12 +4,11 @@ sidebar_position: 8
 
 # Button Group
 
-| ![Button Group](/img/tutorial/buttons_group.png) |
+| ![Button Group](/img/tutorial/button_group_3_2_8.png) |
 |-|
 
 **Button functions from left to right:**
 
-- Refresh module cache;
 - Check for updates;
 - Save settings without exiting the module;
 - Save settings and exit;
