@@ -8,7 +8,7 @@ sidebar_position: 3
 
 | ![attribute](/img/tutorial/value_filter.png) |
 |:--:|
-| *List View Switch* |
+| *List Filter* |
 
 | **Переключатель** | **Список** |
 |:--|:--|

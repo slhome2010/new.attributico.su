@@ -8,7 +8,7 @@ In stores with a large number of products, **Attributes**, and their **Values**,
 
 | ![attribute](/img/tutorial/value_filter.png) |
 |:--:|
-| *List View Switch* |
+| *List Filter* |
 
 | **Switch** | **List** |
 |:--|:--|

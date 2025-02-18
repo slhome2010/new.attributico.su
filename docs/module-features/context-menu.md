@@ -29,11 +29,11 @@ All actions are listed in the [summary table](/module-features/summary-table.md)
 
 ## Quick Settings Menu {#using-dialog}
 
-If the **"Settings"** option is selected from the [context menu](#using-context-menu), a quick management dialog for the tree will appear.
+If the **"Settings"** option is selected from the *context menu*, a quick management dialog for the tree will appear.
 
 | **Option** | **Purpose** |
 |-----------|------------|
-| **Auto-collapse** | Enabled by default, meaning that when an element in the tree is expanded, the nearest related elements (on the same level) collapse. This reduces screen clutter. If multiple expanded elements need to be visible simultaneously, disable this option. This setting affects the [context menu](#using-context-menu) options **"Expand"** and **"Collapse"**. |
+| **Auto-collapse** | Enabled by default, meaning that when an element in the tree is expanded, the nearest related elements (on the same level) collapse. This reduces screen clutter. If multiple expanded elements need to be visible simultaneously, disable this option. This setting affects the *context menu* options **"Expand"** and **"Collapse"**. |
 | **Sorting Order** | Allows temporarily disabling sorting in a specific tree. If disabled, everything is sorted alphabetically. |
 | **Lazy Loading** | Quick control over the tree loading mode. If enabled, child nodes load on demand. If disabled, the entire tree loads fully. More details in the section [Node Loading](/general-info/lazy-load.md). |
 | **Consider Hierarchy** | Works only in the category tree. Allows managing recursive subcategory selection. |
