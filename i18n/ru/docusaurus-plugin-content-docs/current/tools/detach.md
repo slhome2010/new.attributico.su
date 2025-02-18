@@ -13,6 +13,3 @@ sidebar_position: 7
 | ![Detach & deduplicate](/img/tutorial/tools_filter_group.jpg) |
 |:--:|
 | *Detach & deduplicate* |
-
-После выбора **Групп** нажмите кнопку 🟡 **Запустить задачу**.
-

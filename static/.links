@@ -2,10 +2,10 @@
 [разделителю](/general-info/values-templates.md)
 [Установка](/install.md)
 [Структура архива](/technical-specifications/archive-content.md)
-[Дежурного шаблона](general-info/duty.md)
-[Default Templates](general-info/duty.md)
+[Дежурного шаблона](/general-info/duty.md)
+[Default Templates](/general-info/duty.md)
 [Добавление значений атрибута в товар](/settings/product.md)
-[Добавление/удаление атрибутов категории](settings/category.md)
+[Добавление/удаление атрибутов категории](/settings/category.md)
 [переопределенным способом](/opencart-integration/method-inserting.md)
 [**deleted duty**](/module-features/duty-features.md)
 [**`Method`**](/settings/product.md)
@@ -18,3 +18,5 @@
 [context menu](/module-features/context-menu.md)
 [множественное выделение](/module-features/tree-features.md)
 [удаление значений](/module-features/delete-value.md)
+
+вкладках *`Дежурные шаблоны`*
