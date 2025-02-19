@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Introduction
 
+The Attribut&co module is an extension for managing product attributes (referred to as "characteristics" in Russian-language versions) in online stores running on the OpenCart platform.
+
 ## Module Mission
 
 To simplify working with attributes and their values. To display the structure of attributes more clearly. To apply more modern editing technologies. To replace routine manual labor with automated operations and move to batch processing of changes.
@@ -12,7 +14,7 @@ To simplify working with attributes and their values. To display the structure o
 
 Creating a set of attributes that are the same for a certain product category and linking this set to the category. It is assumed that products of the same category have, roughly, the same set of attributes. The structure of categories and subcategories in Opencart is quite well developed, so the link to the category was chosen, not to the manufacturer, for example. Bringing the structure of attributes and their values to the form:
 
-```
+```bash
 
 Product Category
     └── Attribute

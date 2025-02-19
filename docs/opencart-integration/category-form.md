@@ -2,8 +2,7 @@
 sidebar_position: 8
 ---
 
-# Integration with the Category Form {#integro-category}
-
+# Integration with the Category Form
 As of now, integration at the category form level is maintained. A new **Attributes** tab should appear there.
 
 :::warning

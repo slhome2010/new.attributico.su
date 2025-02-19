@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Overriding the Value Insertion Method {#integro-override}
+# Overriding the Value Insertion Method
 
 Until now, **Values** or **Templates** were inserted into a product according to the **`Method`** set in the settings of [Adding Attribute Values to a Product](/settings/product.md).
 

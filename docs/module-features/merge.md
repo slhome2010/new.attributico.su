@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Merging Attributes {#using-merge}  
+# Merging Attributes
 
 It is common to encounter situations where different attribute names represent the same concept. For example, **"Country of Origin"**, **"Manufacturer"**, and **"Country of Production"** are essentially the same attribute. In such cases, it makes sense to merge them under a single name, such as **"Country of Origin"**. These inconsistencies are called *implicit duplicates*. Automatic merging is not possible, so it must be done manually. However, the Drag-and-Drop technology significantly simplifies the process.  
 

@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Value Comparison {#settings-compare}
+# Value Comparison
 
 This setting defines the algorithm for updating **Values** after editing them. The mode names speak for themselves.
 

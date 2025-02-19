@@ -2,8 +2,7 @@
 sidebar_position: 11
 ---
 
-# Filter {#using-search}
-
+# Filter
 What do we do when errors are found in **Attributes**, or worse, in **Values**? Who is responsible, and what should be done?  
 One way is to catch products with errors using Mega Filter Pro, then go into each product and fix it manually.
 

@@ -9,10 +9,10 @@ sidebar_position: 1
 | **Attribute separator** | Used when a product can have multiple different values for the same attribute. More details in [Terms and Definitions](/general-info/values-templates.md). |
 | **Consider sorting order** | If enabled, trees are formed according to the user-defined order; otherwise, they are sorted alphabetically. |
 | **Smart scrolling** | Enables automatic scrolling of tree nodes within a fixed area. |
-| **Show empty values** | Show or hide empty attribute values. More details: [Remove Empty Values](tools.html#tools-empty). |
+| **Show empty values** | Show or hide empty attribute values. More details: [Remove Empty Values](/tools/empty-values.md). |
 | **Product in a new window** | Open the product page in a new window. |
 | **Lazy loading** | Child nodes are loaded on demand. More details: [Node Loading](/general-info/lazy-load.md). |
-| **Attribute tree cache** | Trees are loaded from cache instead of the database. More details: [Clear Tree Cache](tools.html#tools-cache). |
+| **Attribute tree cache** | Trees are loaded from cache instead of the database. More details: [Clear Tree Cache](/tools/cache.md). |
 | **All stores** | Includes categories from all stores in the list when enabled. |
 
 :::info

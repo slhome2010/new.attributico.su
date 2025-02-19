@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Category Attributes {#using-attribute-category}  
+# Category Attributes
 
 Using a set of attributes for bulk assignment to similar products is a key principle of this module. **Category Attributes** can be prepared in several ways.
 
@@ -18,7 +18,7 @@ For better understanding, we recommend watching the video with examples.
 
 ## Tool
 
-Another method is using the [Category Attributes](tools.html#tools-category) tool.
+Another method is using the [Category Attributes](/tools/category-attributes.md) tool.
 
 ## Adding Category Attributes to a Product  
 

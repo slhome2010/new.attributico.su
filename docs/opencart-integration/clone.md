@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Cloning {#integro-clone}
+# Cloning
 
 By popular request, the ability to insert the same selected **Value** or **Template** synchronously into all languages has been added. Hopefully, the difference between synchronous insertion of a **Default Template**, described earlier, and inserting the same **Value** is clear.
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Working with the Tree {#using-tree}
+# Working with the Tree
 
 To activate any tree element, click on it with the left mouse button.
 

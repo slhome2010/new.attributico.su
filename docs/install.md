@@ -23,28 +23,21 @@ For those who use the OCTEMPLATE template, do not perform this step. See the des
 After that, the *Catalog ⇒ Attributes ⇒ Attribut&co* menu item should appear.
 
 :::caution
-
 Clear the store and browser cache. The specifics of clearing the cache for version 3.x stores are described, for example, [here](https://shopiweb.ru/opencart-3/kesh-opencart-3-ochistka-kesha/).
-
 :::
 
 :::warning
-
 If you have previously used the module of earlier versions and installed modifiers directly into the `system` folder, you need to remove them from there.
 
 That is, in the `system` folder of your site, there should be no `attribut&co.2.x.ocmod.xml` and `autocomplete.ocmod.xml` files.
-
 :::
 
 :::info
-
 In some versions of the translation, instead of the word `Extensions`, the word `Addons` is present, and instead of `Modifiers`, it will be written `Addon Manager`.
 Often the word `Attributes` is translated as `Characteristics`.
-
 :::
 
 :::tip
-
 For those who use the OCTEMPLATE template!
 
 OCTEMPLATE uses a large number of modifiers, so installing the module modifier may not have enough ocmod resources.
@@ -52,14 +45,12 @@ OCTEMPLATE uses a large number of modifiers, so installing the module modifier m
 To overcome this, you need to perform the following steps:
 
 Do not perform step 5\. from the installation instructions. For stores below version 3.0.x, the `attribut&co.2.x.ocmod.xml` and `autocomplete.ocmod.xml` files need to be copied directly into the `system` folder of your site. For stores version 3.0.x, you need to extract the `install.xml` file from the `attributico.3.x.ocmod.zip` archive, rename it to `attributico.3.ocmod.xml` and then copy it to the `system` folder.
-
 :::
 
 :::note
 Possible problems OpenCart 1.5.x `(deprecated)`
 
 This module uses the `jQuery UI - v1.11.4+` plugins. OpenCart 1.5.x uses `jQuery UI - v1.8`. During the module installation, this version will be replaced unambiguously, otherwise Attribut&co will not work. In this regard, the functionality of some third-party modules may be temporarily disrupted.
-
 :::
 
 ## Update

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Inheritance {#settings-inherit}
+# Inheritance
 
 | Item | Description |  
 | --- | --- |  

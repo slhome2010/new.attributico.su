@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# Deleting Values {#using-value}
+# Deleting Values
 
-The operation can be performed via the [context menu](/module-features/context-menu.md) or using the `Del` key. You can delete a **Value**, **Template**, or multiple items at once (using [multi-select](#using-select)).
+The operation can be performed via the [context menu](/module-features/context-menu.md) or using the `Del` key. You can delete a **Value**, **Template**, or multiple items at once (using [multi-select](/module-features/tree-features.md)).
 
 This operation is actually quite complex. You need to fully understand the mechanism behind pressing a single key.
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 12
 ---
-# Summary Table {#using-summary}
+# Summary Table
 
 :::info  
 The abbreviation Drag&Drop refers to dragging nodes while holding the left mouse button ***  

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Duty Template
 
-## Creating a Duty Template {#using-duty}
+## Creating a Duty Template
 
 Creating a [**Duty Template**](/general-info/duty.md) is done on the *`Duty Templates`* tab or the *`Attributes`* tab if the **Duty Template** node is added in the tree settings.
 

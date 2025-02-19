@@ -2,8 +2,7 @@
 sidebar_position: 6
 ---
 
-# Drag-and-Drop Technology {#using-dnd}
-
+# Drag-and-Drop Technology
 This is one of the conveniences provided by Attribut&co. For example, how much easier it is to drag an *Attribute* from one *Group* to another with a mouse instead of opening forms, adding a new *Group* name in one place, and removing it in another.
 
 **Drag-and-Drop** technology capabilities:

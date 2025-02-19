@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Managing List View {#integro-list}
+# Managing List View
 
 Depending on which button is pressed, either **Templates** or **Values** will be displayed in the selection field.
 

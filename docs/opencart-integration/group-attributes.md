@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Group Attributes {#integro-group}
+# Group Attributes
 
 Starting from version 3.2.8, it is now possible to add all **Group Attributes** from a selected list directly within the product form.
 

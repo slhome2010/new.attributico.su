@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Value Filter {#integro-filter}
+# Value Filter
 
 In stores with a large number of products, **Attributes**, and their **Values**, the list linked to the selection field can become very long. This can cause inconvenience when filling out the table. The filter allows you to limit the list.
 

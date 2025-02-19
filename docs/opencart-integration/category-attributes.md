@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Category Attribute Support {#integro-attribute}
+# Category Attribute Support
 
 Integration with the product page allows partial automation of the process of adding **Category Attributes** to a product.
 
@@ -19,5 +19,5 @@ The button's function is independent of the setting [Add category attributes to 
 :::info
 Everything described above regarding the addition of **Category Attributes** and their **Values** applies to a single, specific, editable product.
 
-If you need to add **Category Attributes** to all products in a certain category, use the module's [Category Attributes](/module-features/category-attributes.md) feature or the [Category Attributes Tool](tools.html#tools-category).
+If you need to add **Category Attributes** to all products in a certain category, use the module's [Category Attributes](/module-features/category-attributes.md) feature or the [Category Attributes Tool](/tools/category-attributes.md).
 :::

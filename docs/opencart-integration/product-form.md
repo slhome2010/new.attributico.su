@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Integration with the Product Form {#integro-product}
+# Integration with the Product Form
 
 The module integrates with the OpenCart engine using `ocmod` modification files. The purpose of these files is described in the section [Archive Structure](/technical-specifications/archive-content.md). Instructions for installing modifications can be found in the section [Installation](/install.md).
 

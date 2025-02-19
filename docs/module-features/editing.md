@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Editing {#using-edit}
+# Editing
 
 Editing mode is enabled on a selected **Node** via `Shift + Click`, `F2`, or through the [context menu](/module-features/context-menu.md).
 

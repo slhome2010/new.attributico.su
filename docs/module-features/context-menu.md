@@ -2,8 +2,7 @@
 sidebar_position: 2
 ---
 
-# Context Menu {#using-context-menu}
-
+# Context Menu
 The context menu is opened by right-clicking on a **Node**.
 
 Actions that are allowed for the selected **Nodes** in the tree will be active in the context menu.  
