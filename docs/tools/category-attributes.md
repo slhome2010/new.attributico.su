@@ -2,41 +2,39 @@
 sidebar_position: 9
 ---
 
-# Атрибуты категорий {#tools-category}
+# Category Attributes
 
-Этот инструмент будет полезен тем, кто устанавливает модуль на рабочий магазин, особенно с большим количеством категорий и товаров, а также для тех, кто занимается парсингом. Формирование **Атрибутов категорий** вручную является трудоемким процессом, а при парсинге иногда неизвестно, с какими **Атрибутами** придет товар.
+This tool is especially useful for those installing the module on an existing store, particularly one with a large number of categories and products, as well as for those working with data parsing. Manually creating **Category Attributes** is a time-consuming process, and when parsing, it's often unclear which **Attributes** a product will include.
 
-| ![Category attributes](/img/tutorial/tools_filter_category.jpg) |
+| ![Category attributes](/img/tutorial/tools_category_settings.png) |
 |:--:|
 | *Create category attributes* |
 
-Обязательно отметьте категории в дереве фильтра. Инструмент выберет все **Атрибуты** указанной вами категории из всех товаров, принадлежащих этой категории, и сгруппирует их в виде **Атрибутов категории**.
+Be sure to select categories in the filter tree. The tool will collect all **Attributes** from the products belonging to the selected category and group them into **Category Attributes**.
 
 :::warning
-Если товар принадлежит сразу нескольким категориям, то **Атрибуты** всех этих категорий просуммируются для каждой из них. Приведите в порядок структуру категорий или не забудьте удалить ненужные атрибуты из категорий после выполнения задачи.
+If a product belongs to multiple categories, the **Attributes** of all these categories will be combined for each of them. Make sure your category structure is well-organized, or remember to remove any unnecessary attributes after the task is completed.
 :::
 
-Если отмечен пункт **Расставить атрибуты категории в товары**, то будет выполнена также задача добавления **Атрибутов** и их **Значений** во все товары выбранной категории.
+If the **Assign category attributes to products** option is enabled, the tool will also add **Attributes** and their **Values** to all products in the selected category.
 
-Расстановка или добавление **Атрибутов** в товары будет производиться в соответствии с настройками [Добавление/удаление атрибутов категории](settings/category.md).
+The assignment or addition of **Attributes** to products follows the settings in [Adding/Removing Category Attributes](/settings/category.md).
 
-Добавление **Значений атрибутов категории** в товар происходит в соответствии со способом, который установлен в настройках [Добавление значений атрибута в товар](/settings/product.md).
+Adding **Category Attribute Values** to products follows the [*`Method`*](/settings/product.md) specified in [Adding Attribute Values to Products](/settings/product.md).
 
-:::info
-Возможно, вы уже создали **Атрибуты категории**, например, с помощью [технологии Drag-and-Drop](/module-features/category-attributes.md). Если вам требуется только добавить ранее созданные **Атрибуты категорий**, то пункт **Сформировать набор атрибутов для категории** надо отключить!
+:::tip
+You may have already created **Category Attributes**, for example, using the [Drag-and-Drop method](/module-features/category-attributes.md), and only need to add them to products. In this case, disable the **Generate a set of attributes for the category** option and [run the task](/tools/settings-and-launch.md) with only the **Assign category attributes to products** option enabled!
 :::
 
-Добавление [Дежурных шаблонов](general-info/duty.md) происходит только если сами **Дежурные шаблоны** заполнены информацией. Поэтому, если вам необходимо добавить **Атрибуты** даже с пустыми **Значениями**, выберите пункт `Оставлять`.
+Adding [Duty Templates](/general-info/duty.md) only occurs if the **Duty Templates** themselves contain information. If you need to add **Attributes** even with empty **Values**, choose the [*`Method`*](/settings/product.md) `Keep`.
 
 :::danger
-Для больших магазинов.
-Не отмечайте сразу много категорий. Есть вероятность, что на хостинге есть ограничения на время выполнения скрипта. Высока вероятность прерывания сервером операции по тайм-ауту.
+For large stores:  
+Do not select too many categories at once. Hosting environments may have execution time limits, increasing the risk of operation failure due to timeouts.
 :::
 
-При успешном выполнении задачи должно появиться соответствующее сообщение:
+Once the task is completed, a confirmation message will be displayed, for example:
 
-> ✅ Успешно! Операция завершена. Сформировано атрибутов категории: 12. Добавлено атрибутов в товары: 758.
+✅ Success! Operation completed. Category attributes generated: 12. Attributes added to products: 758.
 
-Некоторые подробности работы инструмента раскрыты в разделе FAQ — [Какой алгоритм действий после парсинга?](faq.html#theory-duty).
-
-
+For more details on how this tool works, see the FAQ section — [What steps should be taken after parsing?](/faq/after-parsing.md).

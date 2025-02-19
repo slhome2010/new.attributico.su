@@ -2,26 +2,25 @@
 sidebar_position: 2
 ---
 
-# Блок фильтра {#tools-filter}
+# Filter Block
 
-В этой и последующих версиях фильтр вынесен в отдельный общий для всех инструментов блок.
+Starting from this and future versions, the filter has been moved to a separate block shared across all tools.
 
 | ![Tools filter](/img/tutorial/Tools_filter.jpg) |
 |:--:|
 | *Tools filter open* |
 
-Для некоторых инструментов фильтр является обязательным, для некоторых необязательным, а для некоторых не нужен вообще. В таблице ниже приведено соответствие фильтра и поведение инструмента в случае его применения.
+For some tools, the filter is mandatory, for others optional, and for some, it is not needed at all. The table below shows how each tool interacts with the filter and its behavior when applied.
 
-| **Инструмент** | **Фильтр** | **Дерево** | **Поведение** |
+| **Tool** | **Filter** | **Tree** | **Behavior** |
 |:--|:--|:--|:--|
-| Удалить пустые значения | Не нужен |  |  |
-| Удалить ошибочные ссылки | Не нужен |  |  |
-| Дефрагментация атрибутов | Не нужен |  |  |
-| Сортировка атрибутов | Не нужен |  |  |
-| Удалить не связанные с товаром | Обязательно | Группы атрибутов | Если ничего не отмечено, задача не выполняется |
-| Объединить дубли | Обязательно | Группы атрибутов | Если ничего не отмечено, задача не выполняется |
-| Атрибуты категорий | Обязательно | Категории | Если ничего не отмечено, задача не выполняется |
-| Клонировать язык | Не нужен |  |  |
-| Замена разделителя | Не обязательно | Группы атрибутов + Категории | Если ничего не отмечено, выполняется поиск и замена по всей БД |
-| Смена регистра | Не обязательно | Группы атрибутов + Категории | Если ничего не отмечено, выполняется поиск и замена по всей БД |
-
+| Remove Empty Values | Not needed |  |  |
+| Remove Broken Links | Not needed |  |  |
+| Attribute Defragmentation | Not needed |  |  |
+| Attribute Sorting | Not needed |  |  |
+| Remove Unlinked Attributes | Required | Attribute Groups | If nothing is selected, the task will not run |
+| Merge Duplicates | Required | Attribute Groups | If nothing is selected, the task will not run |
+| Category Attributes | Required | Categories | If nothing is selected, the task will not run |
+| Clone Language | Not needed |  |  |
+| Separator Replacement | Optional | Attribute Groups + Categories | If nothing is selected, search and replacement will run across the entire database |
+| Case Conversion | Optional | Attribute Groups + Categories | If nothing is selected, search and replacement will run across the entire database |

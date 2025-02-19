@@ -2,26 +2,12 @@
 sidebar_position: 4
 ---
 
-# Удалить ошибочные ссылки {#tools-scavengery}
+# Remove Broken Links
 
-Некоторые таблицы БД, которые создает модуль, не являются "родными" для OpenCart. Соответственно, стандартные средства движка не позволяют корректно изменять данные в этих таблицах. Рекомендацию — работать только через **Attribut&co** — некоторые пользователи игнорируют. Ручное удаление приводит к появлению ссылок на несуществующие атрибуты. Вместо дерева будет отображаться ошибка.
+Some database tables created by the module are not "native" to OpenCart. The platform's standard tools do not properly modify data in these tables. Although users are advised to manage attributes exclusively through **Attribut&co**, some ignore this recommendation. Manual deletions can result in links to non-existent attributes, causing errors instead of displaying the attribute tree.
 
-```
+```javascript
 Load error! (SyntaxError: Unexpected token < in JSON at position 0)...
 ```
 
-Чтобы проверить корректность таблиц БД, можно применять данный инструмент, который просто удалит ссылки на несуществующие атрибуты. Для запуска достаточно нажать на кнопку <button type="button" data-toggle="tooltip" title="Запустить задачу" class="btn btn-warning"><i class="fa fa-play"></i></button>.  
-
-Должно появиться сообщение с рекомендацией не покидать данную страницу.  
-
-:::warning
-**Внимание!**  
-Оставайтесь на этой странице до завершения операции.  
-:::
-
-После выполнения задачи должно появиться соответсвующее сообщение.  
-
-:::success
-**Успешно!**  
-Операция завершена. Удалено ошибочных ссылок: 0  
-:::
+To check database integrity, you can use this tool, which simply removes links to non-existent attributes—essentially cleaning up database clutter.

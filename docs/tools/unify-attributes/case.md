@@ -2,28 +2,28 @@
 sidebar_position: 14
 ---
 
-# Смена регистра
+# Case Conversion
 
-Инструмент позволяет в пакетном режиме сменить регистр первой буквы в названии **Группы**, **Атрибута**, **Значения** или **Дежурного шаблона**.
+This tool allows you to batch-convert the case of the first letter in **Groups**, **Attributes**, **Values**, or **Duty Templates**.
 
-В случае множественного **Значения** или **Дежурного шаблона** меняется регистр первой буквы каждого слова, записанного через разделитель. Т.е. инструмент _умеет_ разбирать конструкции типа:  
-`Китай/россия/бразилия/Казахстан`.
+For multiple **Values** or **Duty Templates**, the tool changes the case of the first letter in each word separated by a delimiter. This means it can handle structures like:  
+`China/russia/brazil/Kazakhstan`.
 
-Для данного инструмента использование фильтра не является обязательным. Если ничего не будет отмечено, то поиск и замена будет производиться по всей БД. Использование фильтра позволит сузить поиск, а значит сократить время работы инструмента или проделать эту задачу поэтапно, что важно для больших магазинов. 
+Using a filter is optional. If no filter is applied, the tool will search and replace across the entire database. However, applying a filter helps narrow the search, reducing processing time or allowing you to execute the task in stages—useful for large stores.
 
 :::info
-Фильтр по категориям работает только для **Значений**.
+Category filtering is available only for **Values**.
 :::
 
-Чтобы активизировать работу инструмента для **Групп** или других узлов, отметьте чекбокс напротив, после чего станет доступным выбор регистра - с большой буквы или с маленькой.
+To enable the tool for **Groups** or other nodes, select the corresponding checkbox. Once activated, you can choose between uppercase or lowercase conversion.
 
 | ![Case](/img/tutorial/case_change.png) |
 |:--:|
-| *Upper or lower case changing* |
+| *Change first-letter case to uppercase or lowercase* |
 
 :::warning
-В процессе применения инструмента к **Значениям** или **Дежурным шаблонам** будут удалены лишние пробелы вокруг разделителя.
+When applied to **Values** or **Duty Templates**, the tool will automatically remove extra spaces around delimiters.
 
-Например:  
-`США/ россия /китай/ Бразилия` → `США/Россия/Китай/Бразилия`
+For example:  
+`USA/ russia /china/ Brazil` → `USA/Russia/China/Brazil`
 :::

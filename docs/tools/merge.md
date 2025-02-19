@@ -2,20 +2,14 @@
 sidebar_position: 8
 ---
 
-# Объединить дубли {#tools-duplicate}
+# Merge Duplicates
 
-Причины появления дублей **Атрибутов** (как было в описании для предыдущего инструмента) появляются в результате парсинга, автоматической загрузки прайс-листов или ошибок контент-менеджеров. Этот инструмент позволяет объединять дубли без потери связей с товаром и категорией. Использование фильтра обязательно. Действие производятся для отмеченных **Групп**, как и в предыдущем случае.
+Duplicate **Attributes** can appear due to parsing, automated price list imports, or content manager errors. This tool allows you to merge duplicates without losing links to products or categories. A filter must be applied. The action will be performed for the **Groups** selected in the filter block.
 
-Как и в предыдущих случаях, для запуска достаточно нажать на кнопку <button type="button" data-toggle="tooltip" title="Запустить задачу" class="btn btn-warning"><i class="fa fa-play"></i></button>.  
+Do not confuse this tool with [Attribute Merging](/module-features/merge.md).
 
-Должно появиться сообщение с рекомендацией не покидать данную страницу.  
+:::info
+Merging can be performed for any **Attributes**, including _explicit_ or _implicit_ duplicates that you define manually.
 
-<div class="alert alert-warning" role="alert"> Внимание! Оставайтесь на этой странице до завершения операции. </div>
-
-После выполнения задачи должно появиться соответсвующее сообщение.  
-
-<div class="alert alert-success alert-dismissible" role="alert"> Успешно! Операция завершена. Удалено атрибутов: 0 </div>  
-
-или  
-
-<div class="alert alert-success alert-dismissible" role="alert"> Успешно! Операция завершена. Обработано дублей: 0 </div>
+This tool follows the same merging rules but only applies to _explicit_ duplicates, meaning those that are 100% identical.
+:::

@@ -2,17 +2,14 @@
 sidebar_position: 7
 ---
 
-# Удалить не связанные с товаром {#tools-detach}
+# Remove Unlinked Attributes
 
-В результате парсинга, автоматической загрузки прайс-листов и других операций, часто появляются дубли **Атрибутов** или **Атрибуты**, которые не принадлежат ни одному товару.
+As a result of parsing, automated price list imports, and other operations, duplicate **Attributes** or **Attributes** that are not linked to any product often appear.
 
-Используйте этот инструмент осознанно, так как удаленные атрибуты могут понадобиться в дальнейшем. Сами по себе не связанные с товаром атрибуты не оказывают отрицательного влияния на работу магазина, но могут незначительно замедлять поиск. Если вы стремитесь к порядку в **Атрибутах**, этот инструмент поможет.
+Use this tool carefully, as deleted attributes may be needed later. Unlinked attributes do not negatively impact store performance, but they can slightly slow down search operations. If you want to keep your **Attributes** organized, this tool can help.
 
-Обязательно воспользуйтесь фильтром, иначе инструмент не сработает. Выберите **Группы**, отметив соответствующий чекбокс в дереве. Можно выбрать сразу все, отметив самый верхний чекбокс.
+A filter must be applied for the tool to work. Select **Groups** by checking the corresponding box in the tree. You can select all at once by checking the topmost box.
 
-| ![Detach & deduplicate](/img/tutorial/tools_filter_group.jpg) |
+| ![Detach](/img/tutorial/tools_filter_group.jpg) |
 |:--:|
-| *Detach & deduplicate* |
-
-После выбора **Групп** нажмите кнопку 🟡 **Запустить задачу**.
-
+| *Remove unlinked attributes* |

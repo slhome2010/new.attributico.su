@@ -2,13 +2,14 @@
 sidebar_position: 10
 ---
 
-# Очистить кэш деревьев {#tools-cache}
+# Clear Tree Cache
 
-В процессе эксплуатации модуля выяснилось, что на магазинах с большим количеством **Атрибутов** деревья загружаются медленно. Поскольку синхронизация данных заставляет перезагружать деревья при любом изменении данных, работать становится трудно. Для ускорения загрузки деревьев, начиная с версии 2.1.7, предусмотрен кэш. Деревья кэшируются целиком. Если настройки дерева совпадают с тем, что уже есть в кэше, то данные будут загружаться из кэш-файла.
+During module operation, it was discovered that on stores with a large number of **Attributes**, tree structures load slowly. Since data synchronization forces trees to reload whenever any data changes, performance can suffer. To speed up tree loading, caching is used. Each tree is cached in a separate file. If the tree settings match the cached version and no data changes have occurred, the tree will be loaded from the cache file.
 
-Очистка подразумевает удаление из кэша всех файлов, соответствующих деревьям, т.е. файлов с именем `cache.attributico...`. Другие файлы кэша не затрагиваются.
+Clearing the cache removes all files related to tree structures, specifically files named `cache.attributico...`. Other cache files remain unaffected.
 
 :::warning
- Есть нюанс!
-Если во время использования этого инструмента кэш не отключен в настройках на вкладке **Общие**, то произойдет не очистка, а перезагрузка кэша. Таким образом, если вы хотите действительно удалить кэш, то отключите этот чекбокс в настройках, не забывая эти настройки сохранить.
+If caching is not disabled in the settings under the [*`General`*](/settings/main-settings.md) tab when using this tool, the cache will be reloaded instead of being cleared.  
+
+To completely remove the cache, uncheck this option in the settings and make sure to save the changes.
 :::

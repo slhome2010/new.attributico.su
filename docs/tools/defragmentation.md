@@ -2,11 +2,11 @@
 sidebar_position: 5
 ---
 
-# Дефрагментация атрибутов и групп {#tools-defrag}
+# Attribute and Group Defragmentation
 
-В процессе работы приходится удалять и добавлять **Атрибуты** и **Группы**. Особенность работы БД такова, что в таблицу записи добавляются по правилу автоинкремента. В результате могут появляться большие "разрывы" в нумерации `attribute_group_id`.
+During operation, **Attributes** and **Groups** are frequently added and removed. Due to the way databases work, records in a table are inserted following an auto-increment rule. As a result, large gaps can appear in the `attribute_group_id` numbering.
 
-## Пример таблицы до дефрагментации
+## Example Table Before Defragmentation
 
 | `attribute_group_id` | `sort_order` |
 |----------------------|-------------|
@@ -20,11 +20,11 @@ sidebar_position: 5
 | 364 | 6  |
 | 366 | 8  |
 
-Нет ничего страшного в том, что между соседними записями есть разрывы. Однако проблема возникает, если отсутствует `attribute_group_id = 1`, так как модули автоматической загрузки прайс-листов и модули парсинга используют именно этот идентификатор для размещения всех **Атрибутов**.
+Gaps between records are generally not an issue. However, a problem arises if `attribute_group_id = 1` is missing, as price list import modules and parsing tools rely on this identifier to store all **Attributes**.
 
-Хорошая новость — данный инструмент восстанавливает `attribute_group_id = 1` без ущерба целостности данных, упорядочивая таблицу.
+The good news is that this tool restores `attribute_group_id = 1` while preserving data integrity and reorganizing the table.
 
-## Пример таблицы после дефрагментации
+## Example Table After Defragmentation
 
 | `attribute_group_id` | `sort_order` |
 |----------------------|-------------|
@@ -38,29 +38,24 @@ sidebar_position: 5
 | 8  | 6  |
 | 9  | 8  |
 
-В дальнейшем **Группу**, у которой `attribute_group_id = 1`, будем называть **Группа парсинга**.
+From this point forward, the **Group** with `attribute_group_id = 1` will be referred to as the **Parsing Group**.
 
-Процесс дефрагментации может занять длительное время, особенно для магазинов с большим количеством атрибутов или товаров. При недостатке ресурсов на хостинге возможен тайм-аут. Для получения **Группы парсинга** достаточно дефрагментировать только **Группы**. Начиная с версии 2.1.7, есть возможность раздельной дефрагментации **Групп** или **Атрибутов**.
+Defragmentation can take a significant amount of time, especially in stores with a large number of attributes or products. If hosting resources are insufficient, timeouts may occur. The tool allows separate defragmentation of **Groups** and **Attributes**.
 
-| ![Defragmentation](/img/tutorial/defrag.jpg) |
+| ![Defragmentation](/img/tutorial/defrag.png) |
 |:--:|
 | *Defragmentation tools settings* |
 
-После того как отметили **Группы** или **Атрибуты**, необходимо нажать кнопку 🟡 **Запустить задачу**.
+:::info
+To create a **Parsing Group**, you only need to defragment **Groups**.
+:::
 
-Во время выполнения задачи появится предупреждение:
+After defragmentation, the **Parsing Group** should appear in all trees, marked with the 🏠 icon. If the icon does not appear, try clearing your browser cache.
 
-> ⚠ Внимание! Оставайтесь на этой странице до завершения операции.
+:::tip
+If the **Parsing Group** is already in use and contains **Attributes**, but needs to be cleared, you can create a new group with the same name and use the Drag-and-Drop method to transfer all attributes there. Then, rename the old **Parsing Group**.
+:::
 
-После успешного завершения задачи:
+## Defragmentation and Parsing Group Setup
 
-> ✅ Успешно! Операция завершена. Упорядочено групп: 9. Упорядочено атрибутов: 31.
-
-После выполнения дефрагментации во всех деревьях должна появиться **Группа парсинга**, которая обозначается иконкой 🏠. Если иконка не появилась, попробуйте очистить кэш браузера.
-
-Если **Группа парсинга** уже занята и содержит **Атрибуты**, но требуется очистка, можно создать новую одноименную группу и с помощью технологии Drag-and-Drop перенести туда все атрибуты, а затем переименовать старую **Группу парсинга**.
-
-## Дефрагментация и подготовка группы парсинга
-
-![YouTube](https://www.youtube.com/embed/8OcO_4L7iBU)
-
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/8OcO_4L7iBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -2,22 +2,22 @@
 sidebar_position: 12
 ---
 
-# Клонирование языка
+# Language Cloning
 
-Пока первая функция в стандартизации. Может быть полезна при подключении нового языка.
+This unification tool can be useful when adding a new language.
 
-Можно отдельно клонировать **Группы**, **Атрибуты** или **Значения**.
+You can clone **Groups**, **Attributes**, or **Values** separately.
 
-- **Режим `Вставлять`** — полезен, если часть атрибутов уже переведена, но для некоторых элементов в базе данных вообще отсутствуют записи. Недостающие записи будут вставлены и заполнены данными языка источника. Имеющиеся записи не будут затронуты, даже если имеют пустые поля.
-- **Режим `Перезаписывать`** — недостающие записи будут вставлены и заполнены данными языка источника. Имеющиеся записи будут перезаписаны.
-- **Режим `Перезаписывать только пустые`** — защитит заполненные поля, но это тяжелый режим с дополнительными запросами к базе данных. На больших магазинах возможны тайм-ауты и зависания системы.
+- **`Insert` mode** — useful if some attributes have already been translated, but certain database entries are missing entirely. Missing records will be inserted and filled with data from the source language. Existing records will remain unchanged, even if they contain empty fields.
+- **`Overwrite` mode** — missing records will be inserted and filled with data from the source language. Existing records will be overwritten.
+- **`Overwrite only empty` mode** — protects filled fields, but requires additional database queries, making it a heavier operation. On large stores, this may lead to timeouts or system freezes.
 
-**Дежурные шаблоны** клонируются одновременно с атрибутами. Отмечать чекбокс "Дежурные" нужно только в случае, если требуется отдельно клонировать именно **Дежурные шаблоны**. Оптимальный режим — `Перезаписывать только пустые`.
+**Duty Templates** are cloned together with attributes. You only need to check the "Duty" box if you specifically want to clone **Duty Templates** separately. The optimal mode is `Overwrite only empty`.
 
 | ![Clone](/img/tutorial/clone.png) |
 |:--:|
-| *Clone attribute between languages* |
+| *Clone attributes between languages* |
 
-После выполнения задачи должно появиться соответствующее сообщение:
+Once the task is complete, a confirmation message should appear:
 
-> ✅ Успешно! Операция завершена. Клонировано групп: 0, Клонировано атрибутов: 20, Клонировано значений: 624, Клонировано дежурных: 0.
+> ✅ Success! Operation completed. Cloned groups: 0, Cloned attributes: 20, Cloned values: 624, Cloned duty templates: 0.

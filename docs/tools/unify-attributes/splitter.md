@@ -2,25 +2,25 @@
 sidebar_position: 13
 ---
 
-# Замена разделителя
+# Separator Replacement
 
-Если в вашем магазине присутствуют товары с множественными **Значениями** атрибутов (в нашей терминологии мы называем их [**Шаблоны**](/general-info/values-templates.md)), либо вам приходится парсить или обрабатывать прайс-листы от разных поставщиков, то вероятность получить **Значения** с разными разделителями очень высока.
+If your store contains products with multiple **Values** for attributes (which we refer to as [**Templates**](/general-info/values-templates.md)), or if you need to parse and process price lists from various suppliers, the chances of encountering **Values** with different separators are quite high.
 
-Данный инструмент позволяет быстро заменить "неправильные" разделители на "правильный". Разделители, которые надо заменить, можно задать списком. Например: `\;:_`  
-Если в список попадут недопустимые разделители, они будут отфильтрованы.
+This tool allows you to quickly replace "incorrect" separators with the "correct" one. You can specify the separators to be replaced as a list. For example: `\;:_`  
+Any invalid separators in the list will be filtered out.
 
 :::danger
-К недопустимым разделителям относятся: буквы, цифры, пробелы, кавычки, а также `[]-`.  
+Invalid separators include letters, numbers, spaces, quotation marks, as well as `[]-`.  
 
-Заменять точку и запятую надо с осторожностью, чтобы не повредить **Значения** типа `0,01-0,05/0,1-0,5` или `USB2.0/USB3.2`.  
+Use caution when replacing periods and commas to avoid corrupting **Values** such as `0,01-0,05/0,1-0,5` or `USB2.0/USB3.2`.  
 :::
 
-Разделитель, которым предполагается заменить, также должен быть из списка допустимых. Если введете несколько разделителей, то будет взят только первый допустимый.
+The replacement separator must also be from the list of allowed characters. If you enter multiple separators, only the first valid one will be used.
 
-Для данного инструмента использование фильтра не является обязательным. Если ничего не будет отмечено, то поиск и замена будет производиться по всей БД. Использование фильтра позволит сузить поиск, а значит сократить время работы инструмента или проделать эту задачу поэтапно, что важно для больших магазинов.
+Using a filter is optional. If no filter is applied, search and replacement will be performed across the entire database. Applying a filter helps narrow the search, reducing processing time or allowing you to execute the task in stages—useful for large stores.
 
 :::warning
-В процессе работы инструмента будут удалены лишние пробелы вокруг разделителя.  
+Extra spaces around the separator will be automatically removed.  
 
-Например: `AVI ; DivX; FLV ; MKV; MOV; MP4; MPEG4 ; MPG;VOB` будет заменено на `AVI/DivX/FLV/MKV/MOV/MP4/MPEG4/MPG/VOB`.  
+For example, `AVI ; DivX; FLV ; MKV; MOV; MP4; MPEG4 ; MPG;VOB` will be converted to `AVI/DivX/FLV/MKV/MOV/MP4/MPEG4/MPG/VOB`.  
 :::
