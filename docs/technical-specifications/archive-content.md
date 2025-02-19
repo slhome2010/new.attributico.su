@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Archive Structure
 
-```markdown
+```bash
 
 Attributico_v3.2.8/
 │── PHP5.4-5.6/
@@ -70,4 +70,6 @@ The provided archive structure corresponds to the module version > 3.0.1. The fo
 
 If the version of your store engine, for example, is 2.1.0.2, and the PHP version is 5.5, then you need the `upload_v2.1.x-2.2/` folder from the PHP5.4-5.6 folder, if the store version is 2.3.0.2, then the `upload_v2.3.x-3.x/` folder.
 
+:::tip
 The `PHP7.2/` folder is suitable for PHP versions 7.2 - 7.4.
+:::
