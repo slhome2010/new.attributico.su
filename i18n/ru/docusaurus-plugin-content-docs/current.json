@@ -54,5 +54,29 @@
   "sidebar.tutorialSidebar.category.Module features.link.generated-index.description": {
     "message": "Возможности. Примеры.",
     "description": "The generated-index page description for category Module features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Integration with OpenCart": {
+    "message": "Интеграция с OpenCart",
+    "description": "The label for category Integration with OpenCart in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Integration with OpenCart.link.generated-index.description": {
+    "message": "Модификация формы товара. Дополнительные кнопки, списки и настройки.",
+    "description": "The generated-index page description for category Integration with OpenCart in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tools": {
+    "message": "Инструменты",
+    "description": "The label for category Tools in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tools.link.generated-index.description": {
+    "message": "Инструменты для пакетной обработки атрибутов и значений.",
+    "description": "The generated-index page description for category Tools in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Unify attributes": {
+    "message": "Унификация атрибутов",
+    "description": "The label for category Unify attributes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Unify attributes.link.generated-index.description": {
+    "message": "Приведение атрибутов к единой системе или форме.",
+    "description": "The generated-index page description for category Unify attributes in sidebar tutorialSidebar"
   }
 }
