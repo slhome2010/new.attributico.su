@@ -33,3 +33,7 @@ The following **operations** will become available:
 - Inserting **Attributes** with their **Default Templates** when linking or relinking a product to a category on the **Links** tab;
 - Inserting all **Category Attributes** with their **Default Templates** using a single button;
 - Inserting all **Attributes** from a selected group with their **Default Templates**.
+
+## Video Examples
+
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/kN91LkmpN_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -33,3 +33,7 @@ sidebar_position: 1
 - Вставка **Атрибутов** с их **Дежурныыми шаблонами** в момент привязки или перепривязки товара к категории на вкладке **Связи**;
 - Вставка всех **Атрибутов категории** с их **Дежурныыми шаблонами** одной кнопкой;
 - Вставка всех **Атрибутов** выбранной из списка группы с их **Дежурныыми шаблонами**.
+
+## Видео Примеры
+
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/kN91LkmpN_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
