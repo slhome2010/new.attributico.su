@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Удалить не связанные с товаром {#tools-detach}
+# Удалить не связанные с товаром
 
 <!-- Remove unrelated attributes. -->
 
