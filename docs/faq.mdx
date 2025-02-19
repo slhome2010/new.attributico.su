@@ -1,0 +1,108 @@
+---
+sidebar_position: 19
+---
+
+# FAQ
+
+These questions are frequently asked.
+
+<details>
+  <summary>Reinstalled the license. Followed the instructions. Still free version...!</summary>
+
+Possible reasons:
+
+- Incorrect domain name. `domain.ru` and `www.domain.ru` are different domains.
+- Downloaded an old license archive instead of a new one.
+- License file was overwritten incorrectly (e.g., renamed a directory with uppercase letters).
+- The license must be downloaded from the platform where the module was purchased. Resources are not updated synchronously.
+
+</details>
+
+<details>
+  <summary>I'm interested in purchasing the module. Will it conflict with DreamFilter?</summary>
+
+The module does not conflict with **DreamFilter**, **megaFilter**, or any other filter. It does not interact with the frontend or filters directly. Instead, it organizes **Attributes** in the database, which are then used by filters.
+
+</details>
+
+<details>
+  <summary>Can I specify a test domain now and add more later?</summary>
+
+Yes. You can update domains at any time, provided the number and characteristics comply with the [license](/license/license-install.md) terms.
+
+</details>
+
+<details>
+  <summary>The module stopped working after migrating to a new hosting. Could this be the cause?</summary>
+
+Try the following:
+
+- Clear the store cache.
+- Clear browser cache and cookies.
+- Refresh modifiers.
+- Reconfigure and save settings.
+
+</details>
+
+<details>
+  <summary>How to merge attribute values?</summary>
+
+The module does not provide dedicated merging tools (e.g., Drag-and-Drop, context menu, or hotkeys) for values or templates.  
+This simplifies the module's design, and merging can be achieved via batch renaming instead.  
+
+To merge values or templates, simply edit the **Value** or **Template**. For details, see the [Editing](/module-features/editing.md) section.
+
+</details>
+
+<details>
+  <summary>What steps should I take after parsing?</summary>
+
+The module does not enforce a strict workflow but provides tools to automate manual tasks.  
+
+One such tool is **[Category Attributes](/tools/category-attributes.md)**.  
+
+:::info  
+In settings, set the **[`Method`](/settings/product.md)** to **"Add default only to empty"**.  
+Other options are self-explanatory.  
+:::
+
+Legend:  
+
+- `C` = Category  
+- `P` = Product  
+- `A` = Attribute  
+- `V` = Attribute Value  
+- `D` = Default Template  
+
+Example:  
+Category `C1` contains product `P1` with **Attribute** `A1` (Value: `V1`).  
+After adding **Attribute** `A2` (Value: `V2`) to `P1` and parsing, products `P2` and `P3` are added with their own attributes.  
+
+| ![Working with Unfilled Default Templates](/img/tutorial/attribute_category_1.svg) |  
+|:--:|  
+| *Diagram 1 – Working with Unfilled Default Templates*  
+
+**Goal**: Unify **category attributes** so every product in `C1` has the same set of **Attributes**.  
+**Action**: Apply the **Category Attributes** tool.  
+
+:::warning  
+Some values remain empty because the module cannot resolve ambiguities (e.g., **Attribute** `A1` might accept `V1` or `V4`).  
+:::  
+
+**Solution**: Define **Default Templates**. The result:  
+
+| ![Working with Filled Default Templates](/img/tutorial/attribute_category_2.svg) |  
+|:--:|  
+| *Diagram 2 – Working with Filled Default Templates*  
+
+All values are now consistently populated.  
+
+</details>
+
+<details>
+  <summary>Can the module display attributes under product images on the homepage?</summary>
+
+No. This module operates exclusively in the admin panel and does not interact with the frontend. Future advanced versions may include such features.  
+For frontend changes, consult your template/theme developers.  
+
+</details>

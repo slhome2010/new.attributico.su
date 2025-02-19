@@ -37,4 +37,4 @@ Once the task is completed, a confirmation message will be displayed, for exampl
 
 ✅ Success! Operation completed. Category attributes generated: 12. Attributes added to products: 758.
 
-For more details on how this tool works, see the FAQ section — [What steps should be taken after parsing?](/faq/after-parsing.md).
+For more details on how this tool works, see the FAQ section — [What steps should be taken after parsing?](/faq.mdx).
