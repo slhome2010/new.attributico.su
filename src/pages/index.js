@@ -57,7 +57,7 @@ function HomepageHeader() {
             </Link>
             <Link
               className={clsx('button button--outline button--lg', styles.getStarted)}
-              to={useBaseUrl('docs/intro')}
+              to={useBaseUrl('docs/install')}
             >
               <Translate id="homepage.banner.link.getStarted"
                 description="The homepage link label">
