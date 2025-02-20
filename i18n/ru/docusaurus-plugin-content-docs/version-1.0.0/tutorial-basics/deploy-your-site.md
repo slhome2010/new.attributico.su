@@ -2,7 +2,11 @@
 sidebar_position: 5
 ---
 
+<<<<<<< HEAD
 # Deploy Твой сайт
+=======
+# Deploy your site
+>>>>>>> su_v0.1.10
 
 Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
 

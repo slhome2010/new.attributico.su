@@ -4,13 +4,24 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
+<<<<<<< HEAD
     "message": "Логотип Attribut&co",
+=======
+    "message": "Логотип",
+>>>>>>> su_v0.1.10
     "description": "The alt text of navbar logo"
   },
   "item.label.Tutorial": {
     "message": "Документация",
     "description": "Navbar item with label Tutorial"
   },
+<<<<<<< HEAD
+=======
+  "item.label.Docs": {
+    "message": "Документация",
+    "description": "Navbar item with label Docs"
+  },
+>>>>>>> su_v0.1.10
   "item.label.Blog": {
     "message": "Блог",
     "description": "Navbar item with label Blog"

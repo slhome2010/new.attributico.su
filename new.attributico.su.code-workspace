@@ -1,11 +1,17 @@
 {
     "folders": [
         {
+<<<<<<< HEAD
             "name": "new.attributico.su",
             "path": "."
         },
         {
             "name": "loc.attributico.su",
+=======
+            "path": "."
+        },
+        {
+>>>>>>> su_v0.1.10
             "path": "../loc.attributico.su"
         }
     ]

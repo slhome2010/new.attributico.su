@@ -8,7 +8,11 @@
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
+<<<<<<< HEAD
     "message": "Частые заметки",
+=======
+    "message": "Частые посты",
+>>>>>>> su_v0.1.10
     "description": "The label for the left sidebar"
   }
 }

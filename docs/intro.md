@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+<<<<<<< HEAD
 # Introduction Next (Last)
 
 ## Module Mission
@@ -22,6 +23,30 @@ Product Category
 
 Representing the structure of attributes and values in the form of trees.
 
+=======
+# Introduction
+
+The Attribut&co module is an extension for managing product attributes (referred to as "characteristics" in Russian-language versions) in online stores running on the OpenCart platform.
+
+## Module Mission
+
+To simplify working with attributes and their values. To display the structure of attributes more clearly. To apply more modern editing technologies. To replace routine manual labor with automated operations and move to batch processing of changes.
+
+## Main Idea
+
+Creating a set of attributes that are the same for a certain product category and linking this set to the category. It is assumed that products of the same category have, roughly, the same set of attributes. The structure of categories and subcategories in Opencart is quite well developed, so the link to the category was chosen, not to the manufacturer, for example. Bringing the structure of attributes and their values to the form:
+
+```bash
+
+Product Category
+    └── Attribute
+          └── Value (list of values) of the attribute
+
+```
+
+Representing the structure of attributes and values in the form of trees.
+
+>>>>>>> su_v0.1.10
 ## Capabilities
 
 - Creating new groups and attributes in the same tree;
@@ -34,9 +59,15 @@ Representing the structure of attributes and values in the form of trees.
   - Merging attributes (combining) without losing values and links;
 - Filtering and searching for groups, attributes and attribute values in the tree;
 - Editing groups, attributes, templates and values;
+<<<<<<< HEAD
 - Substituting the "Default Template" (default template) when adding an attribute to a product;
 - Batch substitution of the "Default Template" in products, when adding an attribute to a category;
 - Setting up the method of adding values and templates to a product;
+=======
+- Substituting the "Default Template" when adding an attribute to a product;
+- Batch substitution of the "Default Template" in products, when adding an attribute to a category;
+- Managing the method of adding values ​​and templates to the product;
+>>>>>>> su_v0.1.10
 - Quick viewing of products filtered by attribute or value;
 - A set of tools for ordering attributes:
   - Finding and deleting empty attribute values;
