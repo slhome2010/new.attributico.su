@@ -1,6 +1,10 @@
 {
   "label": "Tutorial - Extras",
+<<<<<<< HEAD
   "position": 27,
+=======
+  "position": 3,
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   "link": {
     "type": "generated-index"
   }

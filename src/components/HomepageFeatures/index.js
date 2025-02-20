@@ -1,65 +1,36 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import Translate, { translate } from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: <Translate>​Tree view</Translate>, //'Easy to Use',
-    Svg: require('@site/static/img/undraw_attributico_tree.svg').default,
+    title: 'Easy to Use',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <Translate>
-        ​Visual representation of groups, attributes and attribute values ​​in the form of a tree. 
-        Editing, adding, deleting directly in the tree.
-      </Translate>
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
     ),
   },
   {
-    title: <Translate>Drag-and-drop</Translate>, //'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_attributico_mountain.svg').default,
+    title: 'Focus on What Matters',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <Translate>
-        Drag and drop attributes or groups using the mouse. 
-        Now, attributes and groups can be sorted using drag and drop.
-      </Translate>
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
     ),
   },
   {
-    title: <Translate>Category Attributes</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_attributico_category.svg').default,
+    title: 'Powered by React',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <Translate>
-        Binding a set of attributes to a product category for quick assignment to similar products. 
-        Preparing a set of Category Attributes using Drag-and-Drop or the auto-creation tool.
-      </Translate>
-    ),
-  },
-  {
-    title: <Translate>Duty templates</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_attributico_monitor.svg').default,
-    description: (
-      <Translate>
-        It is possible to set a default template for each attribute and 
-        substitute it into the value when adding an attribute or category attribute to a product.
-      </Translate>
-    ),
-  },
-  {
-    title: <Translate>Merging Duplicates</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_attributico_double.svg').default,
-    description: (
-      <Translate>
-        Merging duplicate attributes without losing the links between their values ​​and products.
-      </Translate>
-    ),
-  },
-  {
-    title: <Translate>Batch processing</Translate>, //'Powered by React',
-    Svg: require('@site/static/img/undraw_attributico_react.svg').default,
-    description: (
-      <Translate>
-        Batch replacement of the value separator, letter case replacement, and language cloning.
-      </Translate>
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
     ),
   },
 ];

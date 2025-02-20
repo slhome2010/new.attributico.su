@@ -134,6 +134,13 @@
     "message": "Теги:",
     "description": "The label alongside a tag list"
   },
+<<<<<<< HEAD
+=======
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Закрыть",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   "theme.admonition.caution": {
     "message": "предупреждение",
     "description": "The default label used for the Caution admonition (:::caution)"
@@ -155,6 +162,7 @@
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
+<<<<<<< HEAD
     "message": "внимание",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
@@ -162,6 +170,11 @@
     "message": "Закрыть",
     "description": "The ARIA label for close button of announcement bar"
   },
+=======
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Навигация по последним постам в блоге",
     "description": "The ARIA label for recent posts in the blog sidebar"
@@ -309,6 +322,7 @@
   "theme.tags.tagsPageTitle": {
     "message": "Теги",
     "description": "The title of the tag list page"
+<<<<<<< HEAD
   },
   "homepage.banner.slogan": {
     "message": "АТРИБУТЫ - ЭТО ЛЕГКО!",
@@ -371,5 +385,7 @@
   },
   "Batch replacement of the value separator, letter case replacement, and language cloning.": {
     "message": "Пакетная замена разделителя значений, замена регистра букв и клонирование языка."
+=======
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   }
 }

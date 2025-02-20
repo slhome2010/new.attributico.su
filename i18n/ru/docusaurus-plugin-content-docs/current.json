@@ -1,6 +1,10 @@
 {
   "version.label": {
+<<<<<<< HEAD
     "message": "Next",
+=======
+    "message": "Последняя",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
@@ -8,12 +12,17 @@
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
+<<<<<<< HEAD
     "message": "5 минут для изучения самых важных концептов Docusaurus.",
+=======
+    "message": "5 минут для изучения самых важных Docusaurus концептов.",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Руководство - Расширенное",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+<<<<<<< HEAD
   },
   "sidebar.tutorialSidebar.category.Technical specifications": {
     "message": "Техническая спецификация",
@@ -78,5 +87,7 @@
   "sidebar.tutorialSidebar.category.Unify attributes.link.generated-index.description": {
     "message": "Приведение атрибутов к единой системе или форме.",
     "description": "The generated-index page description for category Unify attributes in sidebar tutorialSidebar"
+=======
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   }
 }

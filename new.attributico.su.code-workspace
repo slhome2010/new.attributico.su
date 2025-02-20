@@ -1,9 +1,17 @@
 {
     "folders": [
         {
+<<<<<<< HEAD
             "path": "."
         },
         {
+=======
+            "name": "new.attributico.su",
+            "path": "."
+        },
+        {
+            "name": "loc.attributico.su",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
             "path": "../loc.attributico.su"
         }
     ]

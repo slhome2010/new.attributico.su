@@ -2,7 +2,11 @@
 sidebar_position: 5
 ---
 
+<<<<<<< HEAD
 # Deploy your site
+=======
+# Deploy Твой сайт
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
 
 Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
 

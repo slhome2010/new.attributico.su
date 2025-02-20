@@ -7,13 +7,11 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-import Translate, { translate } from '@docusaurus/Translate';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+<<<<<<< HEAD
       <div className={clsx('container', styles.heroContainer)}>
         <div className={styles.heroBoxes}>
           <img
@@ -65,6 +63,19 @@ function HomepageHeader() {
               </Translate>
             </Link>
           </div>
+=======
+      <div className="container">
+        <Heading as="h1" className="hero__title">
+          {siteConfig.title}
+        </Heading>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro">
+            Docusaurus Tutorial - 5min ⏱️
+          </Link>
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
         </div>
       </div>
     </header>
@@ -72,7 +83,7 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}

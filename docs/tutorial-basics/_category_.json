@@ -1,6 +1,10 @@
 {
   "label": "Tutorial - Basics",
+<<<<<<< HEAD
   "position": 26,
+=======
+  "position": 2,
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."

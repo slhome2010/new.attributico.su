@@ -4,17 +4,24 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
+<<<<<<< HEAD
     "message": "Логотип",
+=======
+    "message": "Логотип Attribut&co",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
     "description": "The alt text of navbar logo"
   },
   "item.label.Tutorial": {
     "message": "Документация",
     "description": "Navbar item with label Tutorial"
   },
+<<<<<<< HEAD
   "item.label.Docs": {
     "message": "Документация",
     "description": "Navbar item with label Docs"
   },
+=======
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   "item.label.Blog": {
     "message": "Блог",
     "description": "Navbar item with label Blog"

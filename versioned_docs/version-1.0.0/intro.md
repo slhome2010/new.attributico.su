@@ -2,7 +2,11 @@
 sidebar_position: 1
 ---
 
+<<<<<<< HEAD
 # Introduction
+=======
+# Introduction 1.0.0
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
 
 ## Module Mission
 
@@ -36,7 +40,11 @@ Representing the structure of attributes and values in the form of trees.
 - Editing groups, attributes, templates and values;
 - Substituting the "Default Template" (default template) when adding an attribute to a product;
 - Batch substitution of the "Default Template" in products, when adding an attribute to a category;
+<<<<<<< HEAD
 - Managing the method of adding values ​​and templates to the product;
+=======
+- Setting up the method of adding values and templates to a product;
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
 - Quick viewing of products filtered by attribute or value;
 - A set of tools for ordering attributes:
   - Finding and deleting empty attribute values;

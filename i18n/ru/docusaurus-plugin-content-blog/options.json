@@ -8,7 +8,11 @@
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
+<<<<<<< HEAD
     "message": "Частые посты",
+=======
+    "message": "Частые заметки",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
     "description": "The label for the left sidebar"
   }
 }

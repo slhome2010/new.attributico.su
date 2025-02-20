@@ -1,6 +1,10 @@
 {
   "link.title.Docs": {
+<<<<<<< HEAD
     "message": "Документы",
+=======
+    "message": "Docs",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
@@ -8,11 +12,19 @@
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
+<<<<<<< HEAD
     "message": "Больше",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Tutorial": {
     "message": "Руководство",
+=======
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
     "description": "The label of footer link with label=Tutorial linking to /docs/intro"
   },
   "link.item.label.Stack Overflow": {
@@ -23,6 +35,7 @@
     "message": "Discord",
     "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
   },
+<<<<<<< HEAD
   "link.item.label.X": {
     "message": "X",
     "description": "The label of footer link with label=X linking to https://x.com/docusaurus"
@@ -50,5 +63,14 @@
   "link.item.label.Free version": {
     "message": "Free версия",
     "description": "The label of footer link with label=Free version linking to https://liveopencart.ru/opencart-moduli-shablony/moduli/filtryi/attribut-coviewer-opencart-atributyi-eto-legko"
+=======
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "copyright": {
+    "message": "Copyright © 2025",
+    "description": "The footer copyright"
+>>>>>>> parent of e1660af (Merge branch 'su_v0.1.10')
   }
 }
